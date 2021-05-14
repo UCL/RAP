@@ -1,0 +1,61 @@
+#---------------------------------------------------------------------------
+# Generate one wordcloud for each department listed in the 'departments' folder
+# Uses a combination of publication keywords and titles from Discovery
+# Department codes listed in 'departments.txt' must be suffixes of:https://discovery.ucl.ac.uk/view/UCL/
+# eg: 
+# https://discovery.ucl.ac.uk/view/UCL/F99
+# https://discovery.ucl.ac.uk/view/UCL/DF9
+#-------------------------------------------------------------------------------------------
+# overheads
+#-------------------------------------------------------------------------------------------
+source('boilerplate.R')
+departments <- readLines('../departments/departments.txt')
+cloud.png <- list.files('../wordclouds/departments')
+
+# remove any departments that are no longer at UCL
+clouds <- sub('.png','',cloud.png)
+remove <- list.files('../wordclouds/departments', full.names=T)[!clouds%in%departments]
+file.remove(remove)
+
+# departments that haven't been done yet
+departments.new <- departments[!departments %in% clouds]
+
+# 10 clouds that haven't been updated recently. Dont do them all.
+N <- 1
+i <- order(file.info(list.files('../wordclouds/departments', full.names=T))$mtime)
+departments.old <- clouds[i[1:N]]
+
+departments <- c(departments.new, departments.old)
+if(length(departments)>N)departments <- sample(departments,size=N)
+#-------------------------------------------------------------------------------------------
+# main loop
+#-------------------------------------------------------------------------------------------
+N <- length(departments)
+for(n in sample(1:N)){
+
+	dept <- urls <- discovery <- exclude <- freq <- NULL
+
+	dept <- departments[n]
+	
+	# get discovery URLs and process if 10 or more pubs
+	urls <- try(get.discovery.urls.for.department(dept))
+	if(length(urls)<10)next
+
+	# get discovery keywords
+	discovery <- try(get.discovery.summary(urls))
+
+	# get exclusions
+	exclude <- get.exclusions()
+
+	# analyse frequencies of words 
+	freq <- extract.words(discovery, iris=NULL, exclude, ud_model)
+
+	# generate word clouds and save
+	wordcloud.maker(freq, col='steelblue', png.file=paste('../wordclouds/departments/',dept,'.png',sep=''))
+
+	# housekeeping
+	print(dept)
+	print(Sys.time())
+	if(is.null(freq))print(paste(dept,'failed'))
+	}
+#-------------------------------------------------------------------------------------------

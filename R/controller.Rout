@@ -1,0 +1,199 @@
+
+R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #-------------------------------------------------------------------------------------------
+> # Single script to run all other required R scripts, so can be envoked automatically on server using CRON
+> #-------------------------------------------------------------------------------------------
+> source('boilerplate.R')
+Loading required package: SemNetDictionaries
+
+SemNetDictionaries 
+For help getting started, see <https://doi.org/10.31234/osf.io/eht87> 
+
+ Submit your own dictionary and moniker glossaries to:
+ <https://github.com/AlexChristensen/SemNetDictionaries/issues/new/choose>
+
+SemNetCleaner 
+For help getting started, see <https://doi.org/10.31234/osf.io/eht87> 
+ For bugs and errors, submit an issue to <https://github.com/AlexChristensen/SemNetCleaner/issues>
+
+WARNING: There have been major updates to the SemNetCleaner package.
+ Please see 'Package NEWS' for a detailed list of updates (see 'Changes in version 1.2.0')
+
+> install_phantomjs(force = TRUE)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1731      0 --:--:-- --:--:-- --:--:--  1736
+ 15 16.3M   15 2559k    0     0  2637k      0  0:00:06 --:--:--  0:00:06 2637k 79 16.3M   79 12.9M    0     0  6714k      0  0:00:02  0:00:01  0:00:01 10.4M100 16.3M  100 16.3M    0     0  7285k      0  0:00:02  0:00:02 --:--:-- 10.4M
+phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
+> 
+> #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
+> #ud_model <- udpipe_load_model(ud_model$file_model)
+> ud_model <- udpipe_load_model('../tools/data/english-ewt-ud-2.5-191206.udpipe')
+> #-------------------------------------------------------------------------------------------
+> source('generate list of UPIs.R')
+> Sys.time()
+[1] "2021-05-14 19:45:09 BST"
+> source('generate wordcloud for each UPI.R')
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/JSDRI58.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 346351 bytes
+Input file size = 346933 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 217999
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 217999
+
+Output IDAT size = 217999 bytes (128352 bytes decrease)
+Output file size = 218077 bytes (128856 bytes = 37.14% decrease)
+
+[1] "JSDRI58"
+[1] "1 of 5 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/TGONG58.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 143212 bytes
+Input file size = 143494 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 91076
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 91076
+
+Output IDAT size = 91076 bytes (52136 bytes decrease)
+Output file size = 91154 bytes (52340 bytes = 36.48% decrease)
+
+[1] "TGONG58"
+[1] "2 of 5 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/MCROL96.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 262103 bytes
+Input file size = 262553 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 167489
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 167489
+
+Output IDAT size = 167489 bytes (94614 bytes decrease)
+Output file size = 167567 bytes (94986 bytes = 36.18% decrease)
+
+[1] "MCROL96"
+[1] "3 of 5 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/JAGOM56.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 91869 bytes
+Input file size = 92079 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 60618
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 60618
+
+Output IDAT size = 60618 bytes (31251 bytes decrease)
+Output file size = 60696 bytes (31383 bytes = 34.08% decrease)
+
+[1] "JAGOM56"
+[1] "4 of 5 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/NSCOU98.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 530501 bytes
+Input file size = 531347 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 313490
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 313490
+
+Output IDAT size = 313490 bytes (217011 bytes decrease)
+Output file size = 313568 bytes (217779 bytes = 40.99% decrease)
+
+[1] "NSCOU98"
+[1] "5 of 5 completed"
+> Sys.time()
+[1] "2021-05-14 19:48:27 BST"
+> source('generate list of department codes.R')
+> Sys.time()
+[1] "2021-05-14 19:49:10 BST"
+> source('generate wordcloud for each department.R')
+[1] "checking C01 ......."
+[1] "url exists"
+[1] "https://discovery.ucl.ac.uk/id/eprint/10116724/ failed........."
+[1] "https://discovery.ucl.ac.uk/id/eprint/10085132/ failed........."
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/departments/C01.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 1041681 bytes
+Input file size = 1043283 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 590898
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 590898
+
+Output IDAT size = 590898 bytes (450783 bytes decrease)
+Output file size = 590976 bytes (452307 bytes = 43.35% decrease)
+
+[1] "C01"
+[1] "2021-05-14 20:24:10 BST"
+> Sys.time()
+[1] "2021-05-14 20:24:10 BST"
+> #-------------------------------------------------------------------------------------------
+> 
+> #-------------------------------------------------------------------------------------------
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> proc.time()
+    user   system  elapsed 
+1260.995   20.649 2348.662 

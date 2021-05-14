@@ -1,0 +1,22 @@
+<a href="https://github.com/UCL"><img src="tools/logos/logo_UCL.png" alt="UCL Research Software Development" height="70"/></a>
+<a href="https://www.ucl.ac.uk/biosciences/departments/genetics-evolution-and-environment/research/molecular-and-cultural-evolution-lab"><img src="tools/logos/logo_MACElab.png" alt="UCL Research Software Development" height="70"/></a>
+
+# UCL-RAP build history
+
+## 2021-05-12
+* Refactored R scripts for speed ups
+* Clouds now generated daily, but only for a small subset of UPIs and departments done (least recent). Therefore all UPIs and Depts are updated every few weeks.
+
+## 2021-01-06
+* New R script 'generate wordcloud for each department.R'. 
+* New R script 'generate list of UPIs.R'.
+* New R script 'generate list of department codes.R'.
+
+## 2021-01-05
+* New R script 'generate wordcloud for each UPI.R'. So far only researchers from GEE are included in the UPI lists. 
+
+## 2021-01-04
+* Initial creation
+
+
+
