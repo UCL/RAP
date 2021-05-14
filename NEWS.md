@@ -3,6 +3,11 @@
 
 # UCL-RAP build history
 
+## 2021-05-14
+* Scrapped working repository at AdrianTimpson/UCL-RAP mirroring to UCL/RAP in favour of a single repository
+* Automatic cropping of .png using imagemagick
+* Cleared entire repository and started fresh, so will take several days before all wordclouds are regenerated
+
 ## 2021-05-12
 * Refactored R scripts for speed ups
 * Clouds now generated daily, but only for a small subset of UPIs and departments done (least recent). Therefore all UPIs and Depts are updated every few weeks.
