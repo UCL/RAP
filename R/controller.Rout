@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1617      0 --:--:-- --:--:-- --:--:--  1620
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  8 16.3M    8 1440k    0     0   861k      0  0:00:19  0:00:01  0:00:18 1900k 34 16.3M   34 5856k    0     0  2191k      0  0:00:07  0:00:02  0:00:05 3333k 85 16.3M   85 13.9M    0     0  3878k      0  0:00:04  0:00:03  0:00:01 5163k100 16.3M  100 16.3M    0     0  4297k      0  0:00:03  0:00:03 --:--:-- 5614k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1683      0 --:--:-- --:--:-- --:--:--  1685
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 60 16.3M   60  9.9M    0     0  6653k      0  0:00:02  0:00:01  0:00:01 10.6M100 16.3M  100 16.3M    0     0  7973k      0  0:00:02  0:00:02 --:--:-- 10.8M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,149 +49,247 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-14 22:45:11 BST"
+[1] "2021-05-15 11:45:11 BST"
 > source('generate wordcloud for each UPI.R')
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/JVARL18.png
+** Processing: ../wordclouds/UPI/CLDWY97.png
 1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 612149 bytes
-Input file size = 613115 bytes
+Input IDAT size = 502604 bytes
+Input file size = 503414 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 373389
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 297979
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 373389
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 297979
 
-Output IDAT size = 373389 bytes (238760 bytes decrease)
-Output file size = 373467 bytes (239648 bytes = 39.09% decrease)
+Output IDAT size = 297979 bytes (204625 bytes decrease)
+Output file size = 298057 bytes (205357 bytes = 40.79% decrease)
 
-[1] "JVARL18"
-[1] "1 of 5 completed"
+[1] "CLDWY97"
+[1] "1 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/VALDR38.png
+** Processing: ../wordclouds/UPI/AFORT20.png
 1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 407662 bytes
-Input file size = 408328 bytes
+Input IDAT size = 476329 bytes
+Input file size = 477103 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 251295
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 294848
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 251295
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 294848
 
-Output IDAT size = 251295 bytes (156367 bytes decrease)
-Output file size = 251373 bytes (156955 bytes = 38.44% decrease)
+Output IDAT size = 294848 bytes (181481 bytes decrease)
+Output file size = 294926 bytes (182177 bytes = 38.18% decrease)
 
-[1] "VALDR38"
-[1] "2 of 5 completed"
+[1] "AFORT20"
+[1] "2 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/AFASS84.png
+** Processing: ../wordclouds/UPI/MIRIC13.png
 1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 307779 bytes
-Input file size = 308301 bytes
+Input IDAT size = 228250 bytes
+Input file size = 228652 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 198572
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 146408
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 198572
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 146408
 
-Output IDAT size = 198572 bytes (109207 bytes decrease)
-Output file size = 198650 bytes (109651 bytes = 35.57% decrease)
+Output IDAT size = 146408 bytes (81842 bytes decrease)
+Output file size = 146486 bytes (82166 bytes = 35.93% decrease)
 
-[1] "AFASS84"
-[1] "3 of 5 completed"
+[1] "MIRIC13"
+[1] "3 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/PFRAN46.png
+** Processing: ../wordclouds/UPI/DOWEN23.png
 1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 277305 bytes
-Input file size = 277779 bytes
+Input IDAT size = 643656 bytes
+Input file size = 644670 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 174149
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 380805
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 174149
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 380805
 
-Output IDAT size = 174149 bytes (103156 bytes decrease)
-Output file size = 174227 bytes (103552 bytes = 37.28% decrease)
+Output IDAT size = 380805 bytes (262851 bytes decrease)
+Output file size = 380883 bytes (263787 bytes = 40.92% decrease)
 
-[1] "PFRAN46"
-[1] "4 of 5 completed"
+[1] "DOWEN23"
+[1] "4 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/APARA68.png
+** Processing: ../wordclouds/UPI/NWILL98.png
 1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 178505 bytes
-Input file size = 178835 bytes
+Input IDAT size = 259845 bytes
+Input file size = 260295 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 115219
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 162484
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 115219
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 162484
 
-Output IDAT size = 115219 bytes (63286 bytes decrease)
-Output file size = 115297 bytes (63538 bytes = 35.53% decrease)
+Output IDAT size = 162484 bytes (97361 bytes decrease)
+Output file size = 162562 bytes (97733 bytes = 37.55% decrease)
 
-[1] "APARA68"
-[1] "5 of 5 completed"
-> Sys.time()
-[1] "2021-05-14 22:48:38 BST"
-> source('generate list of department codes.R')
-> Sys.time()
-[1] "2021-05-14 22:49:31 BST"
-> source('generate wordcloud for each department.R')
-[1] "checking F59 ......."
-[1] "url exists"
+[1] "NWILL98"
+[1] "5 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/departments/F59.png
+** Processing: ../wordclouds/UPI/IMCWH58.png
 1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 688886 bytes
-Input file size = 689972 bytes
+Input IDAT size = 206133 bytes
+Input file size = 206511 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 411644
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 127157
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 411644
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 127157
 
-Output IDAT size = 411644 bytes (277242 bytes decrease)
-Output file size = 411722 bytes (278250 bytes = 40.33% decrease)
+Output IDAT size = 127157 bytes (78976 bytes decrease)
+Output file size = 127235 bytes (79276 bytes = 38.39% decrease)
 
-[1] "F59"
-[1] "2021-05-14 23:05:25 BST"
-> Sys.time()
-[1] "2021-05-14 23:05:25 BST"
-> #-------------------------------------------------------------------------------------------
-> 
-> #-------------------------------------------------------------------------------------------
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> proc.time()
-    user   system  elapsed 
- 667.807   25.599 1223.311 
+[1] "IMCWH58"
+[1] "6 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/EBCAD42.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 216918 bytes
+Input file size = 217308 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 135033
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 135033
+
+Output IDAT size = 135033 bytes (81885 bytes decrease)
+Output file size = 135111 bytes (82197 bytes = 37.83% decrease)
+
+[1] "EBCAD42"
+[1] "7 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/KMQUY74.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 250109 bytes
+Input file size = 250547 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 156908
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 156908
+
+Output IDAT size = 156908 bytes (93201 bytes decrease)
+Output file size = 156986 bytes (93561 bytes = 37.34% decrease)
+
+[1] "KMQUY74"
+[1] "8 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/BSZEN90.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 234973 bytes
+Input file size = 235387 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 145568
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 145568
+
+Output IDAT size = 145568 bytes (89405 bytes decrease)
+Output file size = 145646 bytes (89741 bytes = 38.12% decrease)
+
+[1] "BSZEN90"
+[1] "9 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/EMORA00.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 194452 bytes
+Input file size = 194806 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 121727
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 121727
+
+Output IDAT size = 121727 bytes (72725 bytes decrease)
+Output file size = 121805 bytes (73001 bytes = 37.47% decrease)
+
+[1] "EMORA00"
+[1] "10 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/AWILD25.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 207205 bytes
+Input file size = 207583 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 129924
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 129924
+
+Output IDAT size = 129924 bytes (77281 bytes decrease)
+Output file size = 130002 bytes (77581 bytes = 37.37% decrease)
+
+[1] "AWILD25"
+[1] "11 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/LNMEL45.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 251204 bytes
+Input file size = 251642 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 157043
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 157043
+
+Output IDAT size = 157043 bytes (94161 bytes decrease)
+Output file size = 157121 bytes (94521 bytes = 37.56% decrease)
+
+[1] "LNMEL45"
+[1] "12 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/MTANZ22.png
+1800x1212 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 278972 bytes
+Input file size = 279458 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 171218
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 171218
+
+Output IDAT size = 171218 bytes (107754 bytes decrease)
+Output file size = 171296 bytes (108162 bytes = 38.70% decrease)
+
+[1] "MTANZ22"
+[1] "13 of 200 completed"
+Error in UseMethod("xml_find_all") : 
+  no applicable method for 'xml_find_all' applied to an object of class "logical"
+[1] "NA failed........."
+[1] " failed........."
+Error in if (any(last.lets == c("s", "i", "a"))) { : 
+  missing value where TRUE/FALSE needed
+Calls: source ... withVisible -> eval -> eval -> extract.words -> singularize
+Execution halted
