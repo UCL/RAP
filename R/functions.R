@@ -122,11 +122,17 @@ get.discovery.summary <- function(urls){
         for(u in 1:U){
                 page <- NA
                 gc()
-                page <- reader(urls[u])
+                url <- urls[u]
+                if(!url.exists(url)){
+				print(paste(url,'failed............'))
+				next
+				}
+
+                page <- reader(url)
 
                 if(is.na(page)){
                         data[u,] <- NA
-                        print(paste(urls[u],'failed.........'))
+                        print(paste(url,'failed.........'))
                         }
                 if(!is.na(page)){
                         name <- page%>% html_nodes("meta")  %>% html_attr( "name")
