@@ -124,7 +124,7 @@ get.discovery.summary <- function(urls){
                 gc()
                 url <- urls[u]
                 if(!url.exists(url)){
-				print(paste(url,'failed............'))
+				print(paste(url,'non-existant'))
 				next
 				}
 
@@ -132,8 +132,10 @@ get.discovery.summary <- function(urls){
 
                 if(is.na(page)){
                         data[u,] <- NA
-                        print(paste(url,'failed.........'))
+                        print('page could not be read')
+				next
                         }
+
                 if(!is.na(page)){
                         name <- page%>% html_nodes("meta")  %>% html_attr( "name")
                         name[is.na(name)] <- 'crap'
