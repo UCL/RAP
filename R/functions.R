@@ -262,14 +262,11 @@ wordcloud.maker <- function(freq, col, png.file){
 	wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
 	html.file <- 'tmp.html'
 	saveWidget(wc,html.file,selfcontained = F)	
- 	webshot(html.file,png.file, delay =20, vwidth = width, vheight=height)
+ 	webshot(html.file,png.file, delay =30, vwidth = width, vheight=height) %>% shrink()
 
 	# imagemagick
-	system(paste('magick convert ',png.file,' -gravity South -chop 0x20 -trim -resize 800x800 ',png.file,sep=''))
+	system(paste('magick convert ',png.file,' -gravity South -chop 0x20 -trim -resize 800x800> ',png.file,sep=''))
         
-	# compress
-	system(paste('optipng', png.file))
-
 	# tidy
 	file.remove(html.file)
 	unlink('tmp_files')
