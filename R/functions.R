@@ -270,7 +270,7 @@ wordcloud.maker <- function(freq, col, png.file){
 
         file.remove(html.file)
 
-	imagemagick.command <- paste('convert ',png.file,' -gravity South -chop 0x20 -trim -resize 600x600\\> ',png.file,sep='')
+	imagemagick.command <- paste('convert ',png.file,' -gravity South -chop 0x20 -trim -resize 600x600\> ',png.file,sep='')
 	system(imagemagick.command)
         }
 #-------------------------------------------------------------------------------------------------------

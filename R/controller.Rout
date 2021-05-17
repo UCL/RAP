@@ -36,21 +36,5 @@ For help getting started, see <https://doi.org/10.31234/osf.io/eht87>
 WARNING: There have been major updates to the SemNetCleaner package.
  Please see 'Package NEWS' for a detailed list of updates (see 'Changes in version 1.2.0')
 
-> install_phantomjs(force = TRUE)
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1461      0 --:--:-- --:--:-- --:--:--  1462
- 16 16.3M   16 2787k    0     0  2896k      0  0:00:05 --:--:--  0:00:05 2896k 83 16.3M   83 13.5M    0     0  7090k      0  0:00:02  0:00:01  0:00:01 10.8M100 16.3M  100 16.3M    0     0  7558k      0  0:00:02  0:00:02 --:--:-- 10.8M
-phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
-> 
-> #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
-> #ud_model <- udpipe_load_model(ud_model$file_model)
-> ud_model <- udpipe_load_model('../tools/data/english-ewt-ud-2.5-191206.udpipe')
-> #-------------------------------------------------------------------------------------------
-> source('generate list of UPIs.R')
-> Sys.time()
-[1] "2021-05-17 15:07:10 BST"
-> source('generate wordcloud for each UPI.R')
-Error in strsplit(test, split = "") : object 'test' not found
-Calls: source ... withVisible -> eval -> eval -> wordcloud.maker -> strsplit
+Error: '\>' is an unrecognized escape in character string starting "' -gravity South -chop 0x20 -trim -resize 600x600\>"
 Execution halted
