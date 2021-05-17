@@ -247,7 +247,7 @@ wordcloud.maker <- function(freq, col, png.file){
 	rw <- w/mean(w)
 
 	# ad hoc approach to deciding the character size
-	words <- strsplit(test,split='')
+	words <- strsplit(freq$word,split='')
 	N <- length(words)
 	rw.words <- numeric(N)
 	for(n in 1:N){
@@ -259,7 +259,6 @@ wordcloud.maker <- function(freq, col, png.file){
 	weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
 	size <- 8/weighted.word.length
 
-#	width <- 1800; height <- 1200
 	width <- 2160; height <- 1440
         wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
         html.file <- 'tmp.html'
@@ -269,8 +268,9 @@ wordcloud.maker <- function(freq, col, png.file){
         webshot(html.file,png.file, delay =20, vwidth = width, vheight=height) %>% shrink()
 
         file.remove(html.file)
+	 unlink('tmp_files')
 
-	imagemagick.command <- paste('convert ',png.file,' -gravity South -chop 0x20 -trim -resize 600x600\\> ',png.file,sep='')
+	imagemagick.command <- paste('convert ',png.file,' -gravity South -chop 0x20 -trim -resize 600x600 ',png.file,sep='')
 	system(imagemagick.command)
         }
 #-------------------------------------------------------------------------------------------------------

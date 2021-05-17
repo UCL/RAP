@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1461      0 --:--:-- --:--:-- --:--:--  1462
- 16 16.3M   16 2787k    0     0  2896k      0  0:00:05 --:--:--  0:00:05 2896k 83 16.3M   83 13.5M    0     0  7090k      0  0:00:02  0:00:01  0:00:01 10.8M100 16.3M  100 16.3M    0     0  7558k      0  0:00:02  0:00:02 --:--:-- 10.8M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1689      0 --:--:-- --:--:-- --:--:--  1689
+ 40 16.3M   40 6796k    0     0  5441k      0  0:00:03  0:00:01  0:00:02 5441k100 16.3M  100 16.3M    0     0  7801k      0  0:00:02  0:00:02 --:--:-- 10.8M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,8 +49,125 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-17 15:07:10 BST"
+[1] "2021-05-17 15:11:09 BST"
 > source('generate wordcloud for each UPI.R')
-Error in strsplit(test, split = "") : object 'test' not found
-Calls: source ... withVisible -> eval -> eval -> wordcloud.maker -> strsplit
-Execution halted
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/PHJON02.png
+2160x1452 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 8 bits/pixel, 21 colors in palette
+Input IDAT size = 15836 bytes
+Input file size = 15926 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 5139
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 5139
+  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5		IDAT size = 5139
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 5136
+  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 5136
+
+Output IDAT size = 5136 bytes (10700 bytes decrease)
+Output file size = 5289 bytes (10637 bytes = 66.79% decrease)
+
+convert: geometry does not contain image `../wordclouds/UPI/PHJON02.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "PHJON02"
+[1] "1 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/JBARR55.png
+2160x1452 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 210467 bytes
+Input file size = 210845 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 137237
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 137237
+
+Output IDAT size = 137237 bytes (73230 bytes decrease)
+Output file size = 137315 bytes (73530 bytes = 34.87% decrease)
+
+[1] "JBARR55"
+[1] "2 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/DPMOR49.png
+2160x1452 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 8 bits/pixel, 21 colors in palette
+Input IDAT size = 15836 bytes
+Input file size = 15926 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 5139
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 5139
+  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5		IDAT size = 5139
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 5136
+  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 5136
+
+Output IDAT size = 5136 bytes (10700 bytes decrease)
+Output file size = 5289 bytes (10637 bytes = 66.79% decrease)
+
+convert: geometry does not contain image `../wordclouds/UPI/DPMOR49.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "DPMOR49"
+[1] "3 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/SBASU90.png
+2160x1452 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 314425 bytes
+Input file size = 314959 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 195728
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 195728
+
+Output IDAT size = 195728 bytes (118697 bytes decrease)
+Output file size = 195806 bytes (119153 bytes = 37.83% decrease)
+
+[1] "SBASU90"
+[1] "4 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/MDEBB25.png
+2160x1452 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 8 bits/pixel, 21 colors in palette
+Input IDAT size = 15836 bytes
+Input file size = 15926 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 5139
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 5139
+  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5		IDAT size = 5139
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 5136
+  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 5136
+
+Output IDAT size = 5136 bytes (10700 bytes decrease)
+Output file size = 5289 bytes (10637 bytes = 66.79% decrease)
+
+convert: geometry does not contain image `../wordclouds/UPI/MDEBB25.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "MDEBB25"
+[1] "5 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/MISER70.png
+2160x1452 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 630759 bytes
+Input file size = 631749 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 388281
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 388281
+
+Output IDAT size = 388281 bytes (242478 bytes decrease)
+Output file size = 388359 bytes (243390 bytes = 38.53% decrease)
+
+[1] "MISER70"
+[1] "6 of 200 completed"
