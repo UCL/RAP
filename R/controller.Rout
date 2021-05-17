@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1727      0 --:--:-- --:--:-- --:--:--  1731
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 26 16.3M   26 4422k    0     0  3176k      0  0:00:05  0:00:01  0:00:04 4392k 86 16.3M   86 14.1M    0     0  6069k      0  0:00:02  0:00:02 --:--:-- 7238k100 16.3M  100 16.3M    0     0  6190k      0  0:00:02  0:00:02 --:--:-- 7218k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1521      0 --:--:-- --:--:-- --:--:--  1522
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 55 16.3M   55 9360k    0     0  5923k      0  0:00:02  0:00:01  0:00:01 9832k100 16.3M  100 16.3M    0     0  7452k      0  0:00:02  0:00:02 --:--:-- 10.1M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,18 +49,275 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-17 20:56:09 BST"
+[1] "2021-05-17 21:04:08 BST"
 > source('generate wordcloud for each UPI.R')
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: geometry does not contain image `../wordclouds/UPI/JIRAW97.png' @ warning/attribute.c/GetImageBoundingBox/501.
-convert: improper image header `../wordclouds/UPI/JIRAW97.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `400x400' @ error/convert.c/ConvertImageCommand/3270.
-** Processing: ../wordclouds/UPI/JIRAW97.png
-Error: Unrecognized image file format
-
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "JIRAW97"
+[1] "LESAC47"
+[1] "LESAC47 failed"
 [1] "1 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+convert: geometry does not contain image `../wordclouds/UPI/LMDAR34.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/LMDAR34.png
+1x1 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 10 bytes
+Input file size = 307 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 0  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 5		IDAT size = 10
+
+../wordclouds/UPI/LMDAR34.png is already optimized.
+
+[1] "LMDAR34"
+[1] "2 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+convert: geometry does not contain image `../wordclouds/UPI/MHOTI46.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/MHOTI46.png
+1x1 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 10 bytes
+Input file size = 307 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 0  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 5		IDAT size = 10
+
+../wordclouds/UPI/MHOTI46.png is already optimized.
+
+[1] "MHOTI46"
+[1] "3 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/KMAHM13.png
+1481x928 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 457483 bytes
+Input file size = 457940 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 275473
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 275473
+
+Output IDAT size = 275473 bytes (182010 bytes decrease)
+Output file size = 275774 bytes (182166 bytes = 39.78% decrease)
+
+[1] "KMAHM13"
+[1] "4 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/ASHOJ33.png
+1618x1137 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 684051 bytes
+Input file size = 684592 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 419350
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 419350
+
+Output IDAT size = 419350 bytes (264701 bytes decrease)
+Output file size = 419651 bytes (264941 bytes = 38.70% decrease)
+
+[1] "ASHOJ33"
+[1] "5 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/RBLUN25.png
+1757x1174 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 989048 bytes
+Input file size = 989709 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 584529
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 584529
+
+Output IDAT size = 584529 bytes (404519 bytes decrease)
+Output file size = 584830 bytes (404879 bytes = 40.91% decrease)
+
+[1] "RBLUN25"
+[1] "6 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+convert: geometry does not contain image `../wordclouds/UPI/OPYZI68.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/OPYZI68.png
+1x1 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 10 bytes
+Input file size = 307 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 0  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 5		IDAT size = 10
+
+../wordclouds/UPI/OPYZI68.png is already optimized.
+
+[1] "OPYZI68"
+[1] "7 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/RSCHN28.png
+1606x1024 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 531598 bytes
+Input file size = 532091 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 319186
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 319186
+
+Output IDAT size = 319186 bytes (212412 bytes decrease)
+Output file size = 319487 bytes (212604 bytes = 39.96% decrease)
+
+[1] "RSCHN28"
+[1] "8 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/SASIM77.png
+1061x776 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 409940 bytes
+Input file size = 410385 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 233678
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 233678
+
+Output IDAT size = 233678 bytes (176262 bytes decrease)
+Output file size = 233979 bytes (176406 bytes = 42.99% decrease)
+
+[1] "SASIM77"
+[1] "9 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/ATSCH97.png
+1031x685 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 329496 bytes
+Input file size = 329917 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 185001
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 185001
+
+Output IDAT size = 185001 bytes (144495 bytes decrease)
+Output file size = 185302 bytes (144615 bytes = 43.83% decrease)
+
+[1] "ATSCH97"
+[1] "10 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+convert: geometry does not contain image `../wordclouds/UPI/FVARG91.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/FVARG91.png
+1x1 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 10 bytes
+Input file size = 307 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 0  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 5		IDAT size = 10
+
+../wordclouds/UPI/FVARG91.png is already optimized.
+
+[1] "FVARG91"
+[1] "11 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/TWEIS71.png
+1266x940 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 393238 bytes
+Input file size = 393683 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 228408
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 228408
+
+Output IDAT size = 228408 bytes (164830 bytes decrease)
+Output file size = 228709 bytes (164974 bytes = 41.91% decrease)
+
+[1] "TWEIS71"
+[1] "12 of 200 completed"
+[1] "https://discovery.ucl.ac.uk/id/eprint/10121033/ non-existant"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+convert: geometry does not contain image `../wordclouds/UPI/NBROW65.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/NBROW65.png
+1x1 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 10 bytes
+Input file size = 307 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 0  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 5		IDAT size = 10
+
+../wordclouds/UPI/NBROW65.png is already optimized.
+
+[1] "NBROW65"
+[1] "13 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+convert: geometry does not contain image `../wordclouds/UPI/SMART37.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "step 1 of imagemagick complete"
+** Processing: ../wordclouds/UPI/SMART37.png
+1x1 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 10 bytes
+Input file size = 307 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 10
+  zc = 9  zm = 8  zs = 0  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 10
+  zc = 1  zm = 8  zs = 2  f = 5		IDAT size = 10
+  zc = 9  zm = 8  zs = 3  f = 5		IDAT size = 10
+
+../wordclouds/UPI/SMART37.png is already optimized.
+
+[1] "SMART37"
+[1] "14 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
