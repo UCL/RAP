@@ -242,11 +242,10 @@ wordcloud.maker <- function(freq, col, png.file){
 
 	if(is.null(freq))return(NA)
 
+	# ad hoc approach to deciding the character size
 	# rough relative widths of lowercase letters, taken from https://gist.github.com/imaurer/d330e68e70180c985b380f25e195b90c
 	w <- c(60,60,52,60,60,30,60,60,25,25,52,25,87,60,60,60,60,35,52,30,60,52,77,52,52,52)
 	rw <- w/mean(w)
-
-	# ad hoc approach to deciding the character size
 	words <- strsplit(freq$word,split='')
 	N <- length(words)
 	rw.words <- numeric(N)
@@ -260,17 +259,18 @@ wordcloud.maker <- function(freq, col, png.file){
 	size <- 16/weighted.word.length
 
 	width <- 3600; height <- 2400
-        wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
-        html.file <- 'tmp.html'
-        saveWidget(wc,html.file,selfcontained = F)	
-
-        webshot(html.file,png.file, delay =20, vwidth = width, vheight=height) %>% shrink()
-        file.remove(html.file)
-	unlink('tmp_files')
+	wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
+	html.file <- 'tmp.html'
+	saveWidget(wc,html.file,selfcontained = F)	
+ 	webshot(html.file,png.file, delay =20, vwidth = width, vheight=height) %>% shrink()
 
 	# imagemagick
-	system(paste('magick convert ',png.file,' -gravity South -chop 0x20 -trim -resize 800x800 ',png.file,sep=''))
-        }
+	system(paste('magick convert ',png.file,' -gravity South -chop 0x20 -trim -resize> 800x800 -colors 255 ',png.file,sep=''))
+        
+	# tidy
+	file.remove(html.file)
+	unlink('tmp_files')
+	}
 
 #-------------------------------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------------------------------
