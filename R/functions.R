@@ -256,9 +256,9 @@ wordcloud.maker <- function(freq, col, png.file){
 		rw.words[n] <- sum(letter.rw)
 		}
 	weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
-	size <- 10/weighted.word.length 
+	size <- 8/weighted.word.length 
 
-	width <- 2160; height <- 1440
+	width <- 1800; height <- 1200
 	wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
 	html.file <- 'tmp.html'
 	saveWidget(wc,html.file,selfcontained = F)	
