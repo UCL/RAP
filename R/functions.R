@@ -265,8 +265,11 @@ wordcloud.maker <- function(freq, col, png.file){
  	webshot(html.file,png.file, delay =20, vwidth = width, vheight=height)
 
 	# imagemagick
-	system(paste('magick convert ',png.file,' -gravity South -chop 0x20 -trim -resize 800x800> -colors 255 ',png.file,sep=''))
+	system(paste('magick convert ',png.file,' -gravity South -chop 0x20 -trim -resize 800x800> ',png.file,sep=''))
         
+	# compress
+	system(paste('optipng', png.file))
+
 	# tidy
 	file.remove(html.file)
 	unlink('tmp_files')
