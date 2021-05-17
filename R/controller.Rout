@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1346      0 --:--:-- --:--:-- --:--:--  1347
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 60 16.3M   60  9.8M    0     0  6208k      0  0:00:02  0:00:01  0:00:01 10.3M100 16.3M  100 16.3M    0     0  7520k      0  0:00:02  0:00:02 --:--:-- 10.5M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1705      0 --:--:-- --:--:-- --:--:--  1708
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 41 16.3M   41 6874k    0     0  5010k      0  0:00:03  0:00:01  0:00:02 6894k100 16.3M  100 16.3M    0     0  7394k      0  0:00:02  0:00:02 --:--:-- 8865k
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,153 +49,27 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-17 20:33:10 BST"
+[1] "2021-05-17 20:41:09 BST"
 > source('generate wordcloud for each UPI.R')
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/RCOHE11.png
-3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 8 bits/pixel, 21 colors in palette
-Input IDAT size = 39608 bytes
-Input file size = 39734 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 11868
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 11865
-  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 11865
-
-Output IDAT size = 11865 bytes (27743 bytes decrease)
-Output file size = 12018 bytes (27716 bytes = 69.75% decrease)
-
-convert: improper image header `../wordclouds/UPI/RCOHE11.png' @ error/png.c/ReadPNGImage/4294.
+convert: geometry does not contain image `../wordclouds/UPI/PDAYX96.png' @ warning/attribute.c/GetImageBoundingBox/501.
+convert: improper image header `../wordclouds/UPI/PDAYX96.png' @ error/png.c/ReadPNGImage/4294.
 convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-[1] "RCOHE11"
+[1] "PDAYX96"
 [1] "1 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/JBLON70.png
-3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 8 bits/pixel, 21 colors in palette
-Input IDAT size = 39608 bytes
-Input file size = 39734 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 11868
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 11865
-  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 11865
-
-Output IDAT size = 11865 bytes (27743 bytes decrease)
-Output file size = 12018 bytes (27716 bytes = 69.75% decrease)
-
-convert: improper image header `../wordclouds/UPI/JBLON70.png' @ error/png.c/ReadPNGImage/4294.
+convert: geometry does not contain image `../wordclouds/UPI/LDSCA07.png' @ warning/attribute.c/GetImageBoundingBox/501.
+convert: improper image header `../wordclouds/UPI/LDSCA07.png' @ error/png.c/ReadPNGImage/4294.
 convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-[1] "JBLON70"
+[1] "LDSCA07"
 [1] "2 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/RANGX35.png
-3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 8 bits/pixel, 246 colors in palette
-Input IDAT size = 575935 bytes
-Input file size = 576853 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 210700
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 208491
-  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 208491
-
-Output IDAT size = 208491 bytes (367444 bytes decrease)
-Output file size = 209319 bytes (367534 bytes = 63.71% decrease)
-
-convert: improper image header `../wordclouds/UPI/RANGX35.png' @ error/png.c/ReadPNGImage/4294.
+convert: improper image header `../wordclouds/UPI/EVIDI50.png' @ error/png.c/ReadPNGImage/4294.
 convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-[1] "RANGX35"
+[1] "EVIDI50"
 [1] "3 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/JHERS82.png
-3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 8 bits/pixel, 246 colors in palette
-Input IDAT size = 495824 bytes
-Input file size = 496622 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 180979
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 177227
-  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 177227
-
-Output IDAT size = 177227 bytes (318597 bytes decrease)
-Output file size = 178055 bytes (318567 bytes = 64.15% decrease)
-
-convert: improper image header `../wordclouds/UPI/JHERS82.png' @ error/png.c/ReadPNGImage/4294.
+convert: improper image header `../wordclouds/UPI/IDIGI04.png' @ error/png.c/ReadPNGImage/4294.
 convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-[1] "JHERS82"
+[1] "IDIGI04"
 [1] "4 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/AGIBS47.png
-3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 8 bits/pixel, 246 colors in palette
-Input IDAT size = 813115 bytes
-Input file size = 814381 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 284133
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 283833
-  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 3  f = 0		IDAT size = 283833
-
-Output IDAT size = 283833 bytes (529282 bytes decrease)
-Output file size = 284661 bytes (529720 bytes = 65.05% decrease)
-
-convert: improper image header `../wordclouds/UPI/AGIBS47.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-[1] "AGIBS47"
-[1] "5 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/SMUEL18.png
-3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 8 bits/pixel, 21 colors in palette
-Input IDAT size = 39608 bytes
-Input file size = 39734 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 11868
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 11865
-  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 11865
-
-Output IDAT size = 11865 bytes (27743 bytes decrease)
-Output file size = 12018 bytes (27716 bytes = 69.75% decrease)
-
-convert: improper image header `../wordclouds/UPI/SMUEL18.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-[1] "SMUEL18"
-[1] "6 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/AAREN61.png
-3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 8 bits/pixel, 21 colors in palette
-Input IDAT size = 39608 bytes
-Input file size = 39734 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 11868
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 11865
-  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 11865
-
-Output IDAT size = 11865 bytes (27743 bytes decrease)
-Output file size = 12018 bytes (27716 bytes = 69.75% decrease)
-
-convert: improper image header `../wordclouds/UPI/AAREN61.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-[1] "AAREN61"
-[1] "7 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
