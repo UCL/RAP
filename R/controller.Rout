@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1736      0 --:--:-- --:--:-- --:--:--  1741
- 16 16.3M   16 2758k    0     0  3336k      0  0:00:05 --:--:--  0:00:05 3336k 82 16.3M   82 13.4M    0     0  7562k      0  0:00:02  0:00:01  0:00:01 10.7M100 16.3M  100 16.3M    0     0  8007k      0  0:00:02  0:00:02 --:--:-- 10.8M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1750      0 --:--:-- --:--:-- --:--:--  1755
+  6 16.3M    6 1116k    0     0  1606k      0  0:00:10 --:--:--  0:00:10 1606k 70 16.3M   70 11.4M    0     0  6916k      0  0:00:02  0:00:01  0:00:01 10.3M100 16.3M  100 16.3M    0     0  7798k      0  0:00:02  0:00:02 --:--:-- 10.5M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,28 +49,6 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-17 20:46:09 BST"
+[1] "2021-05-17 20:51:10 BST"
 > source('generate wordcloud for each UPI.R')
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: geometry does not contain image `../wordclouds/UPI/RCSTE29.png' @ warning/attribute.c/GetImageBoundingBox/501.
-convert: improper image header `../wordclouds/UPI/RCSTE29.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `300x300' @ error/convert.c/ConvertImageCommand/3270.
-** Processing: ../wordclouds/UPI/RCSTE29.png
-Error: Unrecognized image file format
-
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "RCSTE29"
-[1] "1 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: improper image header `../wordclouds/UPI/PCSTO82.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `300x300' @ error/convert.c/ConvertImageCommand/3270.
-** Processing: ../wordclouds/UPI/PCSTO82.png
-Error: Unrecognized image file format
-
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "PCSTO82"
-[1] "2 of 200 completed"
