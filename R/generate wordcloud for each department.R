@@ -51,7 +51,8 @@ for(n in sample(1:N)){
 	freq <- extract.words(discovery, iris=NULL, exclude, ud_model)
 
 	# generate word clouds and save
-	wordcloud.maker(freq, col='steelblue', png.file=paste('../wordclouds/departments/',dept,'.png',sep=''))
+	png.file <- paste('../wordclouds/departments/',dept,'.png',sep='')
+	wordcloud.maker(freq, col='steelblue', png.file=png.file)
 
 	# housekeeping
 	print(dept)

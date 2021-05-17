@@ -53,7 +53,8 @@ for(n in sample(1:N)){
 	if(nrow(freq)<20)freq <- NULL
 
 	# generate word clouds and save
-	wordcloud.maker(freq, col='steelblue', png.file=paste('../wordclouds/UPI/',upi,'.png',sep=''))
+	png.file <- paste('../wordclouds/UPI/',upi,'.png',sep='')
+	wordcloud.maker(freq, col='steelblue', png.file=png.file)
 
 	# housekeeping
 	print(upi)
