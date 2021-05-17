@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1786      0 --:--:-- --:--:-- --:--:--  1785
- 48 16.3M   48 8197k    0     0  6055k      0  0:00:02  0:00:01  0:00:01 6055k100 16.3M  100 16.3M    0     0  7904k      0  0:00:02  0:00:02 --:--:-- 10.9M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1732      0 --:--:-- --:--:-- --:--:--  1736
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 54 16.3M   54 9140k    0     0  6241k      0  0:00:02  0:00:01  0:00:01 10.0M100 16.3M  100 16.3M    0     0  7800k      0  0:00:02  0:00:02 --:--:-- 10.4M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,10 +49,50 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-17 20:24:09 BST"
+[1] "2021-05-17 20:27:09 BST"
 > source('generate wordcloud for each UPI.R')
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/FCACU14.png
+** Processing: ../wordclouds/UPI/MACIN84.png
+3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 733222 bytes
+Input file size = 734368 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 475894
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 475894
+
+Output IDAT size = 475894 bytes (257328 bytes decrease)
+Output file size = 475972 bytes (258396 bytes = 35.19% decrease)
+
+convert: improper image header `../wordclouds/UPI/MACIN84.png' @ error/png.c/ReadPNGImage/4294.
+convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
+[1] "MACIN84"
+[1] "1 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/MFINN75.png
+3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 568924 bytes
+Input file size = 569830 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 376691
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 376691
+
+Output IDAT size = 376691 bytes (192233 bytes decrease)
+Output file size = 376769 bytes (193061 bytes = 33.88% decrease)
+
+convert: improper image header `../wordclouds/UPI/MFINN75.png' @ error/png.c/ReadPNGImage/4294.
+convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
+[1] "MFINN75"
+[1] "2 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+** Processing: ../wordclouds/UPI/RDOBS02.png
 3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 8 bits/pixel, 21 colors in palette
 Input IDAT size = 39608 bytes
@@ -68,6 +108,8 @@ Selecting parameters:
 Output IDAT size = 11865 bytes (27743 bytes decrease)
 Output file size = 12018 bytes (27716 bytes = 69.75% decrease)
 
-convert: geometry does not contain image `../wordclouds/UPI/FCACU14.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "FCACU14"
-[1] "1 of 200 completed"
+convert: improper image header `../wordclouds/UPI/RDOBS02.png' @ error/png.c/ReadPNGImage/4294.
+convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
+[1] "RDOBS02"
+[1] "3 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
