@@ -267,7 +267,7 @@ wordcloud.maker <- function(freq, col, png.file){
 	# imagemagick
 	system(paste('magick convert ',png.file,' +repage -gravity South -chop 0x20 -trim ',png.file,sep=''))
 	print('step 1 of imagemagick complete')
- 	system(paste('magick convert ',png.file,' +repage -resize 600x600> ',png.file,sep=''))
+ 	system(paste('magick convert ',png.file,' +repage -resize 600x600 ',png.file,sep=''))
  	print('step 2 of imagemagick complete')   
   
 	# tidy

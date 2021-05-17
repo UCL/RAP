@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1692      0 --:--:-- --:--:-- --:--:--  1689
- 26 16.3M   26 4406k    0     0  4136k      0  0:00:04  0:00:01  0:00:03 4136k 92 16.3M   92 15.1M    0     0  7483k      0  0:00:02  0:00:02 --:--:-- 10.7M100 16.3M  100 16.3M    0     0  7676k      0  0:00:02  0:00:02 --:--:-- 10.7M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1632      0 --:--:-- --:--:-- --:--:--  1633
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 51 16.3M   51 8645k    0     0  6076k      0  0:00:02  0:00:01  0:00:01 8922k100 16.3M  100 16.3M    0     0  7773k      0  0:00:02  0:00:02 --:--:-- 9856k
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,139 +49,97 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-17 23:19:10 BST"
+[1] "2021-05-17 23:26:09 BST"
 > source('generate wordcloud for each UPI.R')
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: geometry does not contain image `../wordclouds/UPI/FMARQ88.png' @ warning/attribute.c/GetImageBoundingBox/501.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/FMARQ88.png' @ error/png.c/ReadPNGImage/4294.
+convert: improper image header `../wordclouds/UPI/KROSE56.png' @ error/png.c/ReadPNGImage/4294.
 convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/FMARQ88.png
+** Processing: ../wordclouds/UPI/KROSE56.png
 Error: Unrecognized image file format
 
 ** Status report
 1 file(s) have been processed.
 1 error(s) have been encountered.
-[1] "FMARQ88"
+[1] "KROSE56"
 [1] "1 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: geometry does not contain image `../wordclouds/UPI/PDAYX96.png' @ warning/attribute.c/GetImageBoundingBox/501.
+convert: geometry does not contain image `../wordclouds/UPI/ABATL37.png' @ warning/attribute.c/GetImageBoundingBox/501.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/PDAYX96.png' @ error/png.c/ReadPNGImage/4294.
+convert: improper image header `../wordclouds/UPI/ABATL37.png' @ error/png.c/ReadPNGImage/4294.
 convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/PDAYX96.png
+** Processing: ../wordclouds/UPI/ABATL37.png
 Error: Unrecognized image file format
 
 ** Status report
 1 file(s) have been processed.
 1 error(s) have been encountered.
-[1] "PDAYX96"
+[1] "ABATL37"
 [1] "2 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/MLWOO52.png' @ error/png.c/ReadPNGImage/4294.
+convert: improper image header `../wordclouds/UPI/SYOOX16.png' @ error/png.c/ReadPNGImage/4294.
 convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MLWOO52.png
+** Processing: ../wordclouds/UPI/SYOOX16.png
 Error: Unrecognized image file format
 
 ** Status report
 1 file(s) have been processed.
 1 error(s) have been encountered.
-[1] "MLWOO52"
+[1] "SYOOX16"
 [1] "3 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/ACHAR61.png' @ error/png.c/ReadPNGImage/4294.
+convert: improper image header `../wordclouds/UPI/RALLE64.png' @ error/png.c/ReadPNGImage/4294.
 convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/ACHAR61.png
+** Processing: ../wordclouds/UPI/RALLE64.png
 Error: Unrecognized image file format
 
 ** Status report
 1 file(s) have been processed.
 1 error(s) have been encountered.
-[1] "ACHAR61"
+[1] "RALLE64"
 [1] "4 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/ESIRK00.png' @ error/png.c/ReadPNGImage/4294.
+convert: improper image header `../wordclouds/UPI/RSBMI41.png' @ error/png.c/ReadPNGImage/4294.
 convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/ESIRK00.png
+** Processing: ../wordclouds/UPI/RSBMI41.png
 Error: Unrecognized image file format
 
 ** Status report
 1 file(s) have been processed.
 1 error(s) have been encountered.
-[1] "ESIRK00"
+[1] "RSBMI41"
 [1] "5 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: geometry does not contain image `../wordclouds/UPI/RRONZ71.png' @ warning/attribute.c/GetImageBoundingBox/501.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/RRONZ71.png' @ error/png.c/ReadPNGImage/4294.
+convert: improper image header `../wordclouds/UPI/IMMAS31.png' @ error/png.c/ReadPNGImage/4294.
 convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/RRONZ71.png
+** Processing: ../wordclouds/UPI/IMMAS31.png
 Error: Unrecognized image file format
 
 ** Status report
 1 file(s) have been processed.
 1 error(s) have been encountered.
-[1] "RRONZ71"
+[1] "IMMAS31"
 [1] "6 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/HMOHA53.png' @ error/png.c/ReadPNGImage/4294.
+convert: improper image header `../wordclouds/UPI/ACHAL58.png' @ error/png.c/ReadPNGImage/4294.
 convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/HMOHA53.png
+** Processing: ../wordclouds/UPI/ACHAL58.png
 Error: Unrecognized image file format
 
 ** Status report
 1 file(s) have been processed.
 1 error(s) have been encountered.
-[1] "HMOHA53"
+[1] "ACHAL58"
 [1] "7 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/EJMWH62.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/EJMWH62.png
-Error: Unrecognized image file format
-
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "EJMWH62"
-[1] "8 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/AEFAH69.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/AEFAH69.png
-Error: Unrecognized image file format
-
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "AEFAH69"
-[1] "9 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/ALIEB28.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/ALIEB28.png
-Error: Unrecognized image file format
-
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "ALIEB28"
-[1] "10 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
