@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1644      0 --:--:-- --:--:-- --:--:--  1645
-  8 16.3M    8 1418k    0     0  1581k      0  0:00:10 --:--:--  0:00:10 1581k 53 16.3M   53 8922k    0     0  4707k      0  0:00:03  0:00:01  0:00:02 7511k100 16.3M  100 16.3M    0     0  6393k      0  0:00:02  0:00:02 --:--:-- 8901k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1120      0 --:--:-- --:--:-- --:--:--  1118
+ 30 16.3M   30 5056k    0     0  4023k      0  0:00:04  0:00:01  0:00:03 4023k 96 16.3M   96 15.7M    0     0  7138k      0  0:00:02  0:00:02 --:--:-- 10.7M100 16.3M  100 16.3M    0     0  7240k      0  0:00:02  0:00:02 --:--:-- 10.8M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,64 +49,16 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-17 19:43:10 BST"
+[1] "2021-05-17 19:48:09 BST"
 > source('generate wordcloud for each UPI.R')
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/ABEAU88.png
-3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 304518 bytes
-Input file size = 305040 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 203017
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 203017
-
-Output IDAT size = 203017 bytes (101501 bytes decrease)
-Output file size = 203095 bytes (101945 bytes = 33.42% decrease)
-
-convert: invalid argument for option '-resize': -colors @ error/convert.c/ConvertImageCommand/2607.
-[1] "ABEAU88"
+convert: unable to open image '255': No such file or directory @ error/blob.c/OpenBlob/3497.
+convert: no decode delegate for this image format `' @ error/constitute.c/ReadImage/560.
+[1] "MORCU59"
 [1] "1 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/HYUAN91.png
-3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 784171 bytes
-Input file size = 785389 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 503867
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 503867
-
-Output IDAT size = 503867 bytes (280304 bytes decrease)
-Output file size = 503945 bytes (281444 bytes = 35.83% decrease)
-
-convert: invalid argument for option '-resize': -colors @ error/convert.c/ConvertImageCommand/2607.
-[1] "HYUAN91"
+convert: unable to open image '255': No such file or directory @ error/blob.c/OpenBlob/3497.
+convert: no decode delegate for this image format `' @ error/constitute.c/ReadImage/560.
+[1] "VDOKS64"
 [1] "2 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-** Processing: ../wordclouds/UPI/AKAUS81.png
-3600x2412 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 8 bits/pixel, 21 colors in palette
-Input IDAT size = 39608 bytes
-Input file size = 39734 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 11868
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 11865
-  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 1  f = 5		IDAT size = 11865
-
-Output IDAT size = 11865 bytes (27743 bytes decrease)
-Output file size = 12018 bytes (27716 bytes = 69.75% decrease)
-
-convert: invalid argument for option '-resize': -colors @ error/convert.c/ConvertImageCommand/2607.
-[1] "AKAUS81"
-[1] "3 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
