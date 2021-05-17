@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1705      0 --:--:-- --:--:-- --:--:--  1708
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 41 16.3M   41 6874k    0     0  5010k      0  0:00:03  0:00:01  0:00:02 6894k100 16.3M  100 16.3M    0     0  7394k      0  0:00:02  0:00:02 --:--:-- 8865k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1736      0 --:--:-- --:--:-- --:--:--  1741
+ 16 16.3M   16 2758k    0     0  3336k      0  0:00:05 --:--:--  0:00:05 3336k 82 16.3M   82 13.4M    0     0  7562k      0  0:00:02  0:00:01  0:00:01 10.7M100 16.3M  100 16.3M    0     0  8007k      0  0:00:02  0:00:02 --:--:-- 10.8M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,27 +49,28 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-17 20:41:09 BST"
+[1] "2021-05-17 20:46:09 BST"
 > source('generate wordcloud for each UPI.R')
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: geometry does not contain image `../wordclouds/UPI/PDAYX96.png' @ warning/attribute.c/GetImageBoundingBox/501.
-convert: improper image header `../wordclouds/UPI/PDAYX96.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-[1] "PDAYX96"
+convert: geometry does not contain image `../wordclouds/UPI/RCSTE29.png' @ warning/attribute.c/GetImageBoundingBox/501.
+convert: improper image header `../wordclouds/UPI/RCSTE29.png' @ error/png.c/ReadPNGImage/4294.
+convert:  `300x300' @ error/convert.c/ConvertImageCommand/3270.
+** Processing: ../wordclouds/UPI/RCSTE29.png
+Error: Unrecognized image file format
+
+** Status report
+1 file(s) have been processed.
+1 error(s) have been encountered.
+[1] "RCSTE29"
 [1] "1 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: geometry does not contain image `../wordclouds/UPI/LDSCA07.png' @ warning/attribute.c/GetImageBoundingBox/501.
-convert: improper image header `../wordclouds/UPI/LDSCA07.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-[1] "LDSCA07"
+convert: improper image header `../wordclouds/UPI/PCSTO82.png' @ error/png.c/ReadPNGImage/4294.
+convert:  `300x300' @ error/convert.c/ConvertImageCommand/3270.
+** Processing: ../wordclouds/UPI/PCSTO82.png
+Error: Unrecognized image file format
+
+** Status report
+1 file(s) have been processed.
+1 error(s) have been encountered.
+[1] "PCSTO82"
 [1] "2 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: improper image header `../wordclouds/UPI/EVIDI50.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-[1] "EVIDI50"
-[1] "3 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: improper image header `../wordclouds/UPI/IDIGI04.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-[1] "IDIGI04"
-[1] "4 of 200 completed"

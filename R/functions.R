@@ -269,7 +269,7 @@ wordcloud.maker <- function(freq, col, png.file){
  	system(paste('magick convert ',png.file,' -resize 300x300> ',png.file,sep=''))
       
 	# compress
-#	system(paste('optipng',png.file))
+	system(paste('optipng',png.file))
 
 	# tidy
 	file.remove(html.file)
