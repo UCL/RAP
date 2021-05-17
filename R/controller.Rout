@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1581      0 --:--:-- --:--:-- --:--:--  1583
-  5 16.3M    5  869k    0     0  1219k      0  0:00:13 --:--:--  0:00:13 1219k 71 16.3M   71 11.6M    0     0  6952k      0  0:00:02  0:00:01  0:00:01 10.7M100 16.3M  100 16.3M    0     0  7801k      0  0:00:02  0:00:02 --:--:-- 10.8M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1718      0 --:--:-- --:--:-- --:--:--  1722
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  3 16.3M    3  611k    0     0   315k      0  0:00:53  0:00:01  0:00:52  626k  9 16.3M    9 1538k    0     0   523k      0  0:00:31  0:00:02  0:00:29  777k 15 16.3M   15 2594k    0     0   658k      0  0:00:25  0:00:03  0:00:22  871k 22 16.3M   22 3794k    0     0   769k      0  0:00:21  0:00:04  0:00:17  955k 30 16.3M   30 5122k    0     0   864k      0  0:00:19  0:00:05  0:00:14 1031k 39 16.3M   39 6610k    0     0   954k      0  0:00:17  0:00:06  0:00:11 1201k 50 16.3M   50 8530k    0     0  1076k      0  0:00:15  0:00:07  0:00:08 1402k 63 16.3M   63 10.3M    0     0  1184k      0  0:00:14  0:00:08  0:00:06 1599k 72 16.3M   72 11.7M    0     0  1216k      0  0:00:13  0:00:09  0:00:04 1657k 81 16.3M   81 13.3M    0     0  1255k      0  0:00:13  0:00:10  0:00:03 1718k 92 16.3M   92 15.0M    0     0  1293k      0  0:00:12  0:00:11  0:00:01 1762k100 16.3M  100 16.3M    0     0  1310k      0  0:00:12  0:00:12 --:--:-- 1692k
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,83 +49,51 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-17 20:07:09 BST"
+[1] "2021-05-17 20:15:20 BST"
 > source('generate wordcloud for each UPI.R')
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: improper image header `../wordclouds/UPI/CJIAX13.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-** Processing: ../wordclouds/UPI/CJIAX13.png
-Error: Unrecognized image file format
+convert: geometry does not contain image `../wordclouds/UPI/VSALP43.png' @ warning/attribute.c/GetImageBoundingBox/501.
+** Processing: ../wordclouds/UPI/VSALP43.png
+800x800 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 301 bytes
+Input file size = 598 bytes
 
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "CJIAX13"
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 301
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 301
+  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+../wordclouds/UPI/VSALP43.png is already optimized.
+
+[1] "VSALP43"
 [1] "1 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: improper image header `../wordclouds/UPI/MAIXX63.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-** Processing: ../wordclouds/UPI/MAIXX63.png
-Error: Unrecognized image file format
+convert: geometry does not contain image `../wordclouds/UPI/JAOBE76.png' @ warning/attribute.c/GetImageBoundingBox/501.
+** Processing: ../wordclouds/UPI/JAOBE76.png
+800x800 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 301 bytes
+Input file size = 598 bytes
 
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "MAIXX63"
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 301
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 301
+  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+../wordclouds/UPI/JAOBE76.png is already optimized.
+
+[1] "JAOBE76"
 [1] "2 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: improper image header `../wordclouds/UPI/MTODD90.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-** Processing: ../wordclouds/UPI/MTODD90.png
-Error: Unrecognized image file format
+convert: geometry does not contain image `../wordclouds/UPI/KLCHU86.png' @ warning/attribute.c/GetImageBoundingBox/501.
+** Processing: ../wordclouds/UPI/KLCHU86.png
+800x800 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 301 bytes
+Input file size = 598 bytes
 
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "MTODD90"
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 301
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 301
+  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+../wordclouds/UPI/KLCHU86.png is already optimized.
+
+[1] "KLCHU86"
 [1] "3 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: improper image header `../wordclouds/UPI/SMTOE85.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-** Processing: ../wordclouds/UPI/SMTOE85.png
-Error: Unrecognized image file format
-
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "SMTOE85"
-[1] "4 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: improper image header `../wordclouds/UPI/VKSHU41.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-** Processing: ../wordclouds/UPI/VKSHU41.png
-Error: Unrecognized image file format
-
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "VKSHU41"
-[1] "5 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: improper image header `../wordclouds/UPI/RCHOP18.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-** Processing: ../wordclouds/UPI/RCHOP18.png
-Error: Unrecognized image file format
-
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "RCHOP18"
-[1] "6 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: improper image header `../wordclouds/UPI/LMPIT09.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `800x800' @ error/convert.c/ConvertImageCommand/3270.
-** Processing: ../wordclouds/UPI/LMPIT09.png
-Error: Unrecognized image file format
-
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "LMPIT09"
-[1] "7 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
