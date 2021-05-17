@@ -256,7 +256,7 @@ wordcloud.maker <- function(freq, col, png.file){
 		rw.words[n] <- sum(letter.rw)
 		}
 	weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
-	size <- 11/weighted.word.length 
+	size <- 9/weighted.word.length 
 
 	width <- 1800; height <- 1200
 	wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
@@ -276,7 +276,6 @@ wordcloud.maker <- function(freq, col, png.file){
 
 	# compress
 	system(paste('optipng',png.file))
-
 	}
 
 
