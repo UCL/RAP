@@ -242,20 +242,35 @@ wordcloud.maker <- function(freq, col, png.file){
 
 	if(is.null(freq))return(NA)
 
-	weighted.word.length <- sum(nchar(freq$word)*freq$freq)/sum(freq$freq)
-	perc <- nrow(freq)/350
-	size <- (8/weighted.word.length) * perc^(1/4)
+	# rough relative widths of lowercase letters, taken from https://gist.github.com/imaurer/d330e68e70180c985b380f25e195b90c
+	w <- c(60,60,52,60,60,30,60,60,25,25,52,25,87,60,60,60,60,35,52,30,60,52,77,52,52,52)
+	rw <- w/mean(w)
 
-        wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(1800,1200))
+	# ad hoc approach to deciding the character size
+	words <- strsplit(test,split='')
+	N <- length(words)
+	rw.words <- numeric(N)
+	for(n in 1:N){
+		word <- words[[n]]
+		letter.position <- match(word,letters[])
+		letter.rw <- rw[letter.position]
+		rw.words[n] <- sum(letter.rw)
+		}
+	weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
+	size <- 8/weighted.word.length
+
+#	width <- 1800; height <- 1200
+	width <- 2160; height <- 1440
+        wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
         html.file <- 'tmp.html'
         saveWidget(wc,html.file,selfcontained = F)	
 
-        webshot(html.file,png.file, delay =20, vwidth = 1800, vheight=1200) %>% shrink()
+
+        webshot(html.file,png.file, delay =20, vwidth = width, vheight=height) %>% shrink()
 
         file.remove(html.file)
-        unlink('tmp_files', recursive=TRUE)
 
-	imagemagick.command <- paste('convert ',png.file,' -gravity South -chop 0x20 -trim ',png.file,sep='')
+	imagemagick.command <- paste('convert ',png.file,' -gravity South -chop 0x20 -trim -resize 600x600\> ',png.file,sep='')
 	system(imagemagick.command)
         }
 #-------------------------------------------------------------------------------------------------------
