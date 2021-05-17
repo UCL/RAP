@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1632      0 --:--:-- --:--:-- --:--:--  1633
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 51 16.3M   51 8645k    0     0  6076k      0  0:00:02  0:00:01  0:00:01 8922k100 16.3M  100 16.3M    0     0  7773k      0  0:00:02  0:00:02 --:--:-- 9856k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1662      0 --:--:-- --:--:-- --:--:--  1658
+ 40 16.3M   40 6738k    0     0  5223k      0  0:00:03  0:00:01  0:00:02 5223k100 16.3M  100 16.3M    0     0  7632k      0  0:00:02  0:00:02 --:--:-- 10.8M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,97 +49,137 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-17 23:26:09 BST"
+[1] "2021-05-17 23:31:09 BST"
 > source('generate wordcloud for each UPI.R')
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/KROSE56.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/KROSE56.png
-Error: Unrecognized image file format
+** Processing: ../wordclouds/UPI/AAKAR67.png
+600x402 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 274704 bytes
+Input file size = 275073 bytes
 
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "KROSE56"
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 220199
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 220199
+
+Output IDAT size = 220199 bytes (54505 bytes decrease)
+Output file size = 220472 bytes (54601 bytes = 19.85% decrease)
+
+[1] "AAKAR67"
 [1] "1 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-convert: geometry does not contain image `../wordclouds/UPI/ABATL37.png' @ warning/attribute.c/GetImageBoundingBox/501.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/ABATL37.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/ABATL37.png
-Error: Unrecognized image file format
+** Processing: ../wordclouds/UPI/JNINA08.png
+600x404 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 167867 bytes
+Input file size = 168200 bytes
 
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "ABATL37"
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 124196
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 124196
+
+Output IDAT size = 124196 bytes (43671 bytes decrease)
+Output file size = 124469 bytes (43731 bytes = 26.00% decrease)
+
+[1] "JNINA08"
 [1] "2 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+convert: geometry does not contain image `../wordclouds/UPI/CKENT11.png' @ warning/attribute.c/GetImageBoundingBox/501.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/SYOOX16.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SYOOX16.png
-Error: Unrecognized image file format
+** Processing: ../wordclouds/UPI/CKENT11.png
+600x600 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 182 bytes
+Input file size = 451 bytes
 
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "SYOOX16"
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
+  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+../wordclouds/UPI/CKENT11.png is already optimized.
+
+[1] "CKENT11"
 [1] "3 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/RALLE64.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/RALLE64.png
-Error: Unrecognized image file format
+** Processing: ../wordclouds/UPI/ADHOG15.png
+600x454 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 147550 bytes
+Input file size = 147871 bytes
 
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "RALLE64"
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 103407
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 103407
+
+Output IDAT size = 103407 bytes (44143 bytes decrease)
+Output file size = 103680 bytes (44191 bytes = 29.88% decrease)
+
+[1] "ADHOG15"
 [1] "4 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/RSBMI41.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/RSBMI41.png
-Error: Unrecognized image file format
+** Processing: ../wordclouds/UPI/AKPUL83.png
+600x376 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 285634 bytes
+Input file size = 286003 bytes
 
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "RSBMI41"
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 205726
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 205726
+
+Output IDAT size = 205726 bytes (79908 bytes decrease)
+Output file size = 205999 bytes (80004 bytes = 27.97% decrease)
+
+[1] "AKPUL83"
 [1] "5 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+convert: geometry does not contain image `../wordclouds/UPI/ASAMA74.png' @ warning/attribute.c/GetImageBoundingBox/501.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/IMMAS31.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/IMMAS31.png
-Error: Unrecognized image file format
+** Processing: ../wordclouds/UPI/ASAMA74.png
+600x600 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 182 bytes
+Input file size = 451 bytes
 
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "IMMAS31"
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
+  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+../wordclouds/UPI/ASAMA74.png is already optimized.
+
+[1] "ASAMA74"
 [1] "6 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+convert: geometry does not contain image `../wordclouds/UPI/RWSHA69.png' @ warning/attribute.c/GetImageBoundingBox/501.
 [1] "step 1 of imagemagick complete"
-convert: improper image header `../wordclouds/UPI/ACHAL58.png' @ error/png.c/ReadPNGImage/4294.
-convert:  `600x600' @ error/convert.c/ConvertImageCommand/3270.
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/ACHAL58.png
-Error: Unrecognized image file format
+** Processing: ../wordclouds/UPI/RWSHA69.png
+600x600 pixels, 1 bit/pixel, grayscale
+Input IDAT size = 182 bytes
+Input file size = 451 bytes
 
-** Status report
-1 file(s) have been processed.
-1 error(s) have been encountered.
-[1] "ACHAL58"
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
+  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
+  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+../wordclouds/UPI/RWSHA69.png is already optimized.
+
+[1] "RWSHA69"
 [1] "7 of 200 completed"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
