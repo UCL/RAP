@@ -256,18 +256,18 @@ wordcloud.maker <- function(freq, col, png.file){
 		rw.words[n] <- sum(letter.rw)
 		}
 	weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
-	size <- 9/weighted.word.length 
+	size <- 10/weighted.word.length 
 
-	width <- 1800; height <- 1200
+	width <- 2160; height <- 1440
 	wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
 	html.file <- 'tmp.html'
 	saveWidget(wc,html.file,selfcontained = F)	
  	webshot(html.file,png.file, delay =20, vwidth = width, vheight=height) 
 
 	# imagemagick
-	system(paste('magick convert ',png.file,' -gravity South -chop 0x20 -trim ',png.file,sep=''))
+	system(paste('magick convert ',png.file,' +repage -gravity South -chop 0x20 -trim ',png.file,sep=''))
 	print('step 1 of imagemagick complete')
- 	system(paste('magick convert ',png.file,' -resize 600x600 ',png.file,sep=''))
+ 	system(paste('magick convert ',png.file,' +repage -resize 600x600> ',png.file,sep=''))
  	print('step 2 of imagemagick complete')   
   
 	# tidy
