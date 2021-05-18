@@ -258,24 +258,30 @@ wordcloud.maker <- function(freq, col, png.file){
 	weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
 	size <- 8/weighted.word.length 
 
+	# generate wordcloud as a html widget, and extract as a png webshot. 
 	width <- 1800; height <- 1200
 	wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
 	html.file <- 'tmp.html'
 	saveWidget(wc,html.file,selfcontained = F)	
- 	webshot(html.file,png.file, delay =30, vwidth = width, vheight=height) 
+ 	webshot(html.file,png.file, delay =20, vwidth = width, vheight=height) 
+	Sys.sleep(2)
+	print('webshot complete')
 
-	# imagemagick
+	# imagemagick to crop and resize
 	system(paste('magick convert ',png.file,' +repage -gravity South -chop 0x20 -trim ',png.file,sep=''))
 	print('step 1 of imagemagick complete')
  	system(paste('magick convert ',png.file,' +repage -resize 600x600 ',png.file,sep=''))
  	print('step 2 of imagemagick complete')   
   
+	# compress
+	system(paste('optipng',png.file))
+	print('optipng compression complete')
+
 	# tidy
       file.remove(html.file)
       unlink('tmp_files', recursive=TRUE)
+	if(file.size(png.file)<2000)unlink(png.file)
 
-	# compress
-	system(paste('optipng',png.file))
 	}
 
 

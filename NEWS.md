@@ -3,8 +3,12 @@
 
 # UCL-RAP build history
 
+## 2021-05-18
+* Auto resizing to 600 px width. Height will vary.
+* New sizing algorithm also considers relative width of characters.
+
 ## 2021-05-14
-* Scrapped working repository at AdrianTimpson/UCL-RAP mirroring to UCL/RAP in favour of a single repository
+* Scrapped working repository at AdrianTimpson/UCL-RAP mirroring to UCL/RAP in favour of a single repository at UCL/RAP
 * Automatic cropping of .png using imagemagick
 * Cleared entire repository and started fresh, so will take several days before all wordclouds are regenerated
 
