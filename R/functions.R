@@ -262,8 +262,10 @@ wordcloud.maker <- function(freq, col, png.file){
 	width <- 1800; height <- 1200
 	wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
 	html.file <- 'tmp.html'
-	saveWidget(wc,html.file,selfcontained = F)	
- 	webshot(html.file,png.file, delay =20, vwidth = width, vheight=height) 
+	saveWidget(wc,html.file,selfcontained = F)
+	if(!file.exists(html.file))stop('failed to save widget to html file')
+	if(file.size(html.file)<1000)stop('something wrong with html file')
+	webshot(html.file,png.file, delay =20, vwidth = width, vheight=height) 
 	Sys.sleep(2)
 	print('webshot complete')
 
