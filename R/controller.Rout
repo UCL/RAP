@@ -36,6 +36,9 @@ For help getting started, see <https://doi.org/10.31234/osf.io/eht87>
 WARNING: There have been major updates to the SemNetCleaner package.
  Please see 'Package NEWS' for a detailed list of updates (see 'Changes in version 1.2.0')
 
-Error in library(png) : there is no package called 'png'
-Calls: source -> withVisible -> eval -> eval -> library
+Error in source("functions.R") : functions.R:266:25: unexpected '{'
+265:         attempt.number <- 0
+266:         whilst(generate){
+                             ^
+Calls: source -> withVisible -> eval -> eval -> source
 Execution halted
