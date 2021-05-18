@@ -152,8 +152,7 @@ get.discovery.urls.for.department <- function(dept){
         
         # find which years are available for the department
         x <- paste('https://discovery.ucl.ac.uk/view/UCL/',dept,sep='')
-        print(paste('checking',dept,'.......'))
-        if(url.exists(x))print('url exists')
+        print(paste('pulling data for',dept,'.......'))
         if(!url.exists(x)){
                 print(paste(x,'url does not exist'))
                 return(NA)
@@ -265,7 +264,10 @@ wordcloud.maker <- function(freq, col, png.file){
 	saveWidget(wc,html.file,selfcontained = F)
 	if(!file.exists(html.file))stop('failed to save widget to html file')
 	if(file.size(html.file)<1000)stop('something wrong with html file')
-	webshot(html.file,png.file, delay =20, vwidth = width, vheight=height) 
+
+	# allow more time to get the webshot if there is a lot of words
+	delay <- round(N*0.08)+5
+	webshot(html.file,png.file, delay =delay, vwidth = width, vheight=height) 
 	Sys.sleep(2)
 	print('webshot complete')
 
