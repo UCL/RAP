@@ -258,22 +258,42 @@ wordcloud.maker <- function(freq, col, png.file){
 	size <- 8/weighted.word.length 
 
 	# generate wordcloud as a html widget, and extract as a png webshot. 
-	width <- 1800; height <- 1200
-	wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
-	html.file <- 'tmp.html'
-	saveWidget(wc,html.file,selfcontained = F)
-	if(!file.exists(html.file))stop('failed to save widget to html file')
-	if(file.size(html.file)<1000)stop('something wrong with html file')
+	# loop, to allow regeneration if messy		
+	width <- 1800
+	height <- width/1.5	
+	generate <- TRUE
+	attempt.number <- 0
+	whilst(generate){
+		wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
+		html.file <- 'tmp.html'
+		saveWidget(wc,html.file,selfcontained = F)
+		if(!file.exists(html.file))stop('failed to save widget to html file')
+		if(file.size(html.file)<1000)stop('something wrong with html file')
 
-	# allow more time to get the webshot if there is a lot of words
-	delay <- round(N*0.08)+5
-	webshot(html.file,png.file, delay =delay, vwidth = width, vheight=height) 
-	Sys.sleep(2)
-	print('webshot complete')
+		# allow more time to get the webshot if there is a lot of words
+		delay <- round(N*0.08)+5
+		webshot(html.file,png.file, delay =delay, vwidth = width, vheight=height) 
+		Sys.sleep(2)
+		print('webshot complete')
 
-	# imagemagick to crop and resize
-	system(paste('magick convert ',png.file,' +repage -gravity South -chop 0x20 -trim ',png.file,sep=''))
-	print('step 1 of imagemagick complete')
+		# imagemagick to crop
+		system(paste('magick convert ',png.file,' +repage -gravity South -chop 0x20 -trim ',png.file,sep=''))
+		print('step 1 of imagemagick complete')
+
+		# check some details of the webshot, and decide if to regenerate
+		attempt.number <- attempt.number + 1
+		print(paste('attempt number',attempt.number))
+		png <- readPNG(png.file)
+		png.height <- dim(png)[1]
+		png.width <- dim(png)[2]
+		png.ratio <- png.width/png.height
+		if(png.width>(width*0.6) & png.width<(width*0.9) & png.ratio<1.8) generate <- FALSE
+		if(png.width<=(width*0.6))size <- size * 1.5
+		if(png.width>=(width*0.9))size <- size * 0.8		
+		if(attempt.number==4)generate <- FALSE
+		}
+
+	# imagemagick to resize
  	system(paste('magick convert ',png.file,' +repage -resize 600x600 ',png.file,sep=''))
  	print('step 2 of imagemagick complete')   
   
@@ -285,7 +305,6 @@ wordcloud.maker <- function(freq, col, png.file){
       file.remove(html.file)
       unlink('tmp_files', recursive=TRUE)
 	if(file.size(png.file)<2000)unlink(png.file)
-
 	}
 
 
