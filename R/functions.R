@@ -242,11 +242,11 @@ wordcloud.maker <- function(freq, col, png.file){
 	# Choosing the size argument for wordcloud2 is critical and tricky.
 	# ad hoc approach below is a start, but doesnt always solve the problem.
 	# Also the algorithm used by wordcloud2 for positioning the words doesnt always result in an attractive layout.
-	# Wordcloud2 generates a different layout each time (random positioning),
+	# Wordcloud2 by default generates a different layout each time (random positioning),
 	# therefore we also loop for several attempts, with various size changes, until constraints are satisfied.
 	# rough relative widths of lowercase letters, taken from https://gist.github.com/imaurer/d330e68e70180c985b380f25e195b90c
 
-	print('..............................................')
+	print('----------------------------------------------------------------------')
 	print(paste('starting',png.file))
 	error <- FALSE
 	if(is.null(freq) | nrow(freq)<10)error <- TRUE
@@ -267,7 +267,7 @@ wordcloud.maker <- function(freq, col, png.file){
 			}
 		freq$freq <- round(rw.words*freq$freq*100)
 		weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
-		size <- 6/weighted.word.length 
+		size <- 10/weighted.word.length 
 
 		# various constants and starting conditions
 		error.connection <- file('../UPI/errors.txt')
@@ -328,13 +328,13 @@ wordcloud.maker <- function(freq, col, png.file){
 
 	if(!error){
 		# resize with imagemagick
-		print('attempting resizing...')  
+		print('resizing...')  
  		system(paste('magick convert ',png.file,' +repage -resize 600x600 ',png.file,sep=''))
   
   
 		# compress png
-		print('attempting optipng compression...')
-		system(paste('optipng',png.file))
+		print('optipng compression...')
+		system(paste('optipng -quiet',png.file))
 		}
 
 
