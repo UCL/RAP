@@ -249,8 +249,8 @@ wordcloud.maker <- function(freq, col, png.file){
 	print('----------------------------------------------------------------------')
 	print(paste('starting',png.file))
 	error <- FALSE
-	if(is.null(freq) | nrow(freq)<10)error <- TRUE
-		
+	if(class(freq)!='data.frame')error <- TRUE
+	
 	if(!error){
 		# adjust the frequency of words by their physical length, as the largest words (given their frequency AND size) should be centred first	
 		w <- c(60,60,52,60,60,30,60,60,25,25,52,25,87,60,60,60,60,35,52,30,60,52,77,52,52,52)
