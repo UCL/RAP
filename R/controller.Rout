@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1606      0 --:--:-- --:--:-- --:--:--  1608
-  5 16.3M    5  849k    0     0  1162k      0  0:00:14 --:--:--  0:00:14 1162k 71 16.3M   71 11.6M    0     0  6879k      0  0:00:02  0:00:01  0:00:01 10.7M100 16.3M  100 16.3M    0     0  7728k      0  0:00:02  0:00:02 --:--:-- 10.8M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1347      0 --:--:-- --:--:-- --:--:--  1347
+ 36 16.3M   36 6119k    0     0  4775k      0  0:00:03  0:00:01  0:00:02 4775k100 16.3M  100 16.3M    0     0  7601k      0  0:00:02  0:00:02 --:--:-- 11.2M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,7 +49,7 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-19 07:59:09 BST"
+[1] "2021-05-19 10:15:09 BST"
 > source('generate wordcloud for each UPI.R')
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
@@ -63,74 +63,70 @@ _RegisterApplication(), FAILED TO establish the default connection to the Window
 [1] "webshot complete"
 [1] "step 1 of imagemagick complete"
 [1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/JALGL32.png
-600x399 pixels, 4x8 bits/pixel, RGB+alpha
+** Processing: ../wordclouds/UPI/YISOG11.png
+600x386 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 169953 bytes
-Input file size = 170286 bytes
+Input IDAT size = 217444 bytes
+Input file size = 217789 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 122158
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 149678
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 122158
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 149678
 
-Output IDAT size = 122158 bytes (47795 bytes decrease)
-Output file size = 122431 bytes (47855 bytes = 28.10% decrease)
+Output IDAT size = 149678 bytes (67766 bytes decrease)
+Output file size = 149951 bytes (67838 bytes = 31.15% decrease)
 
 [1] "optipng compression complete"
-[1] "JALGL32"
+[1] "YISOG11"
 [1] "1 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "step 1 of imagemagick complete"
 [1] "attempt number 1"
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/APDOE12.png
-600x360 pixels, 4x8 bits/pixel, RGB+alpha
+** Processing: ../wordclouds/UPI/SSRIV05.png
+600x395 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 267165 bytes
-Input file size = 267534 bytes
+Input IDAT size = 157820 bytes
+Input file size = 158141 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 195722
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 109028
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 195722
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 109028
 
-Output IDAT size = 195722 bytes (71443 bytes decrease)
-Output file size = 195995 bytes (71539 bytes = 26.74% decrease)
+Output IDAT size = 109028 bytes (48792 bytes decrease)
+Output file size = 109301 bytes (48840 bytes = 30.88% decrease)
 
 [1] "optipng compression complete"
-[1] "APDOE12"
+[1] "SSRIV05"
 [1] "2 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "step 1 of imagemagick complete"
 [1] "attempt number 1"
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/GPETR43.png
-600x390 pixels, 4x8 bits/pixel, RGB+alpha
+** Processing: ../wordclouds/UPI/SEKER08.png
+600x364 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 250630 bytes
-Input file size = 250987 bytes
+Input IDAT size = 168003 bytes
+Input file size = 168336 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 176054
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 115841
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 176054
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 115841
 
-Output IDAT size = 176054 bytes (74576 bytes decrease)
-Output file size = 176327 bytes (74660 bytes = 29.75% decrease)
+Output IDAT size = 115841 bytes (52162 bytes decrease)
+Output file size = 116114 bytes (52222 bytes = 31.02% decrease)
 
 [1] "optipng compression complete"
-[1] "GPETR43"
+[1] "SEKER08"
 [1] "3 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
@@ -141,2783 +137,66 @@ _RegisterApplication(), FAILED TO establish the default connection to the Window
 [1] "step 1 of imagemagick complete"
 [1] "attempt number 2"
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/CEELW72.png
-600x362 pixels, 4x8 bits/pixel, RGB+alpha
+** Processing: ../wordclouds/UPI/HPOUL63.png
+600x357 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 279320 bytes
-Input file size = 279689 bytes
+Input IDAT size = 186504 bytes
+Input file size = 186837 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 206325
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 129871
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 206325
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 129871
 
-Output IDAT size = 206325 bytes (72995 bytes decrease)
-Output file size = 206598 bytes (73091 bytes = 26.13% decrease)
+Output IDAT size = 129871 bytes (56633 bytes decrease)
+Output file size = 130144 bytes (56693 bytes = 30.34% decrease)
 
 [1] "optipng compression complete"
-[1] "CEELW72"
+[1] "HPOUL63"
 [1] "4 of 200 completed"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MTANX68.png' @ warning/attribute.c/GetImageBoundingBox/501.
 [1] "step 1 of imagemagick complete"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MTANX68.png' @ warning/attribute.c/GetImageBoundingBox/501.
 [1] "step 1 of imagemagick complete"
 [1] "attempt number 2"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MTANX68.png' @ warning/attribute.c/GetImageBoundingBox/501.
 [1] "step 1 of imagemagick complete"
 [1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MTANX68.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
 [1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MTANX68.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
+** Processing: ../wordclouds/UPI/ISTJA95.png
+600x460 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 151838 bytes
+Input file size = 152159 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/MTANX68.png is already optimized.
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 100361
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 100361
+
+Output IDAT size = 100361 bytes (51477 bytes decrease)
+Output file size = 100634 bytes (51525 bytes = 33.86% decrease)
 
 [1] "optipng compression complete"
-[1] "MTANX68"
+[1] "ISTJA95"
 [1] "5 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/YSOOX09.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/YSOOX09.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/YSOOX09.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/YSOOX09.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/YSOOX09.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/YSOOX09.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "YSOOX09"
-[1] "6 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/LGUOX16.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/LGUOX16.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/LGUOX16.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/LGUOX16.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/LGUOX16.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/LGUOX16.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "LGUOX16"
-[1] "7 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/ECOMP18.png
-600x350 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 173637 bytes
-Input file size = 173970 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 123102
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 123102
-
-Output IDAT size = 123102 bytes (50535 bytes decrease)
-Output file size = 123375 bytes (50595 bytes = 29.08% decrease)
-
-[1] "optipng compression complete"
-[1] "ECOMP18"
-[1] "8 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MISMA09.png
-600x389 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 224473 bytes
-Input file size = 224818 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 162704
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 162704
-
-Output IDAT size = 162704 bytes (61769 bytes decrease)
-Output file size = 162977 bytes (61841 bytes = 27.51% decrease)
-
-[1] "optipng compression complete"
-[1] "MISMA09"
-[1] "9 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/JFSNA99.png
-600x365 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 179133 bytes
-Input file size = 179466 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 125364
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 125364
-
-Output IDAT size = 125364 bytes (53769 bytes decrease)
-Output file size = 125637 bytes (53829 bytes = 29.99% decrease)
-
-[1] "optipng compression complete"
-[1] "JFSNA99"
-[1] "10 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/KMART32.png
-600x438 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 199310 bytes
-Input file size = 199655 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 143958
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 143958
-
-Output IDAT size = 143958 bytes (55352 bytes decrease)
-Output file size = 144231 bytes (55424 bytes = 27.76% decrease)
-
-[1] "optipng compression complete"
-[1] "KMART32"
-[1] "11 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/KPACH87.png
-600x343 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 193927 bytes
-Input file size = 194260 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 136529
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 136529
-
-Output IDAT size = 136529 bytes (57398 bytes decrease)
-Output file size = 136802 bytes (57458 bytes = 29.58% decrease)
-
-[1] "optipng compression complete"
-[1] "KPACH87"
-[1] "12 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MAWIL99.png
-600x356 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 208028 bytes
-Input file size = 208373 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 146894
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 146894
-
-Output IDAT size = 146894 bytes (61134 bytes decrease)
-Output file size = 147167 bytes (61206 bytes = 29.37% decrease)
-
-[1] "optipng compression complete"
-[1] "MAWIL99"
-[1] "13 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SCOST03.png
-600x396 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 269685 bytes
-Input file size = 270054 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 184404
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 184404
-
-Output IDAT size = 184404 bytes (85281 bytes decrease)
-Output file size = 184677 bytes (85377 bytes = 31.61% decrease)
-
-[1] "optipng compression complete"
-[1] "SCOST03"
-[1] "14 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/DSTOU32.png
-600x358 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 212559 bytes
-Input file size = 212904 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 145613
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 145613
-
-Output IDAT size = 145613 bytes (66946 bytes decrease)
-Output file size = 145886 bytes (67018 bytes = 31.48% decrease)
-
-[1] "optipng compression complete"
-[1] "DSTOU32"
-[1] "15 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/LAYAT67.png
-600x390 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 158503 bytes
-Input file size = 158824 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 113131
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 113131
-
-Output IDAT size = 113131 bytes (45372 bytes decrease)
-Output file size = 113404 bytes (45420 bytes = 28.60% decrease)
-
-[1] "optipng compression complete"
-[1] "LAYAT67"
-[1] "16 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SNANT83.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SNANT83.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SNANT83.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SNANT83.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SNANT83.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/SNANT83.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "SNANT83"
-[1] "17 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/HAWAT30.png
-600x389 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 180775 bytes
-Input file size = 181108 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 120822
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 120822
-
-Output IDAT size = 120822 bytes (59953 bytes decrease)
-Output file size = 121095 bytes (60013 bytes = 33.14% decrease)
-
-[1] "optipng compression complete"
-[1] "HAWAT30"
-[1] "18 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MCROS91.png
-600x360 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 228374 bytes
-Input file size = 228719 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 155027
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 155027
-
-Output IDAT size = 155027 bytes (73347 bytes decrease)
-Output file size = 155300 bytes (73419 bytes = 32.10% decrease)
-
-[1] "optipng compression complete"
-[1] "MCROS91"
-[1] "19 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/AQUAR39.png
-600x386 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 332405 bytes
-Input file size = 332798 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 244558
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 244558
-
-Output IDAT size = 244558 bytes (87847 bytes decrease)
-Output file size = 244831 bytes (87967 bytes = 26.43% decrease)
-
-[1] "optipng compression complete"
-[1] "AQUAR39"
-[1] "20 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PWOOX98.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PWOOX98.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PWOOX98.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PWOOX98.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/PWOOX98.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/PWOOX98.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "PWOOX98"
-[1] "21 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/PARAB65.png
-600x386 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 271776 bytes
-Input file size = 272145 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 191979
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 191979
-
-Output IDAT size = 191979 bytes (79797 bytes decrease)
-Output file size = 192252 bytes (79893 bytes = 29.36% decrease)
-
-[1] "optipng compression complete"
-[1] "PARAB65"
-[1] "22 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/AMTAY78.png
-600x396 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 194756 bytes
-Input file size = 195089 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 131683
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 131683
-
-Output IDAT size = 131683 bytes (63073 bytes decrease)
-Output file size = 131956 bytes (63133 bytes = 32.36% decrease)
-
-[1] "optipng compression complete"
-[1] "AMTAY78"
-[1] "23 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/EMCEL36.png
-600x336 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 234427 bytes
-Input file size = 234784 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 170759
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 170759
-
-Output IDAT size = 170759 bytes (63668 bytes decrease)
-Output file size = 171032 bytes (63752 bytes = 27.15% decrease)
-
-[1] "optipng compression complete"
-[1] "EMCEL36"
-[1] "24 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/VMPAE41.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/VMPAE41.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/VMPAE41.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/VMPAE41.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/VMPAE41.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/VMPAE41.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "VMPAE41"
-[1] "25 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/VAPAY31.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/VAPAY31.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/VAPAY31.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/VAPAY31.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/VAPAY31.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/VAPAY31.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "VAPAY31"
-[1] "26 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/AKOTE45.png
-600x385 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 233828 bytes
-Input file size = 234185 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 160666
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 160666
-
-Output IDAT size = 160666 bytes (73162 bytes decrease)
-Output file size = 160939 bytes (73246 bytes = 31.28% decrease)
-
-[1] "optipng compression complete"
-[1] "AKOTE45"
-[1] "27 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MAKAS89.png
-600x383 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 222146 bytes
-Input file size = 222491 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 150064
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 150064
-
-Output IDAT size = 150064 bytes (72082 bytes decrease)
-Output file size = 150337 bytes (72154 bytes = 32.43% decrease)
-
-[1] "optipng compression complete"
-[1] "MAKAS89"
-[1] "28 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/CJSMI93.png
-600x438 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 217346 bytes
-Input file size = 217691 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 148648
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 148648
-
-Output IDAT size = 148648 bytes (68698 bytes decrease)
-Output file size = 148921 bytes (68770 bytes = 31.59% decrease)
-
-[1] "optipng compression complete"
-[1] "CJSMI93"
-[1] "29 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/LWOOL67.png
-600x350 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 172328 bytes
-Input file size = 172661 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 122443
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 122443
-
-Output IDAT size = 122443 bytes (49885 bytes decrease)
-Output file size = 122716 bytes (49945 bytes = 28.93% decrease)
-
-[1] "optipng compression complete"
-[1] "LWOOL67"
-[1] "30 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/GTPOW44.png
-600x395 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 240549 bytes
-Input file size = 240906 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 162983
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 162983
-
-Output IDAT size = 162983 bytes (77566 bytes decrease)
-Output file size = 163256 bytes (77650 bytes = 32.23% decrease)
-
-[1] "optipng compression complete"
-[1] "GTPOW44"
-[1] "31 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GMANO20.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GMANO20.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GMANO20.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GMANO20.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/GMANO20.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/GMANO20.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "GMANO20"
-[1] "32 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SMITH21.png
-600x338 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 205651 bytes
-Input file size = 205996 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 140973
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 140973
-
-Output IDAT size = 140973 bytes (64678 bytes decrease)
-Output file size = 141246 bytes (64750 bytes = 31.43% decrease)
-
-[1] "optipng compression complete"
-[1] "SMITH21"
-[1] "33 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/APALO11.png
-600x462 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 213766 bytes
-Input file size = 214111 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 151882
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 151882
-
-Output IDAT size = 151882 bytes (61884 bytes decrease)
-Output file size = 152155 bytes (61956 bytes = 28.94% decrease)
-
-[1] "optipng compression complete"
-[1] "APALO11"
-[1] "34 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/DJBAL01.png
-600x382 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 285582 bytes
-Input file size = 285951 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 210133
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 210133
-
-Output IDAT size = 210133 bytes (75449 bytes decrease)
-Output file size = 210406 bytes (75545 bytes = 26.42% decrease)
-
-[1] "optipng compression complete"
-[1] "DJBAL01"
-[1] "35 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/EPJST43.png
-600x364 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 209104 bytes
-Input file size = 209449 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 154720
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 154720
-
-Output IDAT size = 154720 bytes (54384 bytes decrease)
-Output file size = 154993 bytes (54456 bytes = 26.00% decrease)
-
-[1] "optipng compression complete"
-[1] "EPJST43"
-[1] "36 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MGMYT48.png
-600x391 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 302856 bytes
-Input file size = 303237 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 224534
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 224534
-
-Output IDAT size = 224534 bytes (78322 bytes decrease)
-Output file size = 224807 bytes (78430 bytes = 25.86% decrease)
-
-[1] "optipng compression complete"
-[1] "MGMYT48"
-[1] "37 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/NTILL21.png
-600x370 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 197744 bytes
-Input file size = 198089 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 150234
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 150234
-
-Output IDAT size = 150234 bytes (47510 bytes decrease)
-Output file size = 150507 bytes (47582 bytes = 24.02% decrease)
-
-[1] "optipng compression complete"
-[1] "NTILL21"
-[1] "38 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/GALLA51.png
-600x371 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 212529 bytes
-Input file size = 212874 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 144477
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 144477
-
-Output IDAT size = 144477 bytes (68052 bytes decrease)
-Output file size = 144750 bytes (68124 bytes = 32.00% decrease)
-
-[1] "optipng compression complete"
-[1] "GALLA51"
-[1] "39 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SRMAT71.png
-600x363 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 188704 bytes
-Input file size = 189037 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 136875
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 136875
-
-Output IDAT size = 136875 bytes (51829 bytes decrease)
-Output file size = 137148 bytes (51889 bytes = 27.45% decrease)
-
-[1] "optipng compression complete"
-[1] "SRMAT71"
-[1] "40 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MTONG15.png
-600x387 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 163119 bytes
-Input file size = 163440 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 118369
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 118369
-
-Output IDAT size = 118369 bytes (44750 bytes decrease)
-Output file size = 118642 bytes (44798 bytes = 27.41% decrease)
-
-[1] "optipng compression complete"
-[1] "MTONG15"
-[1] "41 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GDPRI11.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GDPRI11.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GDPRI11.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GDPRI11.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/GDPRI11.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/GDPRI11.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "GDPRI11"
-[1] "42 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/ASTAT47.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/ASTAT47.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/ASTAT47.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/ASTAT47.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/ASTAT47.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/ASTAT47.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "ASTAT47"
-[1] "43 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/DCHOI64.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/DCHOI64.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/DCHOI64.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/DCHOI64.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/DCHOI64.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/DCHOI64.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "DCHOI64"
-[1] "44 of 200 completed"
-[1] "RCONW07"
-[1] "RCONW07 failed"
-[1] "45 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/JJTAN56.png
-600x419 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 250258 bytes
-Input file size = 250615 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 179785
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 179785
-
-Output IDAT size = 179785 bytes (70473 bytes decrease)
-Output file size = 180058 bytes (70557 bytes = 28.15% decrease)
-
-[1] "optipng compression complete"
-[1] "JJTAN56"
-[1] "46 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/CMMAD44.png
-600x402 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 295383 bytes
-Input file size = 295764 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 222325
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 222325
-
-Output IDAT size = 222325 bytes (73058 bytes decrease)
-Output file size = 222598 bytes (73166 bytes = 24.74% decrease)
-
-[1] "optipng compression complete"
-[1] "CMMAD44"
-[1] "47 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SACOX23.png
-600x404 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 209663 bytes
-Input file size = 210008 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 148748
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 148748
-
-Output IDAT size = 148748 bytes (60915 bytes decrease)
-Output file size = 149021 bytes (60987 bytes = 29.04% decrease)
-
-[1] "optipng compression complete"
-[1] "SACOX23"
-[1] "48 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/LMILL97.png
-600x413 pixels, 3x8 bits/pixel, RGB
-Input IDAT size = 139870 bytes
-Input file size = 140191 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 98784
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 98784
-
-Output IDAT size = 98784 bytes (41086 bytes decrease)
-Output file size = 99057 bytes (41134 bytes = 29.34% decrease)
-
-[1] "optipng compression complete"
-[1] "LMILL97"
-[1] "49 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MOLDH84.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MOLDH84.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MOLDH84.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MOLDH84.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MOLDH84.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/MOLDH84.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "MOLDH84"
-[1] "50 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/JRATK98.png
-568x600 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 182835 bytes
-Input file size = 183168 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 135802
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 135802
-
-Output IDAT size = 135802 bytes (47033 bytes decrease)
-Output file size = 136075 bytes (47093 bytes = 25.71% decrease)
-
-[1] "optipng compression complete"
-[1] "JRATK98"
-[1] "51 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SDIXO16.png
-600x488 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 176450 bytes
-Input file size = 176783 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 124410
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 124410
-
-Output IDAT size = 124410 bytes (52040 bytes decrease)
-Output file size = 124683 bytes (52100 bytes = 29.47% decrease)
-
-[1] "optipng compression complete"
-[1] "SDIXO16"
-[1] "52 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PTHOM42.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PTHOM42.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PTHOM42.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PTHOM42.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/PTHOM42.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/PTHOM42.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "PTHOM42"
-[1] "53 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/TCHAN29.png
-600x416 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 193283 bytes
-Input file size = 193616 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 140013
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 140013
-
-Output IDAT size = 140013 bytes (53270 bytes decrease)
-Output file size = 140286 bytes (53330 bytes = 27.54% decrease)
-
-[1] "optipng compression complete"
-[1] "TCHAN29"
-[1] "54 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/AKOCH93.png
-600x412 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 252702 bytes
-Input file size = 253059 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 183468
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 183468
-
-Output IDAT size = 183468 bytes (69234 bytes decrease)
-Output file size = 183741 bytes (69318 bytes = 27.39% decrease)
-
-[1] "optipng compression complete"
-[1] "AKOCH93"
-[1] "55 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/CCALL50.png
-600x355 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 100596 bytes
-Input file size = 100905 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 73184
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 73184
-
-Output IDAT size = 73184 bytes (27412 bytes decrease)
-Output file size = 73457 bytes (27448 bytes = 27.20% decrease)
-
-[1] "optipng compression complete"
-[1] "CCALL50"
-[1] "56 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AHENL22.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AHENL22.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AHENL22.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AHENL22.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/AHENL22.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/AHENL22.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "AHENL22"
-[1] "57 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/JGTAY63.png
-600x392 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 284500 bytes
-Input file size = 284869 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 207646
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 207646
-
-Output IDAT size = 207646 bytes (76854 bytes decrease)
-Output file size = 207919 bytes (76950 bytes = 27.01% decrease)
-
-[1] "optipng compression complete"
-[1] "JGTAY63"
-[1] "58 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/KKHAN96.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/KKHAN96.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/KKHAN96.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/KKHAN96.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/KKHAN96.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/KKHAN96.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "KKHAN96"
-[1] "59 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/HUAHM90.png
-600x337 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 192922 bytes
-Input file size = 193255 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 144881
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 144881
-
-Output IDAT size = 144881 bytes (48041 bytes decrease)
-Output file size = 145154 bytes (48101 bytes = 24.89% decrease)
-
-[1] "optipng compression complete"
-[1] "HUAHM90"
-[1] "60 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/LEFER39.png
-600x390 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 182131 bytes
-Input file size = 182464 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 126605
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 126605
-
-Output IDAT size = 126605 bytes (55526 bytes decrease)
-Output file size = 126878 bytes (55586 bytes = 30.46% decrease)
-
-[1] "optipng compression complete"
-[1] "LEFER39"
-[1] "61 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/OYALD86.png
-600x377 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 201317 bytes
-Input file size = 201662 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 138768
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 138768
-
-Output IDAT size = 138768 bytes (62549 bytes decrease)
-Output file size = 139041 bytes (62621 bytes = 31.05% decrease)
-
-[1] "optipng compression complete"
-[1] "OYALD86"
-[1] "62 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AMCNE32.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AMCNE32.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AMCNE32.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AMCNE32.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/AMCNE32.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/AMCNE32.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "AMCNE32"
-[1] "63 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/ZFOXX41.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/ZFOXX41.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/ZFOXX41.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/ZFOXX41.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/ZFOXX41.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/ZFOXX41.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "ZFOXX41"
-[1] "64 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/PNAIR85.png
-600x433 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 228155 bytes
-Input file size = 228500 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 156807
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 156807
-
-Output IDAT size = 156807 bytes (71348 bytes decrease)
-Output file size = 157080 bytes (71420 bytes = 31.26% decrease)
-
-[1] "optipng compression complete"
-[1] "PNAIR85"
-[1] "65 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/KEHAW59.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/KEHAW59.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/KEHAW59.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/KEHAW59.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/KEHAW59.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/KEHAW59.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "KEHAW59"
-[1] "66 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MJREI02.png
-600x410 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 142711 bytes
-Input file size = 143032 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 108419
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 108419
-
-Output IDAT size = 108419 bytes (34292 bytes decrease)
-Output file size = 108692 bytes (34340 bytes = 24.01% decrease)
-
-[1] "optipng compression complete"
-[1] "MJREI02"
-[1] "67 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GDISA55.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GDISA55.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GDISA55.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/GDISA55.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/GDISA55.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/GDISA55.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "GDISA55"
-[1] "68 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/ISWIA79.png
-600x434 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 222862 bytes
-Input file size = 223207 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 156893
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 156893
-
-Output IDAT size = 156893 bytes (65969 bytes decrease)
-Output file size = 157166 bytes (66041 bytes = 29.59% decrease)
-
-[1] "optipng compression complete"
-[1] "ISWIA79"
-[1] "69 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RTURN24.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RTURN24.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RTURN24.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RTURN24.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/RTURN24.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/RTURN24.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "RTURN24"
-[1] "70 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/LSFRA56.png
-600x380 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 178228 bytes
-Input file size = 178561 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 125908
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 125908
-
-Output IDAT size = 125908 bytes (52320 bytes decrease)
-Output file size = 126181 bytes (52380 bytes = 29.33% decrease)
-
-[1] "optipng compression complete"
-[1] "LSFRA56"
-[1] "71 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MSMIT82.png
-600x371 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 258405 bytes
-Input file size = 258762 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 184836
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 184836
-
-Output IDAT size = 184836 bytes (73569 bytes decrease)
-Output file size = 185109 bytes (73653 bytes = 28.46% decrease)
-
-[1] "optipng compression complete"
-[1] "MSMIT82"
-[1] "72 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SWAGN56.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SWAGN56.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SWAGN56.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SWAGN56.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SWAGN56.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/SWAGN56.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "SWAGN56"
-[1] "73 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SBWAL99.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SBWAL99.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SBWAL99.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SBWAL99.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SBWAL99.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/SBWAL99.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "SBWAL99"
-[1] "74 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/RKMAT85.png
-600x365 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 276249 bytes
-Input file size = 276618 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 198256
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 198256
-
-Output IDAT size = 198256 bytes (77993 bytes decrease)
-Output file size = 198529 bytes (78089 bytes = 28.23% decrease)
-
-[1] "optipng compression complete"
-[1] "RKMAT85"
-[1] "75 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PPINT49.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PPINT49.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PPINT49.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/PPINT49.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/PPINT49.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/PPINT49.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "PPINT49"
-[1] "76 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/LMONT04.png
-600x362 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 246483 bytes
-Input file size = 246840 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 176698
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 176698
-
-Output IDAT size = 176698 bytes (69785 bytes decrease)
-Output file size = 176971 bytes (69869 bytes = 28.31% decrease)
-
-[1] "optipng compression complete"
-[1] "LMONT04"
-[1] "77 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/JAGAR94.png
-600x377 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 319135 bytes
-Input file size = 319516 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 224329
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 224329
-
-Output IDAT size = 224329 bytes (94806 bytes decrease)
-Output file size = 224602 bytes (94914 bytes = 29.71% decrease)
-
-[1] "optipng compression complete"
-[1] "JAGAR94"
-[1] "78 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/APGIB90.png
-600x382 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 332727 bytes
-Input file size = 333120 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 237071
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 237071
-
-Output IDAT size = 237071 bytes (95656 bytes decrease)
-Output file size = 237344 bytes (95776 bytes = 28.75% decrease)
-
-[1] "optipng compression complete"
-[1] "APGIB90"
-[1] "79 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AJBIL77.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AJBIL77.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AJBIL77.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AJBIL77.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/AJBIL77.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/AJBIL77.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "AJBIL77"
-[1] "80 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/IHAMI75.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/IHAMI75.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/IHAMI75.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/IHAMI75.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/IHAMI75.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/IHAMI75.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "IHAMI75"
-[1] "81 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/AGRAB09.png
-600x454 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 271400 bytes
-Input file size = 271769 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 199829
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 199829
-
-Output IDAT size = 199829 bytes (71571 bytes decrease)
-Output file size = 200102 bytes (71667 bytes = 26.37% decrease)
-
-[1] "optipng compression complete"
-[1] "AGRAB09"
-[1] "82 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SHAMB22.png
-600x421 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 204359 bytes
-Input file size = 204704 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 145382
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 145382
-
-Output IDAT size = 145382 bytes (58977 bytes decrease)
-Output file size = 145655 bytes (59049 bytes = 28.85% decrease)
-
-[1] "optipng compression complete"
-[1] "SHAMB22"
-[1] "83 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MOONO64.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MOONO64.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MOONO64.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/MOONO64.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MOONO64.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/MOONO64.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "MOONO64"
-[1] "84 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RAMOH89.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RAMOH89.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RAMOH89.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RAMOH89.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/RAMOH89.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/RAMOH89.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "RAMOH89"
-[1] "85 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/CHLLE43.png
-600x425 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 305690 bytes
-Input file size = 306071 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 224042
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 224042
-
-Output IDAT size = 224042 bytes (81648 bytes decrease)
-Output file size = 224315 bytes (81756 bytes = 26.71% decrease)
-
-[1] "optipng compression complete"
-[1] "CHLLE43"
-[1] "86 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SMSIS90.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SMSIS90.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SMSIS90.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/SMSIS90.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SMSIS90.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/SMSIS90.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "SMSIS90"
-[1] "87 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RCSCO66.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RCSCO66.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RCSCO66.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/RCSCO66.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/RCSCO66.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/RCSCO66.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "RCSCO66"
-[1] "88 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/JDBOW38.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/JDBOW38.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/JDBOW38.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/JDBOW38.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/JDBOW38.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/JDBOW38.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "JDBOW38"
-[1] "89 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/JJSUR21.png
-600x358 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 256001 bytes
-Input file size = 256358 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 179891
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 179891
-
-Output IDAT size = 179891 bytes (76110 bytes decrease)
-Output file size = 180164 bytes (76194 bytes = 29.72% decrease)
-
-[1] "optipng compression complete"
-[1] "JJSUR21"
-[1] "90 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/JDHAY38.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/JDHAY38.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/JDHAY38.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/JDHAY38.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/JDHAY38.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/JDHAY38.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "JDHAY38"
-[1] "91 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AMHOL19.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AMHOL19.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AMHOL19.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-convert: geometry does not contain image `../wordclouds/UPI/AMHOL19.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 4"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/AMHOL19.png
-600x600 pixels, 1 bit/pixel, grayscale
-Input IDAT size = 182 bytes
-Input file size = 451 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 182
-  zc = 9  zm = 8  zs = 1  f = 0		IDAT size = 182
-  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-../wordclouds/UPI/AMHOL19.png is already optimized.
-
-[1] "optipng compression complete"
-[1] "AMHOL19"
-[1] "92 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/RMLIT88.png
-600x372 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 264287 bytes
-Input file size = 264656 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 184810
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 184810
-
-Output IDAT size = 184810 bytes (79477 bytes decrease)
-Output file size = 185083 bytes (79573 bytes = 30.07% decrease)
-
-[1] "optipng compression complete"
-[1] "RMLIT88"
-[1] "93 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MWBAR79.png
-600x349 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 95450 bytes
-Input file size = 95747 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 68219
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 68219
-
-Output IDAT size = 68219 bytes (27231 bytes decrease)
-Output file size = 68492 bytes (27255 bytes = 28.47% decrease)
-
-[1] "optipng compression complete"
-[1] "MWBAR79"
-[1] "94 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/AJGBY40.png
-600x377 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 187001 bytes
-Input file size = 187334 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 133414
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 133414
-
-Output IDAT size = 133414 bytes (53587 bytes decrease)
-Output file size = 133687 bytes (53647 bytes = 28.64% decrease)
-
-[1] "optipng compression complete"
-[1] "AJGBY40"
-[1] "95 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/LJTEO22.png
-600x398 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 194678 bytes
-Input file size = 195011 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 139782
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 139782
-
-Output IDAT size = 139782 bytes (54896 bytes decrease)
-Output file size = 140055 bytes (54956 bytes = 28.18% decrease)
-
-[1] "optipng compression complete"
-[1] "LJTEO22"
-[1] "96 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/NNGOS47.png
-600x418 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 194576 bytes
-Input file size = 194909 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 124842
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 124842
-
-Output IDAT size = 124842 bytes (69734 bytes decrease)
-Output file size = 125115 bytes (69794 bytes = 35.81% decrease)
-
-[1] "optipng compression complete"
-[1] "NNGOS47"
-[1] "97 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/MJGRO65.png
-600x337 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 200230 bytes
-Input file size = 200575 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 142684
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 142684
-
-Output IDAT size = 142684 bytes (57546 bytes decrease)
-Output file size = 142957 bytes (57618 bytes = 28.73% decrease)
-
-[1] "optipng compression complete"
-[1] "MJGRO65"
-[1] "98 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+Error in strsplit(freq$word, split = "") : non-character argument
+Calls: source ... withVisible -> eval -> eval -> wordcloud.maker -> strsplit
+In addition: Warning messages:
+1: In .Internal(gc(verbose, reset, full)) :
+  closing unused connection 3 (../UPI/errors.txt)
+2: In .Internal(gc(verbose, reset, full)) :
+  closing unused connection 3 (../UPI/errors.txt)
+3: In .Internal(gc(verbose, reset, full)) :
+  closing unused connection 3 (../UPI/errors.txt)
+4: In .Internal(gc(verbose, reset, full)) :
+  closing unused connection 3 (../UPI/errors.txt)
+5: In .Internal(gc(verbose, reset, full)) :
+  closing unused connection 3 (../UPI/errors.txt)
+Execution halted
