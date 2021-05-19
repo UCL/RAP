@@ -263,7 +263,7 @@ wordcloud.maker <- function(freq, col, png.file){
 	height <- width/1.5	
 	generate <- TRUE
 	attempt.number <- 0
-	whilst(generate){
+	while(generate){
 		wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
 		html.file <- 'tmp.html'
 		saveWidget(wc,html.file,selfcontained = F)
