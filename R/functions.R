@@ -252,8 +252,8 @@ wordcloud.maker <- function(freq, col, png.file){
 	if(is.null(freq) | nrow(freq)<10)error <- TRUE
 		
 	if(!error){
-		w <- c(60,60,52,60,60,30,60,60,25,25,52,25,87,60,60,60,60,35,52,30,60,52,77,52,52,52)
-		rw <- w/mean(w)
+		# adjust the frequency of words by their physical length, as the largest words (given their frequency AND size) should be centred first	
+		rw <- c(60,60,52,60,60,30,60,60,25,25,52,25,87,60,60,60,60,35,52,30,60,52,77,52,52,52)
 		words <- strsplit(freq$word,split='')
 		N <- length(words)
 		rw.words <- numeric(N)
@@ -263,9 +263,8 @@ wordcloud.maker <- function(freq, col, png.file){
 			letter.rw <- rw[letter.position]
 			rw.words[n] <- sum(letter.rw)
 			}
-		weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
-		size <- 8/weighted.word.length 
-		
+		freq$freq <- round(rw.words*freq$freq)
+
 		# various constants and starting conditions
 		error.connection <- file('../UPI/errors.txt')
 		html.file <- 'tmp.html'	
@@ -273,6 +272,7 @@ wordcloud.maker <- function(freq, col, png.file){
 		height <- width/1.5	
 		generate <- TRUE
 		attempt.number <- 0
+		size <- 8
 
 		# loop to allow regeneration if aesthetic constraints of png arent met	
 		while(generate){
@@ -303,15 +303,20 @@ wordcloud.maker <- function(freq, col, png.file){
 			print('attempting cropping...')
 			system(paste('magick convert ',png.file,' +repage -gravity South -chop 0x20 -trim ',png.file,sep=''))
 
-
 			# check some details of the webshot, and decide if to regenerate
 			png <- readPNG(png.file)
 			png.height <- dim(png)[1]
 			png.width <- dim(png)[2]
 			png.ratio <- png.width/png.height
 			if(png.width>(width*0.6) & png.width<(width*0.9) & png.ratio<1.75 & png.ratio>1.25) generate <- FALSE
-			if(png.width<=(width*0.6))size <- size * 1.5
-			if(png.width>=(width*0.9))size <- size * 0.8		
+			if(png.width<=(width*0.6)){
+				size <- size * 1.5	
+				print(paste(size,'is too small, trying again'))
+				}
+			if(png.width>=(width*0.9)){
+				size <- size * 0.8
+				print(paste(size,'is too big, trying again'))
+				}		
 			if(attempt.number==5){
 				generate <- FALSE
 				error <- TRUE
