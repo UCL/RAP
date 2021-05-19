@@ -22,3 +22,8 @@
 ../wordclouds/UPI/ASMIT31.png
 ../wordclouds/UPI/ATHOE43.png
 ../wordclouds/UPI/RHACK68.png
+../wordclouds/UPI/MDEIS71.png
+../wordclouds/UPI/SMUTT91.png
+../wordclouds/UPI/MRODR48.png
+../wordclouds/UPI/DEUTS12.png
+../wordclouds/UPI/JEROW76.png
