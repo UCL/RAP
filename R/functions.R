@@ -267,12 +267,12 @@ wordcloud.maker <- function(freq, col, png.file){
 			}
 		freq$freq <- round(rw.words*freq$freq*100)
 		weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
-		size <- 11/weighted.word.length 
+		size <- 12/weighted.word.length 
 
 		# various constants and starting conditions
 		error.connection <- file('../UPI/errors.txt')
 		html.file <- 'tmp.html'	
-		width <- 2000
+		width <- 2200
 		height <- round(width/1.5)	
 		generate <- TRUE
 		attempt.number <- 0
@@ -320,7 +320,7 @@ wordcloud.maker <- function(freq, col, png.file){
 				size <- size * 0.8
 				}	
 			if(png.ratio>1.75 | png.ratio<1.25) print('ratio poor, trying again')	
-			if(attempt.number==5){
+			if(attempt.number==6){
 				generate <- FALSE
 				error <- TRUE
 				}
@@ -330,7 +330,7 @@ wordcloud.maker <- function(freq, col, png.file){
 	if(!error){
 		# resize with imagemagick
 		print('resizing...')  
- 		system(paste('magick convert ',png.file,' +repage -resize 700x700 ',png.file,sep=''))
+ 		system(paste('magick convert ',png.file,' +repage -resize 900x900 ',png.file,sep=''))
   
   
 		# compress png

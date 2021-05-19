@@ -1,0 +1,4 @@
+../wordclouds/UPI/GJAME99.png
+../wordclouds/UPI/LSP0015.png
+../wordclouds/UPI/CWPIT98.png
+../wordclouds/UPI/ALIAO31.png
