@@ -262,7 +262,7 @@ wordcloud.maker <- function(freq, col, png.file){
 			word <- words[[n]]
 			letter.position <- match(word,letters[])
 			letter.rw <- rw[letter.position]
-			letter.rw[is.na(letter.rw)] <- mean(w)
+			letter.rw[is.na(letter.rw)] <- 1
 			rw.words[n] <- sum(letter.rw)
 			}
 		freq$freq <- round(rw.words*freq$freq*100)
@@ -288,6 +288,7 @@ wordcloud.maker <- function(freq, col, png.file){
 			print(paste('attempt number',attempt.number))
 
 			# generate wordcloud as a html widget
+			size <- round(size,3)
 			wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
 			saveWidget(wc,html.file,selfcontained = F)
 
@@ -302,7 +303,7 @@ wordcloud.maker <- function(freq, col, png.file){
 			print('webshot complete')
 
 			# crop white borders with imagemagick
-			print('attempting cropping...')
+			print('cropping...')
 			system(paste('magick convert ',png.file,' +repage -gravity South -chop 0x20 -trim ',png.file,sep=''))
 
 			# check some details of the webshot, and decide if to regenerate

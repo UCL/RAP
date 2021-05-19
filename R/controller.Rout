@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1662      0 --:--:-- --:--:-- --:--:--  1658
- 30 16.3M   30 5109k    0     0  4760k      0  0:00:03  0:00:01  0:00:02 4760k 96 16.3M   96 15.8M    0     0  7804k      0  0:00:02  0:00:02 --:--:-- 10.8M100 16.3M  100 16.3M    0     0  7883k      0  0:00:02  0:00:02 --:--:-- 10.8M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1592      0 --:--:-- --:--:-- --:--:--  1595
+ 19 16.3M   19 3206k    0     0  3598k      0  0:00:04 --:--:--  0:00:04 3598k 85 16.3M   85 13.9M    0     0  7539k      0  0:00:02  0:00:01  0:00:01 10.7M100 16.3M  100 16.3M    0     0  7914k      0  0:00:02  0:00:02 --:--:-- 10.8M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,176 +49,123 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-19 13:02:09 BST"
+[1] "2021-05-19 13:08:08 BST"
 > source('generate wordcloud for each UPI.R')
-[1] ".............................................."
-[1] "starting ../wordclouds/UPI/NJADD93.png"
-[1] "number of words = 144"
-[1] "size = 0.748257204975636"
+[1] "----------------------------------------------------------------------"
+[1] "starting ../wordclouds/UPI/FSCHU22.png"
+[1] "number of words = 94"
+[1] "size = 0.87643477591553"
 [1] "attempt number 1"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "0.748257204975636 is too small, trying again"
+[1] "0.87643477591553 is too small, trying again"
 [1] "attempt number 2"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "attempting resizing..."
-[1] "attempting optipng compression..."
-** Processing: ../wordclouds/UPI/NJADD93.png
-600x416 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 184952 bytes
-Input file size = 185285 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 132217
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 132217
-
-Output IDAT size = 132217 bytes (52735 bytes decrease)
-Output file size = 132490 bytes (52795 bytes = 28.49% decrease)
-
-[1] "NJADD93"
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "FSCHU22"
 [1] "1 of 200 completed"
-[1] ".............................................."
-[1] "starting ../wordclouds/UPI/PMGRI18.png"
-[1] "number of words = 297"
-[1] "size = 0.432424801432964"
+[1] "----------------------------------------------------------------------"
+[1] "starting ../wordclouds/UPI/MLORV14.png"
+[1] "number of words = 111"
+[1] "size = 1.17455198018959"
 [1] "attempt number 1"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "0.432424801432964 is too small, trying again"
+[1] "1.17455198018959 is too big, trying again"
 [1] "attempt number 2"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "0.648637202149446 is too small, trying again"
-[1] "attempt number 3"
-[1] "webshot complete"
-[1] "attempting cropping..."
-[1] "0.972955803224169 is too small, trying again"
-[1] "attempt number 4"
-[1] "webshot complete"
-[1] "attempting cropping..."
-[1] "attempting resizing..."
-[1] "attempting optipng compression..."
-** Processing: ../wordclouds/UPI/PMGRI18.png
-600x439 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 318522 bytes
-Input file size = 318903 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 237290
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 237290
-
-Output IDAT size = 237290 bytes (81232 bytes decrease)
-Output file size = 237563 bytes (81340 bytes = 25.51% decrease)
-
-[1] "PMGRI18"
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "MLORV14"
 [1] "2 of 200 completed"
-[1] ".............................................."
-[1] "starting ../wordclouds/UPI/SRHAR77.png"
-[1] "number of words = 50"
-[1] "size = 0.621109321066206"
+[1] "----------------------------------------------------------------------"
+[1] "starting ../wordclouds/UPI/RGWIL34.png"
+[1] "number of words = 34"
+[1] "size = 1.19165885908078"
 [1] "attempt number 1"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "0.621109321066206 is too small, trying again"
 [1] "attempt number 2"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "attempting resizing..."
-[1] "attempting optipng compression..."
-** Processing: ../wordclouds/UPI/SRHAR77.png
-600x372 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 121320 bytes
-Input file size = 121629 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 90180
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 90180
-
-Output IDAT size = 90180 bytes (31140 bytes decrease)
-Output file size = 90453 bytes (31176 bytes = 25.63% decrease)
-
-[1] "SRHAR77"
-[1] "3 of 200 completed"
-[1] ".............................................."
-[1] "starting ../wordclouds/UPI/NOULT15.png"
-[1] "number of words = 32"
-[1] "size = 0.744408123242513"
-[1] "attempt number 1"
-[1] "webshot complete"
-[1] "attempting cropping..."
-[1] "0.744408123242513 is too small, trying again"
-[1] "attempt number 2"
-[1] "webshot complete"
-[1] "attempting cropping..."
-[1] "attempting resizing..."
-[1] "attempting optipng compression..."
-** Processing: ../wordclouds/UPI/NOULT15.png
-600x459 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 188307 bytes
-Input file size = 188640 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 123366
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 123366
-
-Output IDAT size = 123366 bytes (64941 bytes decrease)
-Output file size = 123639 bytes (65001 bytes = 34.46% decrease)
-
-[1] "NOULT15"
-[1] "4 of 200 completed"
-[1] ".............................................."
-[1] "starting ../wordclouds/UPI/ATOMK78.png"
-[1] "number of words = 56"
-[1] "size = 0.817018244209161"
-[1] "attempt number 1"
-[1] "webshot complete"
-[1] "attempting cropping..."
-[1] "0.817018244209161 is too small, trying again"
-[1] "attempt number 2"
-[1] "webshot complete"
-[1] "attempting cropping..."
-[1] "1.22552736631374 is too big, trying again"
 [1] "attempt number 3"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "attempting resizing..."
-[1] "attempting optipng compression..."
-** Processing: ../wordclouds/UPI/ATOMK78.png
-600x406 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 178744 bytes
-Input file size = 179077 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 123369
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 123369
-
-Output IDAT size = 123369 bytes (55375 bytes decrease)
-Output file size = 123642 bytes (55435 bytes = 30.96% decrease)
-
-[1] "ATOMK78"
-[1] "5 of 200 completed"
-[1] ".............................................."
-[1] "starting ../wordclouds/UPI/VKITX83.png"
-[1] "number of words = 38"
-[1] "size = 0.734399574714592"
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "RGWIL34"
+[1] "3 of 200 completed"
+[1] "----------------------------------------------------------------------"
+[1] "starting ../wordclouds/UPI/TCATK39.png"
+[1] "number of words = 238"
+[1] "size = 1.09675012405456"
 [1] "attempt number 1"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "0.734399574714592 is too small, trying again"
-[1] "attempt number 2"
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "TCATK39"
+[1] "4 of 200 completed"
+[1] "----------------------------------------------------------------------"
+[1] "starting ../wordclouds/UPI/JMUIR45.png"
+[1] "number of words = 40"
+[1] "size = 1.22994268239619"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "JMUIR45"
+[1] "5 of 200 completed"
+[1] "----------------------------------------------------------------------"
+[1] "starting ../wordclouds/UPI/TYUXX32.png"
+[1] "number of words = 45"
+[1] "size = 1.15231787241747"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "TYUXX32"
+[1] "6 of 200 completed"
+[1] "----------------------------------------------------------------------"
+[1] "starting ../wordclouds/UPI/KENNA74.png"
+[1] "number of words = 137"
+[1] "size = 1.22195644103608"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "KENNA74"
+[1] "7 of 200 completed"
+[1] "----------------------------------------------------------------------"
+[1] "starting ../wordclouds/UPI/NDJJO40.png"
+[1] "number of words = 62"
+[1] "size = 1.21146008433578"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "NDJJO40"
+[1] "8 of 200 completed"
+[1] "----------------------------------------------------------------------"
+[1] "starting ../wordclouds/UPI/NJOYE26.png"
+[1] "number of words = 83"
+[1] "size = 1.2653852007833"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "NJOYE26"
+[1] "9 of 200 completed"
+[1] "----------------------------------------------------------------------"
+[1] "starting ../wordclouds/UPI/MSHAR34.png"
+[1] "number of words = 116"
+[1] "size = 1.1515802086077"
+[1] "attempt number 1"
