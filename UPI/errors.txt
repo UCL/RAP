@@ -1,1 +1,8 @@
 
+../wordclouds/UPI/BOLIV45.png
+../wordclouds/UPI/PVBRE73.png
+../wordclouds/UPI/ARWEB82.png
+../wordclouds/UPI/VSTAV68.png
+../wordclouds/UPI/CMTAN67.png
+../wordclouds/UPI/DBROW94.png
+../wordclouds/UPI/AVORA22.png

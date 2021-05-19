@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1679      0 --:--:-- --:--:-- --:--:--  1680
-  1 16.3M    1  309k    0     0   347k      0  0:00:48 --:--:--  0:00:48  347k  8 16.3M    8 1385k    0     0   736k      0  0:00:22  0:00:01  0:00:21 1083k 14 16.3M   14 2404k    0     0   834k      0  0:00:20  0:00:02  0:00:18 1051k 21 16.3M   21 3572k    0     0   917k      0  0:00:18  0:00:03  0:00:15 1086k 27 16.3M   27 4628k    0     0   948k      0  0:00:17  0:00:04  0:00:13 1081k 33 16.3M   33 5684k    0     0   966k      0  0:00:17  0:00:05  0:00:12 1076k 40 16.3M   40 6772k    0     0   983k      0  0:00:17  0:00:06  0:00:11 1076k 46 16.3M   46 7716k    0     0   978k      0  0:00:17  0:00:07  0:00:10 1061k 51 16.3M   51 8564k    0     0   962k      0  0:00:17  0:00:08  0:00:09  997k 54 16.3M   54 9204k    0     0   930k      0  0:00:17  0:00:09  0:00:08  914k 59 16.3M   59 9972k    0     0   916k      0  0:00:18  0:00:10  0:00:08  857k 64 16.3M   64 10.6M    0     0   913k      0  0:00:18  0:00:11  0:00:07  817k 69 16.3M   69 11.3M    0     0   903k      0  0:00:18  0:00:12  0:00:06  785k 75 16.3M   75 12.2M    0     0   905k      0  0:00:18  0:00:13  0:00:05  802k 81 16.3M   81 13.2M    0     0   911k      0  0:00:18  0:00:14  0:00:04  874k 86 16.3M   86 14.1M    0     0   910k      0  0:00:18  0:00:15  0:00:03  897k 92 16.3M   92 15.0M    0     0   915k      0  0:00:18  0:00:16  0:00:02  919k 98 16.3M   98 16.0M    0     0   920k      0  0:00:18  0:00:17  0:00:01  963k100 16.3M  100 16.3M    0     0   923k      0  0:00:18  0:00:18 --:--:--  983k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1692      0 --:--:-- --:--:-- --:--:--  1694
+  6 16.3M    6 1075k    0     0  1297k      0  0:00:12 --:--:--  0:00:12 1297k 45 16.3M   45 7590k    0     0  4144k      0  0:00:04  0:00:01  0:00:03 6502k100 16.3M  100 16.3M    0     0  6215k      0  0:00:02  0:00:02 --:--:-- 8402k
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,41 +49,908 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-19 10:36:25 BST"
+[1] "2021-05-19 10:46:10 BST"
 > source('generate wordcloud for each UPI.R')
 [1] ".............................................."
-[1] "starting ../wordclouds/UPI/CHALL44.png"
+[1] "starting ../wordclouds/UPI/JCKNO52.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/JCKNO52.png
+600x344 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 272356 bytes
+Input file size = 272725 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 197330
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 197330
+
+Output IDAT size = 197330 bytes (75026 bytes decrease)
+Output file size = 197603 bytes (75122 bytes = 27.54% decrease)
+
+[1] "optipng compression complete"
+[1] "JCKNO52"
+[1] "1 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/BDKAR32.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/BDKAR32.png
+600x404 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 159759 bytes
+Input file size = 160080 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 105452
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 105452
+
+Output IDAT size = 105452 bytes (54307 bytes decrease)
+Output file size = 105725 bytes (54355 bytes = 33.95% decrease)
+
+[1] "optipng compression complete"
+[1] "BDKAR32"
+[1] "2 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/PCHAM66.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/PCHAM66.png
+600x454 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 190018 bytes
+Input file size = 190351 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 134025
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 134025
+
+Output IDAT size = 134025 bytes (55993 bytes decrease)
+Output file size = 134298 bytes (56053 bytes = 29.45% decrease)
+
+[1] "optipng compression complete"
+[1] "PCHAM66"
+[1] "3 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/GSWAN34.png"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "borders successfully cropped"
 [1] "resizing successful"
-** Processing: ../wordclouds/UPI/CHALL44.png
-600x377 pixels, 4x8 bits/pixel, RGB+alpha
+** Processing: ../wordclouds/UPI/GSWAN34.png
+600x350 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 152416 bytes
-Input file size = 152737 bytes
+Input IDAT size = 187134 bytes
+Input file size = 187467 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 107521
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 133198
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 107521
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 133198
 
-Output IDAT size = 107521 bytes (44895 bytes decrease)
-Output file size = 107794 bytes (44943 bytes = 29.43% decrease)
+Output IDAT size = 133198 bytes (53936 bytes decrease)
+Output file size = 133471 bytes (53996 bytes = 28.80% decrease)
 
 [1] "optipng compression complete"
-[1] "CHALL44"
-[1] "1 of 200 completed"
+[1] "GSWAN34"
+[1] "4 of 200 completed"
 [1] ".............................................."
-[1] "starting ../wordclouds/UPI/SFORK35.png"
-Error in if (is.na(freq) | nrow(freq) < 10) error <- TRUE : 
-  argument is of length zero
-Calls: source -> withVisible -> eval -> eval -> wordcloud.maker
-In addition: Warning messages:
-1: In if (is.na(freq) | nrow(freq) < 10) error <- TRUE :
-  the condition has length > 1 and only the first element will be used
-2: In .Internal(gc(verbose, reset, full)) :
-  closing unused connection 3 (../UPI/errors.txt)
-Execution halted
+[1] "starting ../wordclouds/UPI/IAHAS65.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/IAHAS65.png
+600x356 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 120044 bytes
+Input file size = 120353 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 85787
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 85787
+
+Output IDAT size = 85787 bytes (34257 bytes decrease)
+Output file size = 86060 bytes (34293 bytes = 28.49% decrease)
+
+[1] "optipng compression complete"
+[1] "IAHAS65"
+[1] "5 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/VEVAN00.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/VEVAN00.png
+600x372 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 216374 bytes
+Input file size = 216719 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 152892
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 152892
+
+Output IDAT size = 152892 bytes (63482 bytes decrease)
+Output file size = 153165 bytes (63554 bytes = 29.33% decrease)
+
+[1] "optipng compression complete"
+[1] "VEVAN00"
+[1] "6 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/BOLIV45.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/BOLIV45.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/BOLIV45.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/BOLIV45.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 4"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/BOLIV45.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 5"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/BOLIV45.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "../wordclouds/UPI/BOLIV45.png failed."
+[1] "BOLIV45"
+[1] "7 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/MNBAN74.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/MNBAN74.png
+600x359 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 244851 bytes
+Input file size = 245208 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 172666
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 172666
+
+Output IDAT size = 172666 bytes (72185 bytes decrease)
+Output file size = 172939 bytes (72269 bytes = 29.47% decrease)
+
+[1] "optipng compression complete"
+[1] "MNBAN74"
+[1] "8 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/AMMEV51.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/AMMEV51.png
+600x397 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 182666 bytes
+Input file size = 182999 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 130616
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 130616
+
+Output IDAT size = 130616 bytes (52050 bytes decrease)
+Output file size = 130889 bytes (52110 bytes = 28.48% decrease)
+
+[1] "optipng compression complete"
+[1] "AMMEV51"
+[1] "9 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/DRAVA17.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/DRAVA17.png
+600x363 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 289102 bytes
+Input file size = 289471 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 205026
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 205026
+
+Output IDAT size = 205026 bytes (84076 bytes decrease)
+Output file size = 205299 bytes (84172 bytes = 29.08% decrease)
+
+[1] "optipng compression complete"
+[1] "DRAVA17"
+[1] "10 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/ABELS38.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/ABELS38.png
+600x392 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 183536 bytes
+Input file size = 183869 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 122151
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 122151
+
+Output IDAT size = 122151 bytes (61385 bytes decrease)
+Output file size = 122424 bytes (61445 bytes = 33.42% decrease)
+
+[1] "optipng compression complete"
+[1] "ABELS38"
+[1] "11 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/RWILS80.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/RWILS80.png
+600x348 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 156223 bytes
+Input file size = 156544 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 107513
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 107513
+
+Output IDAT size = 107513 bytes (48710 bytes decrease)
+Output file size = 107786 bytes (48758 bytes = 31.15% decrease)
+
+[1] "optipng compression complete"
+[1] "RWILS80"
+[1] "12 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/HARDY72.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/HARDY72.png
+600x386 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 169459 bytes
+Input file size = 169792 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 122753
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 122753
+
+Output IDAT size = 122753 bytes (46706 bytes decrease)
+Output file size = 123026 bytes (46766 bytes = 27.54% decrease)
+
+[1] "optipng compression complete"
+[1] "HARDY72"
+[1] "13 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/RLBON31.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/RLBON31.png
+600x409 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 185473 bytes
+Input file size = 185806 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 130880
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 130880
+
+Output IDAT size = 130880 bytes (54593 bytes decrease)
+Output file size = 131153 bytes (54653 bytes = 29.41% decrease)
+
+[1] "optipng compression complete"
+[1] "RLBON31"
+[1] "14 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/LMAUG52.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/LMAUG52.png
+600x396 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 155789 bytes
+Input file size = 156110 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 103594
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 103594
+
+Output IDAT size = 103594 bytes (52195 bytes decrease)
+Output file size = 103867 bytes (52243 bytes = 33.47% decrease)
+
+[1] "optipng compression complete"
+[1] "LMAUG52"
+[1] "15 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/JMMCG79.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/JMMCG79.png
+600x345 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 210307 bytes
+Input file size = 210652 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 150288
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 150288
+
+Output IDAT size = 150288 bytes (60019 bytes decrease)
+Output file size = 150561 bytes (60091 bytes = 28.53% decrease)
+
+[1] "optipng compression complete"
+[1] "JMMCG79"
+[1] "16 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/SMKUN37.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/SMKUN37.png
+600x454 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 145899 bytes
+Input file size = 146220 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 104962
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 104962
+
+Output IDAT size = 104962 bytes (40937 bytes decrease)
+Output file size = 105235 bytes (40985 bytes = 28.03% decrease)
+
+[1] "optipng compression complete"
+[1] "SMKUN37"
+[1] "17 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/SJMAC39.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/SJMAC39.png
+600x392 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 264496 bytes
+Input file size = 264865 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 191101
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 191101
+
+Output IDAT size = 191101 bytes (73395 bytes decrease)
+Output file size = 191374 bytes (73491 bytes = 27.75% decrease)
+
+[1] "optipng compression complete"
+[1] "SJMAC39"
+[1] "18 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/TRARN40.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/TRARN40.png
+600x393 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 256328 bytes
+Input file size = 256685 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 186323
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 186323
+
+Output IDAT size = 186323 bytes (70005 bytes decrease)
+Output file size = 186596 bytes (70089 bytes = 27.31% decrease)
+
+[1] "optipng compression complete"
+[1] "TRARN40"
+[1] "19 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/EGAND72.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/EGAND72.png
+600x345 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 209644 bytes
+Input file size = 209989 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 147042
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 147042
+
+Output IDAT size = 147042 bytes (62602 bytes decrease)
+Output file size = 147315 bytes (62674 bytes = 29.85% decrease)
+
+[1] "optipng compression complete"
+[1] "EGAND72"
+[1] "20 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/PVBRE73.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 4"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 5"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "../wordclouds/UPI/PVBRE73.png failed."
+[1] "PVBRE73"
+[1] "21 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/ARWEB82.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/ARWEB82.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/ARWEB82.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/ARWEB82.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 4"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/ARWEB82.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 5"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/ARWEB82.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "../wordclouds/UPI/ARWEB82.png failed."
+[1] "ARWEB82"
+[1] "22 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/VSTAV68.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/VSTAV68.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/VSTAV68.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/VSTAV68.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 4"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/VSTAV68.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 5"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/VSTAV68.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "../wordclouds/UPI/VSTAV68.png failed."
+[1] "VSTAV68"
+[1] "23 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/CMTAN67.png"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/CMTAN67.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/CMTAN67.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/CMTAN67.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 4"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/CMTAN67.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 5"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/CMTAN67.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "../wordclouds/UPI/CMTAN67.png failed."
+[1] "CMTAN67"
+[1] "24 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/SAMOR38.png"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/SAMOR38.png
+600x368 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 219061 bytes
+Input file size = 219406 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 160914
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 160914
+
+Output IDAT size = 160914 bytes (58147 bytes decrease)
+Output file size = 161187 bytes (58219 bytes = 26.53% decrease)
+
+[1] "optipng compression complete"
+[1] "SAMOR38"
+[1] "25 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/AJREY18.png"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/AJREY18.png
+600x351 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 213291 bytes
+Input file size = 213636 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 151287
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 151287
+
+Output IDAT size = 151287 bytes (62004 bytes decrease)
+Output file size = 151560 bytes (62076 bytes = 29.06% decrease)
+
+[1] "optipng compression complete"
+[1] "AJREY18"
+[1] "26 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/DBROW94.png"
+[1] "attempt number 1"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/DBROW94.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/DBROW94.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/DBROW94.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 4"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/DBROW94.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 5"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/DBROW94.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "../wordclouds/UPI/DBROW94.png failed."
+[1] "DBROW94"
+[1] "27 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/GBRUI62.png"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/GBRUI62.png
+600x359 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 181606 bytes
+Input file size = 181939 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 124400
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 124400
+
+Output IDAT size = 124400 bytes (57206 bytes decrease)
+Output file size = 124673 bytes (57266 bytes = 31.48% decrease)
+
+[1] "optipng compression complete"
+[1] "GBRUI62"
+[1] "28 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/AVORA22.png"
+[1] "attempt number 1"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/AVORA22.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/AVORA22.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/AVORA22.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 4"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/AVORA22.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 5"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/AVORA22.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "../wordclouds/UPI/AVORA22.png failed."
+[1] "AVORA22"
+[1] "29 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/MHOSS71.png"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 3"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/MHOSS71.png
+600x390 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 163550 bytes
+Input file size = 163871 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 115365
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 115365
+
+Output IDAT size = 115365 bytes (48185 bytes decrease)
+Output file size = 115638 bytes (48233 bytes = 29.43% decrease)
+
+[1] "optipng compression complete"
+[1] "MHOSS71"
+[1] "30 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/YGIRE29.png"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/YGIRE29.png
+600x378 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 157792 bytes
+Input file size = 158113 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 105872
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 105872
+
+Output IDAT size = 105872 bytes (51920 bytes decrease)
+Output file size = 106145 bytes (51968 bytes = 32.87% decrease)
+
+[1] "optipng compression complete"
+[1] "YGIRE29"
+[1] "31 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/JASMI10.png"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/JASMI10.png
+600x409 pixels, 4x8 bits/pixel, RGB+alpha
+Reducing image to 3x8 bits/pixel, RGB
+Input IDAT size = 252614 bytes
+Input file size = 252971 bytes
+
+Trying:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 172514
+  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
+Selecting parameters:
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 172514
+
+Output IDAT size = 172514 bytes (80100 bytes decrease)
+Output file size = 172787 bytes (80184 bytes = 31.70% decrease)
+
+[1] "optipng compression complete"
+[1] "JASMI10"
+[1] "32 of 200 completed"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/LHOVA57.png"
+[1] "attempt number 1"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/LHOVA57.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 2"
+[1] "webshot complete"
+convert: geometry does not contain image `../wordclouds/UPI/LHOVA57.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "borders successfully cropped"
+[1] "attempt number 3"

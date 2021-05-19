@@ -239,7 +239,7 @@ return(page)}
 #-------------------------------------------------------------------------------------------------------
 wordcloud.maker <- function(freq, col, png.file){
 
-	# Choosing the size argument for wrodcloud2 is critical and tricky.
+	# Choosing the size argument for wordcloud2 is critical and tricky.
 	# ad hoc approach below is a start, but doesnt always solve the problem.
 	# Also the algorithm used by wordcloud2 for positioning the words doesnt always result in an attractive layout.
 	# Wordcloud2 generates a different layout each time (random positioning),
@@ -249,7 +249,7 @@ wordcloud.maker <- function(freq, col, png.file){
 	print('..............................................')
 	print(paste('starting',png.file))
 	error <- FALSE
-	if(is.na(freq) | nrow(freq)<10)error <- TRUE
+	if(is.null(freq) | nrow(freq)<10)error <- TRUE
 		
 	if(!error){
 		w <- c(60,60,52,60,60,30,60,60,25,25,52,25,87,60,60,60,60,35,52,30,60,52,77,52,52,52)
@@ -289,14 +289,20 @@ wordcloud.maker <- function(freq, col, png.file){
 			webshot(html.file,png.file, delay =delay, vwidth = width, vheight=height) 
 			Sys.sleep(2)
 	
+			# output sanity checks 
+			print(paste('widget html file size =',file.size(html.file)))
+			print(paste('webshot png file size =',file.size(png.file)))
+			print(paste('number of words =',nrow(freq)))
+
 			# remove intermediate temp files
 			file.remove(html.file)
       		unlink('tmp_files', recursive=TRUE)
 			print('webshot complete')
 
 			# crop white borders with imagemagick
+			print('attempting cropping...')
 			system(paste('magick convert ',png.file,' +repage -gravity South -chop 0x20 -trim ',png.file,sep=''))
-			print('borders successfully cropped')
+
 
 			# check some details of the webshot, and decide if to regenerate
 			png <- readPNG(png.file)
@@ -315,12 +321,13 @@ wordcloud.maker <- function(freq, col, png.file){
 
 	if(!error){
 		# resize with imagemagick
+		print('attempting resizing...')  
  		system(paste('magick convert ',png.file,' +repage -resize 600x600 ',png.file,sep=''))
- 		print('resizing successful')   
+  
   
 		# compress png
+		print('attempting optipng compression...')
 		system(paste('optipng',png.file))
-		print('optipng compression complete')
 		}
 
 
@@ -331,7 +338,7 @@ wordcloud.maker <- function(freq, col, png.file){
 		new <- unique(c(old, png.file))
 		writeLines(new, error.connection)
 		close(error.connection)
-		print(paste(png.file,'failed.'))
+		print(paste(png.file,'failed...................'))
 		}
 	}
 
