@@ -246,73 +246,83 @@ wordcloud.maker <- function(freq, col, png.file){
 	# therefore we also loop for several attempts, with various size changes, until constraints are satisfied.
 	# rough relative widths of lowercase letters, taken from https://gist.github.com/imaurer/d330e68e70180c985b380f25e195b90c
 
-	w <- c(60,60,52,60,60,30,60,60,25,25,52,25,87,60,60,60,60,35,52,30,60,52,77,52,52,52)
-	rw <- w/mean(w)
-	words <- strsplit(freq$word,split='')
-	N <- length(words)
-	rw.words <- numeric(N)
-	for(n in 1:N){
-		word <- words[[n]]
-		letter.position <- match(word,letters[])
-		letter.rw <- rw[letter.position]
-		rw.words[n] <- sum(letter.rw)
-		}
-	weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
-	size <- 8/weighted.word.length 
-
-	# various constants and starting conditions
-	error.connection <- file('../UPI/errors.txt')
-	html.file <- 'tmp.html'	
-	width <- 1800
-	height <- width/1.5	
-	generate <- TRUE
+	print('..............................................')
+	print(paste('starting',png.file))
 	error <- FALSE
-	attempt.number <- 0
+	if(is.na(freq) | nrow(freq)<10)error <- TRUE
+		
+	if(!error){
+		w <- c(60,60,52,60,60,30,60,60,25,25,52,25,87,60,60,60,60,35,52,30,60,52,77,52,52,52)
+		rw <- w/mean(w)
+		words <- strsplit(freq$word,split='')
+		N <- length(words)
+		rw.words <- numeric(N)
+		for(n in 1:N){
+			word <- words[[n]]
+			letter.position <- match(word,letters[])
+			letter.rw <- rw[letter.position]
+			rw.words[n] <- sum(letter.rw)
+			}
+		weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
+		size <- 8/weighted.word.length 
+		
+		# various constants and starting conditions
+		error.connection <- file('../UPI/errors.txt')
+		html.file <- 'tmp.html'	
+		width <- 1800
+		height <- width/1.5	
+		generate <- TRUE
+		attempt.number <- 0
 
-	# loop to allow regeneration if aesthetic constraints of png arent met	
-	while(generate){
+		# loop to allow regeneration if aesthetic constraints of png arent met	
+		while(generate){
 
-		# generate wordcloud as a html widget
-		wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
-		saveWidget(wc,html.file,selfcontained = F)
+			attempt.number <- attempt.number + 1
+			print(paste('attempt number',attempt.number))
 
-		# extract as a png webshot. Allow more time to get the webshot if there is a lot of words
-		delay <- round(N*0.08)+5
-		webshot(html.file,png.file, delay =delay, vwidth = width, vheight=height) 
-		Sys.sleep(2)
-		print('webshot complete')
+			# generate wordcloud as a html widget
+			wc <- wordcloud2(freq, size=size, color = col, minRotation = 0, maxRotation = pi/2,widgetsize=c(width,height))
+			saveWidget(wc,html.file,selfcontained = F)
 
-		# crop white borders with imagemagick
-		system(paste('magick convert ',png.file,' +repage -gravity South -chop 0x20 -trim ',png.file,sep=''))
-		print('step 1 of imagemagick complete')
+			# extract as a png webshot. Allow more time to get the webshot if there is a lot of words
+			delay <- round(N*0.08)+5
+			webshot(html.file,png.file, delay =delay, vwidth = width, vheight=height) 
+			Sys.sleep(2)
+	
+			# remove intermediate temp files
+			file.remove(html.file)
+      		unlink('tmp_files', recursive=TRUE)
+			print('webshot complete')
 
-		# check some details of the webshot, and decide if to regenerate
-		attempt.number <- attempt.number + 1
-		print(paste('attempt number',attempt.number))
-		png <- readPNG(png.file)
-		png.height <- dim(png)[1]
-		png.width <- dim(png)[2]
-		png.ratio <- png.width/png.height
-		if(png.width>(width*0.6) & png.width<(width*0.9) & png.ratio<1.75 & png.ratio>1.25) generate <- FALSE
-		if(png.width<=(width*0.6))size <- size * 1.5
-		if(png.width>=(width*0.9))size <- size * 0.8		
-		if(attempt.number==5){
-			generate <- FALSE
-			error <- TRUE
+			# crop white borders with imagemagick
+			system(paste('magick convert ',png.file,' +repage -gravity South -chop 0x20 -trim ',png.file,sep=''))
+			print('borders successfully cropped')
+
+			# check some details of the webshot, and decide if to regenerate
+			png <- readPNG(png.file)
+			png.height <- dim(png)[1]
+			png.width <- dim(png)[2]
+			png.ratio <- png.width/png.height
+			if(png.width>(width*0.6) & png.width<(width*0.9) & png.ratio<1.75 & png.ratio>1.25) generate <- FALSE
+			if(png.width<=(width*0.6))size <- size * 1.5
+			if(png.width>=(width*0.9))size <- size * 0.8		
+			if(attempt.number==5){
+				generate <- FALSE
+				error <- TRUE
+				}
 			}
 		}
 
-	# resize with imagemagick
- 	system(paste('magick convert ',png.file,' +repage -resize 600x600 ',png.file,sep=''))
- 	print('step 2 of imagemagick complete')   
+	if(!error){
+		# resize with imagemagick
+ 		system(paste('magick convert ',png.file,' +repage -resize 600x600 ',png.file,sep=''))
+ 		print('resizing successful')   
   
-	# compress png
-	system(paste('optipng',png.file))
-	print('optipng compression complete')
+		# compress png
+		system(paste('optipng',png.file))
+		print('optipng compression complete')
+		}
 
-	# remove intermediate temp files
-      file.remove(html.file)
-      unlink('tmp_files', recursive=TRUE)
 
 	# remove any failures and store in error log, for manual checking
 	if(error){
@@ -321,6 +331,7 @@ wordcloud.maker <- function(freq, col, png.file){
 		new <- unique(c(old, png.file))
 		writeLines(new, error.connection)
 		close(error.connection)
+		print(paste(png.file,'failed.'))
 		}
 	}
 

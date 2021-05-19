@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1347      0 --:--:-- --:--:-- --:--:--  1347
- 36 16.3M   36 6119k    0     0  4775k      0  0:00:03  0:00:01  0:00:02 4775k100 16.3M  100 16.3M    0     0  7601k      0  0:00:02  0:00:02 --:--:-- 11.2M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1679      0 --:--:-- --:--:-- --:--:--  1680
+  1 16.3M    1  309k    0     0   347k      0  0:00:48 --:--:--  0:00:48  347k  8 16.3M    8 1385k    0     0   736k      0  0:00:22  0:00:01  0:00:21 1083k 14 16.3M   14 2404k    0     0   834k      0  0:00:20  0:00:02  0:00:18 1051k 21 16.3M   21 3572k    0     0   917k      0  0:00:18  0:00:03  0:00:15 1086k 27 16.3M   27 4628k    0     0   948k      0  0:00:17  0:00:04  0:00:13 1081k 33 16.3M   33 5684k    0     0   966k      0  0:00:17  0:00:05  0:00:12 1076k 40 16.3M   40 6772k    0     0   983k      0  0:00:17  0:00:06  0:00:11 1076k 46 16.3M   46 7716k    0     0   978k      0  0:00:17  0:00:07  0:00:10 1061k 51 16.3M   51 8564k    0     0   962k      0  0:00:17  0:00:08  0:00:09  997k 54 16.3M   54 9204k    0     0   930k      0  0:00:17  0:00:09  0:00:08  914k 59 16.3M   59 9972k    0     0   916k      0  0:00:18  0:00:10  0:00:08  857k 64 16.3M   64 10.6M    0     0   913k      0  0:00:18  0:00:11  0:00:07  817k 69 16.3M   69 11.3M    0     0   903k      0  0:00:18  0:00:12  0:00:06  785k 75 16.3M   75 12.2M    0     0   905k      0  0:00:18  0:00:13  0:00:05  802k 81 16.3M   81 13.2M    0     0   911k      0  0:00:18  0:00:14  0:00:04  874k 86 16.3M   86 14.1M    0     0   910k      0  0:00:18  0:00:15  0:00:03  897k 92 16.3M   92 15.0M    0     0   915k      0  0:00:18  0:00:16  0:00:02  919k 98 16.3M   98 16.0M    0     0   920k      0  0:00:18  0:00:17  0:00:01  963k100 16.3M  100 16.3M    0     0   923k      0  0:00:18  0:00:18 --:--:--  983k
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,154 +49,41 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-19 10:15:09 BST"
+[1] "2021-05-19 10:36:25 BST"
 > source('generate wordcloud for each UPI.R')
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/CHALL44.png"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/YISOG11.png
-600x386 pixels, 4x8 bits/pixel, RGB+alpha
+[1] "borders successfully cropped"
+[1] "resizing successful"
+** Processing: ../wordclouds/UPI/CHALL44.png
+600x377 pixels, 4x8 bits/pixel, RGB+alpha
 Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 217444 bytes
-Input file size = 217789 bytes
+Input IDAT size = 152416 bytes
+Input file size = 152737 bytes
 
 Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 149678
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 107521
   zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
 Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 149678
+  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 107521
 
-Output IDAT size = 149678 bytes (67766 bytes decrease)
-Output file size = 149951 bytes (67838 bytes = 31.15% decrease)
+Output IDAT size = 107521 bytes (44895 bytes decrease)
+Output file size = 107794 bytes (44943 bytes = 29.43% decrease)
 
 [1] "optipng compression complete"
-[1] "YISOG11"
+[1] "CHALL44"
 [1] "1 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SSRIV05.png
-600x395 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 157820 bytes
-Input file size = 158141 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 109028
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 109028
-
-Output IDAT size = 109028 bytes (48792 bytes decrease)
-Output file size = 109301 bytes (48840 bytes = 30.88% decrease)
-
-[1] "optipng compression complete"
-[1] "SSRIV05"
-[1] "2 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/SEKER08.png
-600x364 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 168003 bytes
-Input file size = 168336 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 115841
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 115841
-
-Output IDAT size = 115841 bytes (52162 bytes decrease)
-Output file size = 116114 bytes (52222 bytes = 31.02% decrease)
-
-[1] "optipng compression complete"
-[1] "SEKER08"
-[1] "3 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/HPOUL63.png
-600x357 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 186504 bytes
-Input file size = 186837 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 129871
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 129871
-
-Output IDAT size = 129871 bytes (56633 bytes decrease)
-Output file size = 130144 bytes (56693 bytes = 30.34% decrease)
-
-[1] "optipng compression complete"
-[1] "HPOUL63"
-[1] "4 of 200 completed"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "step 1 of imagemagick complete"
-[1] "attempt number 3"
-[1] "step 2 of imagemagick complete"
-** Processing: ../wordclouds/UPI/ISTJA95.png
-600x460 pixels, 4x8 bits/pixel, RGB+alpha
-Reducing image to 3x8 bits/pixel, RGB
-Input IDAT size = 151838 bytes
-Input file size = 152159 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 100361
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 100361
-
-Output IDAT size = 100361 bytes (51477 bytes decrease)
-Output file size = 100634 bytes (51525 bytes = 33.86% decrease)
-
-[1] "optipng compression complete"
-[1] "ISTJA95"
-[1] "5 of 200 completed"
-Error in strsplit(freq$word, split = "") : non-character argument
-Calls: source ... withVisible -> eval -> eval -> wordcloud.maker -> strsplit
+[1] ".............................................."
+[1] "starting ../wordclouds/UPI/SFORK35.png"
+Error in if (is.na(freq) | nrow(freq) < 10) error <- TRUE : 
+  argument is of length zero
+Calls: source -> withVisible -> eval -> eval -> wordcloud.maker
 In addition: Warning messages:
-1: In .Internal(gc(verbose, reset, full)) :
-  closing unused connection 3 (../UPI/errors.txt)
+1: In if (is.na(freq) | nrow(freq) < 10) error <- TRUE :
+  the condition has length > 1 and only the first element will be used
 2: In .Internal(gc(verbose, reset, full)) :
-  closing unused connection 3 (../UPI/errors.txt)
-3: In .Internal(gc(verbose, reset, full)) :
-  closing unused connection 3 (../UPI/errors.txt)
-4: In .Internal(gc(verbose, reset, full)) :
-  closing unused connection 3 (../UPI/errors.txt)
-5: In .Internal(gc(verbose, reset, full)) :
   closing unused connection 3 (../UPI/errors.txt)
 Execution halted
