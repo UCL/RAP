@@ -253,7 +253,8 @@ wordcloud.maker <- function(freq, col, png.file){
 		
 	if(!error){
 		# adjust the frequency of words by their physical length, as the largest words (given their frequency AND size) should be centred first	
-		rw <- c(60,60,52,60,60,30,60,60,25,25,52,25,87,60,60,60,60,35,52,30,60,52,77,52,52,52)
+		w <- c(60,60,52,60,60,30,60,60,25,25,52,25,87,60,60,60,60,35,52,30,60,52,77,52,52,52)
+		rw <- w/mean(w)
 		words <- strsplit(freq$word,split='')
 		N <- length(words)
 		rw.words <- numeric(N)
@@ -261,9 +262,10 @@ wordcloud.maker <- function(freq, col, png.file){
 			word <- words[[n]]
 			letter.position <- match(word,letters[])
 			letter.rw <- rw[letter.position]
+			letter.rw[is.na(letter.rw)] <- mean(w)
 			rw.words[n] <- sum(letter.rw)
 			}
-		freq$freq <- round(rw.words*freq$freq)
+		freq$freq <- round(rw.words*freq$freq*100)
 		weighted.word.length <- sum(rw.words*freq$freq)/sum(freq$freq)
 		size <- 6/weighted.word.length 
 
@@ -274,6 +276,10 @@ wordcloud.maker <- function(freq, col, png.file){
 		height <- width/1.5	
 		generate <- TRUE
 		attempt.number <- 0
+
+		# output sanity checks 
+		print(paste('number of words =',nrow(freq)))
+		print(paste('size =',size))
 
 		# loop to allow regeneration if aesthetic constraints of png arent met	
 		while(generate){
@@ -289,10 +295,6 @@ wordcloud.maker <- function(freq, col, png.file){
 			delay <- round(N*0.08)+5
 			webshot(html.file,png.file, delay =delay, vwidth = width, vheight=height) 
 			Sys.sleep(2)
-	
-			# output sanity checks 
-			print(paste('webshot png file size =',file.size(png.file)))
-			print(paste('number of words =',nrow(freq)))
 
 			# remove intermediate temp files
 			file.remove(html.file)

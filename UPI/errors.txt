@@ -27,3 +27,7 @@
 ../wordclouds/UPI/MRODR48.png
 ../wordclouds/UPI/DEUTS12.png
 ../wordclouds/UPI/JEROW76.png
+../wordclouds/UPI/XPANX04.png
+../wordclouds/UPI/CRENZ63.png
+../wordclouds/UPI/EWALK98.png
+../wordclouds/UPI/JAPIT74.png

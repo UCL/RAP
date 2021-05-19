@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1637      0 --:--:-- --:--:-- --:--:--  1637
-  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 59 16.3M   59  9.7M    0     0  4802k      0  0:00:03  0:00:02  0:00:01 10.0M100 16.3M  100 16.3M    0     0  6222k      0  0:00:02  0:00:02 --:--:-- 10.3M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   632  100   632    0     0   1670      0 --:--:-- --:--:-- --:--:--  1667
+ 33 16.3M   33 5669k    0     0  5125k      0  0:00:03  0:00:01  0:00:02 5125k 99 16.3M   99 16.3M    0     0  7941k      0  0:00:02  0:00:02 --:--:-- 10.7M100 16.3M  100 16.3M    0     0  7946k      0  0:00:02  0:00:02 --:--:-- 10.8M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,350 +49,204 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2021-05-19 12:34:10 BST"
+[1] "2021-05-19 12:48:09 BST"
 > source('generate wordcloud for each UPI.R')
 [1] ".............................................."
-[1] "starting ../wordclouds/UPI/VMASE97.png"
+[1] "starting ../wordclouds/UPI/XPANX04.png"
 [1] "attempt number 1"
-[1] "widget html file size = 2572"
-[1] "webshot png file size = 121865"
-[1] "number of words = 64"
+[1] "webshot png file size = 40047"
+[1] "number of words = 226"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "attempting resizing..."
-[1] "attempting optipng compression..."
-** Processing: ../wordclouds/UPI/VMASE97.png
-600x445 pixels, 3x8 bits/pixel, RGB
-Input IDAT size = 62799 bytes
-Input file size = 63084 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 49258
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 49258
-
-Output IDAT size = 49258 bytes (13541 bytes decrease)
-Output file size = 49531 bytes (13553 bytes = 21.48% decrease)
-
-[1] "VMASE97"
+[1] "0.0146999276388092 is too small, trying again"
+[1] "attempt number 2"
+[1] "webshot png file size = 38964"
+[1] "number of words = 226"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "0.0220498914582138 is too small, trying again"
+[1] "attempt number 3"
+[1] "webshot png file size = 40507"
+[1] "number of words = 226"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "0.0330748371873207 is too small, trying again"
+[1] "attempt number 4"
+[1] "webshot png file size = 50211"
+[1] "number of words = 226"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "0.049612255780981 is too small, trying again"
+[1] "attempt number 5"
+[1] "webshot png file size = 50846"
+[1] "number of words = 226"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "0.0744183836714715 is too small, trying again"
+[1] "../wordclouds/UPI/XPANX04.png failed..................."
+[1] "XPANX04"
 [1] "1 of 200 completed"
 [1] ".............................................."
-[1] "starting ../wordclouds/UPI/MDEIS71.png"
+[1] "starting ../wordclouds/UPI/CRENZ63.png"
 [1] "attempt number 1"
-[1] "widget html file size = 7084"
 [1] "webshot png file size = 11492"
 [1] "number of words = 350"
 [1] "webshot complete"
 [1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/MDEIS71.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "12 is too small, trying again"
+convert: geometry does not contain image `../wordclouds/UPI/CRENZ63.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
 [1] "attempt number 2"
-[1] "widget html file size = 7084"
 [1] "webshot png file size = 11492"
 [1] "number of words = 350"
 [1] "webshot complete"
 [1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/MDEIS71.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "18 is too small, trying again"
+convert: geometry does not contain image `../wordclouds/UPI/CRENZ63.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
 [1] "attempt number 3"
-[1] "widget html file size = 7084"
 [1] "webshot png file size = 11492"
 [1] "number of words = 350"
 [1] "webshot complete"
 [1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/MDEIS71.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "27 is too small, trying again"
+convert: geometry does not contain image `../wordclouds/UPI/CRENZ63.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
 [1] "attempt number 4"
-[1] "widget html file size = 7084"
 [1] "webshot png file size = 11492"
 [1] "number of words = 350"
 [1] "webshot complete"
 [1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/MDEIS71.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "40.5 is too small, trying again"
+convert: geometry does not contain image `../wordclouds/UPI/CRENZ63.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
 [1] "attempt number 5"
-[1] "widget html file size = 7084"
 [1] "webshot png file size = 11492"
 [1] "number of words = 350"
 [1] "webshot complete"
 [1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/MDEIS71.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "60.75 is too small, trying again"
-[1] "../wordclouds/UPI/MDEIS71.png failed..................."
-[1] "MDEIS71"
+convert: geometry does not contain image `../wordclouds/UPI/CRENZ63.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
+[1] "../wordclouds/UPI/CRENZ63.png failed..................."
+[1] "CRENZ63"
 [1] "2 of 200 completed"
 [1] ".............................................."
-[1] "starting ../wordclouds/UPI/RYUXX03.png"
+[1] "starting ../wordclouds/UPI/EWALK98.png"
 [1] "attempt number 1"
-[1] "widget html file size = 2618"
-[1] "webshot png file size = 82763"
-[1] "number of words = 70"
+[1] "webshot png file size = 25485"
+[1] "number of words = 88"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "attempting resizing..."
-[1] "attempting optipng compression..."
-** Processing: ../wordclouds/UPI/RYUXX03.png
-600x439 pixels, 3x8 bits/pixel, RGB
-Input IDAT size = 45212 bytes
-Input file size = 45497 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 34951
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 34951
-
-Output IDAT size = 34951 bytes (10261 bytes decrease)
-Output file size = 35224 bytes (10273 bytes = 22.58% decrease)
-
-[1] "RYUXX03"
+[1] "0.0141383370620823 is too small, trying again"
+[1] "attempt number 2"
+[1] "webshot png file size = 27307"
+[1] "number of words = 88"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "0.0212075055931234 is too small, trying again"
+[1] "attempt number 3"
+[1] "webshot png file size = 29942"
+[1] "number of words = 88"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "0.0318112583896851 is too small, trying again"
+[1] "attempt number 4"
+[1] "webshot png file size = 25074"
+[1] "number of words = 88"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "0.0477168875845277 is too small, trying again"
+[1] "attempt number 5"
+[1] "webshot png file size = 22056"
+[1] "number of words = 88"
+[1] "webshot complete"
+[1] "attempting cropping..."
+[1] "0.0715753313767915 is too small, trying again"
+[1] "../wordclouds/UPI/EWALK98.png failed..................."
+[1] "EWALK98"
 [1] "3 of 200 completed"
 [1] ".............................................."
-[1] "starting ../wordclouds/UPI/AALJA49.png"
+[1] "starting ../wordclouds/UPI/JAPIT74.png"
 [1] "attempt number 1"
-[1] "widget html file size = 2456"
-[1] "webshot png file size = 96117"
-[1] "number of words = 60"
+[1] "webshot png file size = 11492"
+[1] "number of words = 65"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "attempting resizing..."
-[1] "attempting optipng compression..."
-** Processing: ../wordclouds/UPI/AALJA49.png
-600x387 pixels, 3x8 bits/pixel, RGB
-Input IDAT size = 43438 bytes
-Input file size = 43723 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 34383
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 34383
-
-Output IDAT size = 34383 bytes (9055 bytes decrease)
-Output file size = 34656 bytes (9067 bytes = 20.74% decrease)
-
-[1] "AALJA49"
+convert: geometry does not contain image `../wordclouds/UPI/JAPIT74.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
+[1] "attempt number 2"
+[1] "webshot png file size = 11492"
+[1] "number of words = 65"
+[1] "webshot complete"
+[1] "attempting cropping..."
+convert: geometry does not contain image `../wordclouds/UPI/JAPIT74.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
+[1] "attempt number 3"
+[1] "webshot png file size = 11492"
+[1] "number of words = 65"
+[1] "webshot complete"
+[1] "attempting cropping..."
+convert: geometry does not contain image `../wordclouds/UPI/JAPIT74.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
+[1] "attempt number 4"
+[1] "webshot png file size = 11492"
+[1] "number of words = 65"
+[1] "webshot complete"
+[1] "attempting cropping..."
+convert: geometry does not contain image `../wordclouds/UPI/JAPIT74.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
+[1] "attempt number 5"
+[1] "webshot png file size = 11492"
+[1] "number of words = 65"
+[1] "webshot complete"
+[1] "attempting cropping..."
+convert: geometry does not contain image `../wordclouds/UPI/JAPIT74.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
+[1] "../wordclouds/UPI/JAPIT74.png failed..................."
+[1] "JAPIT74"
 [1] "4 of 200 completed"
 [1] ".............................................."
-[1] "starting ../wordclouds/UPI/SMUTT91.png"
+[1] "starting ../wordclouds/UPI/DFMCM17.png"
 [1] "attempt number 1"
-[1] "widget html file size = 2409"
-[1] "webshot png file size = 103875"
-[1] "number of words = 55"
+[1] "webshot png file size = 11492"
+[1] "number of words = 350"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "6.4 is too big, trying again"
+convert: geometry does not contain image `../wordclouds/UPI/DFMCM17.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
 [1] "attempt number 2"
-[1] "widget html file size = 2409"
-[1] "webshot png file size = 196171"
-[1] "number of words = 55"
+[1] "webshot png file size = 11492"
+[1] "number of words = 350"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "5.12 is too big, trying again"
+convert: geometry does not contain image `../wordclouds/UPI/DFMCM17.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
 [1] "attempt number 3"
-[1] "widget html file size = 2409"
-[1] "webshot png file size = 186573"
-[1] "number of words = 55"
+[1] "webshot png file size = 11492"
+[1] "number of words = 350"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "4.096 is too big, trying again"
+convert: geometry does not contain image `../wordclouds/UPI/DFMCM17.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
 [1] "attempt number 4"
-[1] "widget html file size = 2410"
-[1] "webshot png file size = 45998"
-[1] "number of words = 55"
+[1] "webshot png file size = 11492"
+[1] "number of words = 350"
 [1] "webshot complete"
 [1] "attempting cropping..."
+convert: geometry does not contain image `../wordclouds/UPI/DFMCM17.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
 [1] "attempt number 5"
-[1] "widget html file size = 2410"
-[1] "webshot png file size = 244054"
-[1] "number of words = 55"
+[1] "webshot png file size = 11492"
+[1] "number of words = 350"
 [1] "webshot complete"
 [1] "attempting cropping..."
-[1] "3.2768 is too big, trying again"
-[1] "../wordclouds/UPI/SMUTT91.png failed..................."
-[1] "SMUTT91"
+convert: geometry does not contain image `../wordclouds/UPI/DFMCM17.png' @ warning/attribute.c/GetImageBoundingBox/501.
+[1] "NA is too small, trying again"
+[1] "../wordclouds/UPI/DFMCM17.png failed..................."
+[1] "DFMCM17"
 [1] "5 of 200 completed"
 [1] ".............................................."
-[1] "starting ../wordclouds/UPI/MRODR48.png"
+[1] "starting ../wordclouds/UPI/RUSSE84.png"
 [1] "attempt number 1"
-[1] "widget html file size = 6374"
-[1] "webshot png file size = 11492"
-[1] "number of words = 305"
+[1] "webshot png file size = 31846"
+[1] "number of words = 99"
 [1] "webshot complete"
 [1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/MRODR48.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "12 is too small, trying again"
+[1] "0.0144414438345771 is too small, trying again"
 [1] "attempt number 2"
-[1] "widget html file size = 6374"
-[1] "webshot png file size = 11492"
-[1] "number of words = 305"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/MRODR48.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "18 is too small, trying again"
-[1] "attempt number 3"
-[1] "widget html file size = 6374"
-[1] "webshot png file size = 11492"
-[1] "number of words = 305"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/MRODR48.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "27 is too small, trying again"
-[1] "attempt number 4"
-[1] "widget html file size = 6374"
-[1] "webshot png file size = 11492"
-[1] "number of words = 305"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/MRODR48.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "40.5 is too small, trying again"
-[1] "attempt number 5"
-[1] "widget html file size = 6374"
-[1] "webshot png file size = 11492"
-[1] "number of words = 305"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/MRODR48.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "60.75 is too small, trying again"
-[1] "../wordclouds/UPI/MRODR48.png failed..................."
-[1] "MRODR48"
-[1] "6 of 200 completed"
-[1] ".............................................."
-[1] "starting ../wordclouds/UPI/DEUTS12.png"
-[1] "attempt number 1"
-[1] "widget html file size = 2354"
-[1] "webshot png file size = 11492"
-[1] "number of words = 53"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/DEUTS12.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "12 is too small, trying again"
-[1] "attempt number 2"
-[1] "widget html file size = 2354"
-[1] "webshot png file size = 11492"
-[1] "number of words = 53"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/DEUTS12.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "18 is too small, trying again"
-[1] "attempt number 3"
-[1] "widget html file size = 2354"
-[1] "webshot png file size = 11492"
-[1] "number of words = 53"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/DEUTS12.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "27 is too small, trying again"
-[1] "attempt number 4"
-[1] "widget html file size = 2354"
-[1] "webshot png file size = 11492"
-[1] "number of words = 53"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/DEUTS12.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "40.5 is too small, trying again"
-[1] "attempt number 5"
-[1] "widget html file size = 2354"
-[1] "webshot png file size = 11492"
-[1] "number of words = 53"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/DEUTS12.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "60.75 is too small, trying again"
-[1] "../wordclouds/UPI/DEUTS12.png failed..................."
-[1] "DEUTS12"
-[1] "7 of 200 completed"
-[1] ".............................................."
-[1] "starting ../wordclouds/UPI/PMAGA62.png"
-[1] "attempt number 1"
-[1] "widget html file size = 2049"
-[1] "webshot png file size = 106440"
-[1] "number of words = 31"
-[1] "webshot complete"
-[1] "attempting cropping..."
-[1] "attempting resizing..."
-[1] "attempting optipng compression..."
-** Processing: ../wordclouds/UPI/PMAGA62.png
-600x384 pixels, 3x8 bits/pixel, RGB
-Input IDAT size = 47665 bytes
-Input file size = 47950 bytes
-
-Trying:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 34612
-  zc = 9  zm = 8  zs = 1  f = 0  zc = 1  zm = 8  zs = 2  f = 0  zc = 9  zm = 8  zs = 3  f = 0  zc = 9  zm = 8  zs = 0  f = 5  zc = 9  zm = 8  zs = 1  f = 5  zc = 1  zm = 8  zs = 2  f = 5  zc = 9  zm = 8  zs = 3  f = 5                               
-Selecting parameters:
-  zc = 9  zm = 8  zs = 0  f = 0		IDAT size = 34612
-
-Output IDAT size = 34612 bytes (13053 bytes decrease)
-Output file size = 34885 bytes (13065 bytes = 27.25% decrease)
-
-[1] "PMAGA62"
-[1] "8 of 200 completed"
-[1] ".............................................."
-[1] "starting ../wordclouds/UPI/JEROW76.png"
-[1] "attempt number 1"
-[1] "widget html file size = 2221"
-[1] "webshot png file size = 11492"
-[1] "number of words = 41"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/JEROW76.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "12 is too small, trying again"
-[1] "attempt number 2"
-[1] "widget html file size = 2221"
-[1] "webshot png file size = 11492"
-[1] "number of words = 41"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/JEROW76.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "18 is too small, trying again"
-[1] "attempt number 3"
-[1] "widget html file size = 2221"
-[1] "webshot png file size = 11492"
-[1] "number of words = 41"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/JEROW76.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "27 is too small, trying again"
-[1] "attempt number 4"
-[1] "widget html file size = 2221"
-[1] "webshot png file size = 11492"
-[1] "number of words = 41"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/JEROW76.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "40.5 is too small, trying again"
-[1] "attempt number 5"
-[1] "widget html file size = 2221"
-[1] "webshot png file size = 11492"
-[1] "number of words = 41"
-[1] "webshot complete"
-[1] "attempting cropping..."
-convert: geometry does not contain image `../wordclouds/UPI/JEROW76.png' @ warning/attribute.c/GetImageBoundingBox/501.
-[1] "60.75 is too small, trying again"
-[1] "../wordclouds/UPI/JEROW76.png failed..................."
-[1] "JEROW76"
-[1] "9 of 200 completed"
-[1] ".............................................."
-[1] "starting ../wordclouds/UPI/SMCRO92.png"
-[1] "attempt number 1"
-[1] "widget html file size = 2402"
-[1] "webshot png file size = 503257"
-[1] "number of words = 55"
-[1] "webshot complete"
-[1] "attempting cropping..."
-[1] "6.4 is too big, trying again"
-[1] "attempt number 2"
-[1] "widget html file size = 2404"
-[1] "webshot png file size = 528950"
-[1] "number of words = 55"
-[1] "webshot complete"
-[1] "attempting cropping..."
-[1] "5.12 is too big, trying again"
-[1] "attempt number 3"
-[1] "widget html file size = 2404"
-[1] "webshot png file size = 503492"
-[1] "number of words = 55"
-[1] "webshot complete"
-[1] "attempting cropping..."
