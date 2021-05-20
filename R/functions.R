@@ -253,7 +253,6 @@ wordcloud.maker <- function(freq, col, png.file){
 	print(paste('starting',png.file))
 	error <- FALSE
 	if(class(freq)!='data.frame')error <- TRUE
-	error.connection <- file('../UPI/errors.txt')
 
 	if(!error){
 		# adjust the frequency of words by their physical length, as the largest words (given their frequency AND size) should be centred first	
@@ -345,6 +344,7 @@ wordcloud.maker <- function(freq, col, png.file){
 	# remove any failures and store in error log, for manual checking
 	if(error){
 		unlink(png.file)
+		error.connection <- file('../UPI/errors.txt')
 		old <- readLines(error.connection)
 		new <- unique(c(old, png.file))
 		writeLines(new, error.connection)
