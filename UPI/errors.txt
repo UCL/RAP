@@ -31,3 +31,7 @@
 ../wordclouds/UPI/SFDOW09.png
 ../wordclouds/UPI/PPAYO26.png
 ../wordclouds/departments/F75.png
+../wordclouds/UPI/LESAC47.png
+../wordclouds/UPI/EYIGI30.png
+../wordclouds/UPI/RBURG33.png
+../wordclouds/UPI/FJSBR48.png
