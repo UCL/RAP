@@ -250,7 +250,8 @@ wordcloud.maker <- function(freq, col, png.file){
 	print(paste('starting',png.file))
 	error <- FALSE
 	if(class(freq)!='data.frame')error <- TRUE
-	
+	error.connection <- file('../UPI/errors.txt')
+
 	if(!error){
 		# adjust the frequency of words by their physical length, as the largest words (given their frequency AND size) should be centred first	
 		w <- c(60,60,52,60,60,30,60,60,25,25,52,25,87,60,60,60,60,35,52,30,60,52,77,52,52,52)
@@ -270,7 +271,6 @@ wordcloud.maker <- function(freq, col, png.file){
 		size <- 12/weighted.word.length 
 
 		# various constants and starting conditions
-		error.connection <- file('../UPI/errors.txt')
 		html.file <- 'tmp.html'	
 		width <- 2200
 		height <- round(width/1.5)	
@@ -298,7 +298,7 @@ wordcloud.maker <- function(freq, col, png.file){
 
 			# remove intermediate temp files
 			file.remove(html.file)
-      		unlink('tmp_files', recursive=TRUE)
+      			unlink('tmp_files', recursive=TRUE)
 			print('webshot complete')
 
 			# crop white borders with imagemagick
