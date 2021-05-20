@@ -73,6 +73,8 @@ extract.words <- function(discovery, iris, exclude, ud_model){
         single[single=='gammon'] <- 'gamma'
         single[single=='mitochondrial'] <- 'mitochondria'
         single[single=='mitochondrion'] <- 'mitochondria'
+        single[single=='beton'] <- 'beta'
+
         freq$single <- single
 
         # combine the counts of singular and plurals
