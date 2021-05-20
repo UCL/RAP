@@ -101,6 +101,8 @@ return(UPIs)}
 #-------------------------------------------------------------------------------------------------------
 get.discovery.summary <- function(urls){
 
+        if(length(urls)==0)return(NULL)
+
         names <- c(     'eprintid','rev_number','userid',
                         'title','ispublished',
                         'divisions','keywords','abstract',
