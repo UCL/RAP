@@ -179,6 +179,7 @@ get.discovery.urls.for.department <- function(dept){
         # extract only the links to discovery papers
         i <- grepl("https://discovery.ucl.ac.uk/id/eprint/", all.links)
         urls <- all.links[i]
+        urls <- urls[!is.na(urls)]
 return(urls)}
 #-------------------------------------------------------------------------------------------------------
 get.discovery.urls.for.upi <- function(upi){
@@ -193,7 +194,7 @@ get.discovery.urls.for.upi <- function(upi){
         # extract only the links to discovery papers
         i <- grepl("https://discovery.ucl.ac.uk/id/eprint/", all.links)
         urls <- all.links[i]
-
+        urls <- urls[!is.na(urls)]
 return(urls)}
 #-------------------------------------------------------------------------------------------------------
 get.exclusions <- function(upi=NA){
