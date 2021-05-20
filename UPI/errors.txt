@@ -19,3 +19,15 @@
 ../wordclouds/UPI/FMAZZ98.png
 ../wordclouds/UPI/CMOOR45.png
 ../wordclouds/UPI/FKENN56.png
+../wordclouds/UPI/RSHAR29.png
+../wordclouds/UPI/JFCRI04.png
+../wordclouds/UPI/VSCKU20.png
+../wordclouds/UPI/FEKYL95.png
+../wordclouds/UPI/MZBOR62.png
+../wordclouds/UPI/LRANG97.png
+../wordclouds/UPI/AROSS47.png
+../wordclouds/UPI/HVILA32.png
+../wordclouds/UPI/VENEH09.png
+../wordclouds/UPI/SFDOW09.png
+../wordclouds/UPI/PPAYO26.png
+../wordclouds/departments/F75.png
