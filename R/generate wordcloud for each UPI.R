@@ -5,7 +5,7 @@
 # overheads
 #-------------------------------------------------------------------------------------------
 source('boilerplate.R')
-all.UPIs <- get.all.UPIs('../UPI')
+all.UPIs <- get.all.UPIs('../tools/UPI')
 cloud.png <- list.files('../wordclouds/UPI')
 
 # remove any wordclouds that are no longer at UCL
@@ -35,6 +35,9 @@ for(n in sample(1:N)){
 	urls <- discovery <- iris <- exclude <- freq <- NULL
 	
 	upi <- UPIs[n]
+
+	print('----------------------------------------------------------')
+	print(paste('Attempting',upi,count,'of',N))
 	
 	# get discovery URLs
 	urls <- try(get.discovery.urls.for.upi(upi))
@@ -57,8 +60,7 @@ for(n in sample(1:N)){
 	wordcloud.maker(freq, col='steelblue', png.file=png.file)
 
 	# housekeeping
-	print(upi)
 	if(is.null(freq))print(paste(upi,'failed'))
-	print(paste(count,'of',N,'completed'))
+
 	}
 #-------------------------------------------------------------------------------------------

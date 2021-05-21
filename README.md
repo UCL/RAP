@@ -16,15 +16,17 @@ Wordcloud images can be browsed in the 'wordclouds' folder, and directly embedde
 
 <a href="https://www.ucl.ac.uk"><img src="https://github.com/UCL/RAP/blob/main/wordclouds/UPI/ACINI83.png"  height="300"/></a>
 
-If required, word exclusions for a specific UPI can be placed in a .txt file in 'exclusions/individuals'.
+Word exclusions for a specific UPI can be placed in /tools/exclusions/individuals/<UPI>.txt
+
+Unusual word changes can be specified by appending /tools/corrections/corrections.csv
 
 ### Current protocol
 The Molecular And Cultural Evolution laboratory (MACE-lab) server regulary automatically webscrapes publications from UCL Discovery, generates wordclouds, summary statistics etc, for any UPI with 5 or more publications and for departments with more than 10 publications.
 UCL comprises several hundred departments and tens of thousands of UPIs, making this process computationally costly. Therefore, only the least recently updated 200 UPIs and 10 departments are updated each day.
 
 The following procedure is automatically performed nightly using scripts in the R folder:
-- Web scrape Discovery to update UPIs in /UPI/everyone.txt and /departments/departments.txt
-- Web scrape research keywords from IRIS and Discovery for researchers in /everyone.txt, and keywords from Discovery for departments in /departments.txt.
+- Web scrape Discovery to update  /tools/UPI/everyone.txt and /tools/departments/departments.txt
+- Web scrape research keywords from IRIS and Discovery for researchers and keywords from Discovery for departments
 - Combine keywords to form a frequency table for each UPI/group/department. Words from abstracts are weighted x1, titles are weighted x3, keywords are weighted x6, IRIS keywords are weighted x15.
 - Various cleaning procedures, including truncation to the most frequent 350 words.
 - Wordcloud images (.png) generated using wordcloud2 (R package) for each UPI and stored in the folder 'wordclouds'.

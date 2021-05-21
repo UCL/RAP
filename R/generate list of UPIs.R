@@ -16,7 +16,7 @@ df <- as.data.frame(t(matrix(x,2,length(x)/2))); names(df) <- c('upi','counts')
 df[,2] <- as.numeric(df[,2])
 df <- subset(df,counts>=min)
 x <- as.character(df$upi)
-writeLines(x,'../UPI/everyone.txt')
+writeLines(x,'../tools/UPI/everyone.txt')
 #-------------------------------------------------------------------------------------------
 
 

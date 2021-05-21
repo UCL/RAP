@@ -9,7 +9,7 @@
 # overheads
 #-------------------------------------------------------------------------------------------
 source('boilerplate.R')
-departments <- readLines('../departments/departments.txt')
+departments <- readLines('../tools/departments/departments.txt')
 cloud.png <- list.files('../wordclouds/departments')
 
 # remove any departments that are no longer at UCL

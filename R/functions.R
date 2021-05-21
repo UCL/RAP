@@ -18,7 +18,6 @@ clean.to.list <- function(x, exclude){
         x <- gsub('-',' ',x,fixed=T)
         x <- gsub(':',' ',x,fixed=T)
         x <- gsub('&',' ',x,fixed=T)
-
         x <- gsub(' ',',',x,fixed=T)
         x <- strsplit(x,split=',')[[1]]
         x <- x[x!='']
@@ -65,17 +64,13 @@ extract.words <- function(discovery, iris, exclude, ud_model){
         freq <- txt_freq(words)
         if(nrow(freq)>400)freq <- freq[1:400,]
 
-        # singularise. Reversing some peculiarities
+        # singularise
         W <- nrow(freq)
         single <- character(W)
         for(w in 1:W)single[w] <- singularize(freq$key[w])
-        single[single=='specie'] <- 'species'
-        single[single=='gammon'] <- 'gamma'
-        single[single=='mitochondrial'] <- 'mitochondria'
-        single[single=='mitochondrion'] <- 'mitochondria'
-        single[single=='beton'] <- 'beta'
 
-        freq$single <- single
+	  # correct any peculiarities	
+        freq$single <- corrector(single)
 
         # combine the counts of singular and plurals
         keep <- unique(single)
@@ -105,8 +100,6 @@ return(UPIs)}
 #-------------------------------------------------------------------------------------------------------
 get.discovery.summary <- function(urls){
 
-        if(length(urls)==0)return(NULL)
-
         names <- c(     'eprintid','rev_number','userid',
                         'title','ispublished',
                         'divisions','keywords','abstract',
@@ -120,10 +113,12 @@ get.discovery.summary <- function(urls){
         urls <- urls[i]
         urls <- unique(urls)
         urls <- urls[!is.na(urls)]
+        urls <- urls[urls!='']
 
         # extract required data
         U <- length(urls)
         N <- length(id)
+        if(U==0)return(NULL) 	
         data <- data.frame(matrix(,U,N)); names(data) <- names
         for(u in 1:U){
                 page <- NA
@@ -203,11 +198,11 @@ get.discovery.urls.for.upi <- function(upi){
         urls <- urls[!is.na(urls)]
 return(urls)}
 #-------------------------------------------------------------------------------------------------------
-get.exclusions <- function(upi=NA){
+get.exclusions <- function(upi=NA,folder='../tools/exclusions'){
 
         # general exclusions for everyone
-        exc <- readLines('../exclusions/everyone.txt')
-        file <- paste('../exclusions/individuals/',upi,'.txt',sep='')
+        exc <- readLines(paste(folder,'/everyone.txt',sep=''))
+        file <- paste(folder,'/individuals/',upi,'.txt',sep='')
         if(file.exists(file))exc <- c(exc,readLines(file))
 
 return(exc)}
@@ -244,7 +239,7 @@ return(page)}
 
 
 #-------------------------------------------------------------------------------------------------------
-wordcloud.maker <- function(freq, col, png.file){
+wordcloud.maker <- function(freq, col, png.file, error.file='../tools/errors/errors.txt'){
 
 	# Choosing the size argument for wordcloud2 is critical and tricky.
 	# ad hoc approach below is a start, but doesnt always solve the problem.
@@ -348,7 +343,7 @@ wordcloud.maker <- function(freq, col, png.file){
 	# remove any failures and store in error log, for manual checking
 	if(error){
 		unlink(png.file)
-		error.connection <- file('../UPI/errors.txt')
+		error.connection <- file(error.file)
 		old <- readLines(error.connection)
 		new <- unique(c(old, png.file))
 		writeLines(new, error.connection)
@@ -356,8 +351,18 @@ wordcloud.maker <- function(freq, col, png.file){
 		print(paste(png.file,'failed...................'))
 		}
 	}
-
-
+#-------------------------------------------------------------------------------------------------------
+correction.tidy <- function(file='../tools/corrections/corrections.csv'){
+	d <- read.csv(file)
+	sorted <- d[order(d$from),]
+	write.csv(sorted,file=file, row.names=FALSE)
+	} 
+#-------------------------------------------------------------------------------------------------------
+corrector <- function(x,file='../tools/corrections/corrections.csv'){
+	d <- read.csv(file)
+	for(n in 1:nrow(d))x[x==d$from[n]]<- d$to[n]
+return(x)}
+#-------------------------------------------------------------------------------------------------------	
 
 #-------------------------------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------------------------------

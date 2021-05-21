@@ -21,7 +21,7 @@ for(n in 1:nrow(df))df$exists[n] <- url.exists(paste('https://discovery.ucl.ac.u
 df <- subset(df, exists)
 
 x <- as.character(df$code)
-writeLines(x,'../departments/departments.txt')
+writeLines(x,'../tools/departments/departments.txt')
 #-------------------------------------------------------------------------------------------
 
 

@@ -3,6 +3,9 @@
 
 # UCL-RAP build history
 
+## 2021-05-21
+* Specific word corrections can be made by appending to /tools/corrections/corrections.csv
+
 ## 2021-05-18
 * Auto resizing to 600 px width. Height will vary.
 * New sizing algorithm also considers relative width of characters.
