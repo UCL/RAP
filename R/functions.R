@@ -248,8 +248,6 @@ wordcloud.maker <- function(freq, col, png.file, error.file='../tools/errors/err
 	# therefore we also loop for several attempts, with various size changes, until constraints are satisfied.
 	# rough relative widths of lowercase letters, taken from https://gist.github.com/imaurer/d330e68e70180c985b380f25e195b90c
 
-	print('----------------------------------------------------------------------')
-	print(paste('starting',png.file))
 	error <- FALSE
 	if(class(freq)!='data.frame')error <- TRUE
 
