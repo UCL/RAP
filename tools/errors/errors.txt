@@ -106,3 +106,14 @@
 ../wordclouds/UPI/FLEIG09.png
 ../wordclouds/UPI/PMATO08.png
 ../wordclouds/UPI/SYAMP96.png
+../wordclouds/UPI/TMICK71.png
+../wordclouds/UPI/CMOOR45.png
+../wordclouds/UPI/NROKE52.png
+../wordclouds/UPI/MSAYE73.png
+../wordclouds/UPI/XMLLE28.png
+../wordclouds/UPI/MEKAL04.png
+../wordclouds/UPI/NSREE63.png
+../wordclouds/UPI/MFELL97.png
+../wordclouds/UPI/SFARI53.png
+../wordclouds/UPI/JAREC48.png
+../wordclouds/departments/J40.png
