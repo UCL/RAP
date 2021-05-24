@@ -160,9 +160,10 @@ get.discovery.urls.for.department <- function(dept){
                 }
         top.page <- reader(x)
         page.links <- top.page%>% html_nodes("a") %>% html_attr( "href")
-        i.1 <- grep(glob2rx('20*.html'),page.links)
-        i.2 <- grep(glob2rx('19*.html'),page.links)
-        page.links <- page.links[c(i.1,i.2)]
+        i.1 <- grep(glob2rx('19*.html'),page.links)
+        i.2 <- grep(glob2rx('20*.html'),page.links)
+        i.3 <- grep(glob2rx('21*.html'),page.links)
+        page.links <- page.links[c(i.1,i.2,i.3)]
         years <- length(page.links)
         all.links <- c()
         if(years>0){

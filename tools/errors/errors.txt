@@ -117,3 +117,15 @@
 ../wordclouds/UPI/SFARI53.png
 ../wordclouds/UPI/JAREC48.png
 ../wordclouds/departments/J40.png
+../wordclouds/UPI/LAREY00.png
+../wordclouds/UPI/MGDOE34.png
+../wordclouds/UPI/JEGRA41.png
+../wordclouds/UPI/ASORB71.png
+../wordclouds/UPI/BVANN78.png
+../wordclouds/UPI/TPSCH56.png
+../wordclouds/UPI/RKUFF99.png
+../wordclouds/UPI/MECRI22.png
+../wordclouds/UPI/MAHOQ13.png
+../wordclouds/UPI/RISSA97.png
+../wordclouds/UPI/LASHE77.png
+../wordclouds/departments/F15.png

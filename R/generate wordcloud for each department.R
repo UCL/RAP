@@ -30,13 +30,17 @@ if(length(departments)>N)departments <- sample(departments,size=N)
 #-------------------------------------------------------------------------------------------
 # main loop
 #-------------------------------------------------------------------------------------------
+count <- 0
 N <- length(departments)
 for(n in sample(1:N)){
 
+	count <- count + 1
 	dept <- urls <- discovery <- exclude <- freq <- NULL
-
 	dept <- departments[n]
 	
+	print('----------------------------------------------------------')
+	print(paste('Attempting',dept,count,'of',N))
+
 	# get discovery URLs and process if 10 or more pubs
 	urls <- try(get.discovery.urls.for.department(dept))
 	if(length(urls)<10)next
@@ -49,14 +53,13 @@ for(n in sample(1:N)){
 
 	# analyse frequencies of words 
 	freq <- extract.words(discovery, iris=NULL, exclude, ud_model)
+	if(nrow(freq)<20)freq <- NULL
 
 	# generate word clouds and save
 	png.file <- paste('../wordclouds/departments/',dept,'.png',sep='')
 	wordcloud.maker(freq, col='steelblue', png.file=png.file)
 
 	# housekeeping
-	print(dept)
-	print(Sys.time())
 	if(is.null(freq))print(paste(dept,'failed'))
 	}
 #-------------------------------------------------------------------------------------------

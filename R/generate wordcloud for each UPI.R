@@ -31,9 +31,7 @@ N <- length(UPIs)
 for(n in sample(1:N)){
 
 	count <- count + 1
-
 	urls <- discovery <- iris <- exclude <- freq <- NULL
-	
 	upi <- UPIs[n]
 
 	print('----------------------------------------------------------')
