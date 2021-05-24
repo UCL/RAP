@@ -1,0 +1,7 @@
+
+# All wordclouds are updated regularly, so tracking them is wasteful.
+# Only the R code, License and readme needs to be tracked.
+/tools
+/wordclouds
+/log
+
