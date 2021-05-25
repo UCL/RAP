@@ -11,12 +11,12 @@ Server automatically web scrapes keywords from UCL researcher profiles, analyses
 Wordcloud images can be browsed in the 'wordclouds' folder, and directly embedded into any webpage (such as a departmental people page) using the github URL. For example:
 
 ```html
-<a href="https://www.ucl.ac.uk"><img src="https://github.com/UCL/RAP/blob/main/wordclouds/UPI/ACINI83.png"  height="300"/></a>
+<a href="https://www.ucl.ac.uk"><img src="https://github.com/UCL/RAP/blob/main/wordclouds/UPI/MMTIS18.png"  height="300"/></a>
 ```
 
-<a href="https://www.ucl.ac.uk"><img src="https://github.com/UCL/RAP/blob/main/wordclouds/UPI/ACINI83.png"  height="300"/></a>
+<a href="https://www.ucl.ac.uk"><img src="https://github.com/UCL/RAP/blob/main/wordclouds/UPI/MMTIS18.png"  height="300"/></a>
 
-Word exclusions for a specific UPI can be placed in /tools/exclusions/individuals/<UPI>.txt
+Word exclusions for a specific UPI can be placed in /tools/exclusions/individuals/\<UPI\>.txt
 
 Unusual word changes can be specified by appending /tools/corrections/corrections.csv
 
