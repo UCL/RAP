@@ -180,3 +180,14 @@
 ../wordclouds/UPI/KMAOX69.png
 ../wordclouds/UPI/SLUOX44.png
 ../wordclouds/UPI/GHOGA93.png
+../wordclouds/UPI/HARDW80.png
+../wordclouds/UPI/NGBAR11.png
+../wordclouds/UPI/RSCON91.png
+../wordclouds/UPI/AGRAP42.png
+../wordclouds/UPI/JKWON88.png
+../wordclouds/UPI/DBOUR93.png
+../wordclouds/UPI/JOCAL36.png
+../wordclouds/UPI/MWCHA98.png
+../wordclouds/UPI/EFERR34.png
+../wordclouds/UPI/EBOUC13.png
+../wordclouds/UPI/AMARA76.png
