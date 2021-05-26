@@ -169,3 +169,14 @@
 ../wordclouds/UPI/FHOFF07.png
 ../wordclouds/UPI/MALUB54.png
 ../wordclouds/UPI/JTASI80.png
+../wordclouds/UPI/AJDRA49.png
+../wordclouds/UPI/RKPAC92.png
+../wordclouds/UPI/TBISM37.png
+../wordclouds/UPI/RCHOP18.png
+../wordclouds/UPI/SANEW89.png
+../wordclouds/UPI/MOKRY35.png
+../wordclouds/UPI/GALIV58.png
+../wordclouds/UPI/DACON32.png
+../wordclouds/UPI/KMAOX69.png
+../wordclouds/UPI/SLUOX44.png
+../wordclouds/UPI/GHOGA93.png
