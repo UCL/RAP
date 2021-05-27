@@ -191,3 +191,10 @@
 ../wordclouds/UPI/EFERR34.png
 ../wordclouds/UPI/EBOUC13.png
 ../wordclouds/UPI/AMARA76.png
+../wordclouds/UPI/MMCKE03.png
+../wordclouds/UPI/HJSMI16.png
+../wordclouds/UPI/JRJWI34.png
+../wordclouds/UPI/HABEA41.png
+../wordclouds/UPI/RGUPT02.png
+../wordclouds/UPI/KAUGU91.png
+../wordclouds/UPI/SUNXX12.png
