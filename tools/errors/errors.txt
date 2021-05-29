@@ -255,3 +255,13 @@
 ../wordclouds/UPI/AEMBL72.png
 ../wordclouds/UPI/MOCON82.png
 ../wordclouds/UPI/PMEHT68.png
+../wordclouds/UPI/MTEST94.png
+../wordclouds/UPI/MJENK00.png
+../wordclouds/UPI/KKITT86.png
+../wordclouds/UPI/ASALA36.png
+../wordclouds/UPI/JNYHA86.png
+../wordclouds/UPI/NANGE90.png
+../wordclouds/UPI/MRPIT61.png
+../wordclouds/UPI/DTJON81.png
+../wordclouds/UPI/ATSOM33.png
+../wordclouds/departments/J80.png
