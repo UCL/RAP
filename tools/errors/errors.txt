@@ -265,3 +265,9 @@
 ../wordclouds/UPI/DTJON81.png
 ../wordclouds/UPI/ATSOM33.png
 ../wordclouds/departments/J80.png
+../wordclouds/UPI/SNOLL35.png
+../wordclouds/UPI/NSHOH54.png
+../wordclouds/UPI/MSAMM21.png
+../wordclouds/UPI/DAZAR48.png
+../wordclouds/UPI/SEPAR06.png
+../wordclouds/UPI/CCAST68.png
