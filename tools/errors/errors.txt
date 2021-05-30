@@ -295,3 +295,6 @@
 ../wordclouds/UPI/MAVIC81.png
 ../wordclouds/UPI/KTDUF47.png
 ../wordclouds/UPI/KJMOO67.png
+../wordclouds/UPI/WMCKE30.png
+../wordclouds/UPI/CAREE02.png
+../wordclouds/UPI/BFRIE10.png
