@@ -121,20 +121,12 @@ get.discovery.summary <- function(urls){
         if(U==0)return(NULL) 	
         data <- data.frame(matrix(,U,N)); names(data) <- names
         for(u in 1:U){
-                page <- NA
-                gc()
                 url <- urls[u]
-                if(!url.exists(url)){
-				print(paste(url,'non-existant'))
-				next
-				}
-
                 page <- reader(url)
-
                 if(is.na(page)){
                         data[u,] <- NA
                         print('page could not be read')
-				next
+			next
                         }
 
                 if(!is.na(page)){
@@ -154,11 +146,8 @@ get.discovery.urls.for.department <- function(dept){
         # find which years are available for the department
         x <- paste('https://discovery.ucl.ac.uk/view/UCL/',dept,sep='')
         print(paste('pulling data for',dept,'.......'))
-        if(!url.exists(x)){
-                print(paste(x,'url does not exist'))
-                return(NA)
-                }
         top.page <- reader(x)
+        if(is.na(top.page))return(NA)
         page.links <- top.page%>% html_nodes("a") %>% html_attr( "href")
         i.1 <- grep(glob2rx('19*.html'),page.links)
         i.2 <- grep(glob2rx('20*.html'),page.links)
@@ -227,18 +216,14 @@ get.iris.summary <- function(upi){
 return(text)}
 #-------------------------------------------------------------------------------------------------------
 reader <- function(url){
-        if(!url.exists(url))return(NA)
-
-        # was causing encoding problems, eg the title of https://discovery.ucl.ac.uk/id/eprint/10083261/
-        #download.file(url, destfile = "scrapedpage.html", quiet=TRUE)
-        #page <- read_html('scrapedpage.html', addFinalizer=F)
-        #file.remove('scrapedpage.html')      
-
-        # instead try extraction directly		
+        page <- NA
+        gc()
+        if(!url.exists(url)){
+                print(paste(url,'non-existant'))
+                return(NA)
+                }
         page <- read_html(url)	
 return(page)}
-
-
 #-------------------------------------------------------------------------------------------------------
 wordcloud.maker <- function(freq, col, png.file, error.file='../tools/errors/errors.txt'){
 
