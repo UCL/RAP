@@ -15,6 +15,7 @@ file.remove(remove)
 
 # upis that haven't been done yet
 UPIs.new <- all.UPIs[!all.UPIs %in% clouds]
+print(paste(length(UPIs.new),'UPIs still to do'))
 
 # 200 clouds that haven't been updated recently. Dont do them all.
 N <- 200

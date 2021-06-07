@@ -19,6 +19,7 @@ file.remove(remove)
 
 # departments that haven't been done yet
 departments.new <- departments[!departments %in% clouds]
+print(paste(length(departments.new),'UPIs still to do'))
 
 # 10 clouds that haven't been updated recently. Dont do them all.
 N <- 10
