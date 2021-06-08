@@ -11,6 +11,10 @@
 source('boilerplate.R')
 departments <- readLines('../tools/departments/departments.txt')
 cloud.png <- list.files('../wordclouds/departments')
+non.research <- readLines('../tools/departments/non.research.txt')
+
+# many departments are administrative not research, so wont have a useful number of publications
+departments <- departments[!departments%in%non.research]
 
 # remove any departments that are no longer at UCL
 clouds <- sub('.png','',cloud.png)
@@ -19,7 +23,6 @@ file.remove(remove)
 
 # departments that haven't been done yet
 departments.new <- departments[!departments %in% clouds]
-print(paste(length(departments.new),'UPIs still to do'))
 
 # 10 clouds that haven't been updated recently. Dont do them all.
 N <- 10
@@ -44,7 +47,10 @@ for(n in sample(1:N)){
 
 	# get discovery URLs and process if 10 or more pubs
 	urls <- try(get.discovery.urls.for.department(dept))
-	if(length(urls)<10)next
+	if(length(urls)<10){
+		print(paste(dept,'has less than 10 publications. Add to the exclusion list'))
+		next
+		}
 
 	# get discovery keywords
 	discovery <- try(get.discovery.summary(urls))
