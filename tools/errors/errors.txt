@@ -663,3 +663,6 @@
 ../wordclouds/UPI/MRENZ15.png
 ../wordclouds/UPI/FRHOD50.png
 ../wordclouds/UPI/MSYME08.png
+../wordclouds/UPI/SAMAL19.png
+../wordclouds/UPI/PVERG18.png
+../wordclouds/UPI/CAHLH99.png
