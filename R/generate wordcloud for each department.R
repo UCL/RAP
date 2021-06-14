@@ -48,7 +48,8 @@ for(n in sample(1:N)){
 	# get discovery URLs and process if 10 or more pubs
 	urls <- try(get.discovery.urls.for.department(dept))
 	if(length(urls)<10){
-		print(paste(dept,'has less than 10 publications. Add to the exclusion list'))
+		print(paste(dept,'has less than 10 publications. Added to the exclusion list'))
+		non.research <- c(non.research,dept)
 		next
 		}
 
@@ -69,4 +70,8 @@ for(n in sample(1:N)){
 	# housekeeping
 	if(is.null(freq))print(paste(dept,'failed'))
 	}
+
+non.research <- sort(non.research)
+write(non.research,file='../tools/departments/non.research.txt')
+
 #-------------------------------------------------------------------------------------------

@@ -7,6 +7,10 @@
 source('boilerplate.R')
 all.UPIs <- get.all.UPIs('../tools/UPI')
 cloud.png <- list.files('../wordclouds/UPI')
+non.research <- readLines('../tools/UPI/non.research.txt')
+
+# many UPIs are administrative not research, so wont have a useful number of publications
+all.UPIs <- all.UPIs[!all.UPIs%in%non.research]
 
 # remove any wordclouds that are no longer at UCL
 clouds <- sub('.png','',cloud.png)
@@ -62,4 +66,7 @@ for(n in sample(1:N)){
 	if(is.null(freq))print(paste(upi,'failed'))
 
 	}
+
+non.research <- sort(non.research)
+write(non.research,file='../tools/UPI/non.research.txt')
 #-------------------------------------------------------------------------------------------
