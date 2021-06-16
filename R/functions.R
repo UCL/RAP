@@ -161,6 +161,10 @@ get.discovery.urls.for.department <- function(dept){
                 # get the summary page for a whole year for department
                 x <- paste('https://discovery.ucl.ac.uk/view/UCL/',dept,'/',page.links[y],sep='')
                 page <- reader(x)
+                if(is.na(page)){
+                        print(paste(page,'page could not be read'))
+			next
+                        }
 
                 # extract all links
                 links <- page%>% html_nodes("a") %>% html_attr( "href")
@@ -178,6 +182,10 @@ get.discovery.urls.for.upi <- function(upi){
         # summary page for UPI
         x <- paste('https://discovery.ucl.ac.uk/view/people/',upi,'.html',sep='')
         page <- reader(x)
+        if(is.na(page)){
+                print(paste(page,'page could not be read'))
+		return(NA)
+                }
 
         # extract all links
         all.links <- page%>% html_nodes("a") %>% html_attr( "href")
@@ -203,6 +211,10 @@ get.iris.summary <- function(upi){
         url.2 <- paste('https://iris.ucl.ac.uk/iris/browse/profile/researchActivities?upi',upi,sep='=')
         page.1 <- reader(url.1)
         page.2 <- reader(url.2)
+        if(is.na(page.1)|is.na(page.2)){
+                print(paste(page.1,'or',page.2,'page could not be read'))
+		return(NA)
+                }
 
         links <- page.1%>% html_nodes("a") %>% html_attr( "href")
         text <- page.1%>% html_nodes("a") %>% html_text()
