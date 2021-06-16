@@ -695,3 +695,5 @@
 ../wordclouds/UPI/MESTA82.png
 ../wordclouds/UPI/BRONI67.png
 ../wordclouds/departments/J42.png
+../wordclouds/UPI/CPINN72.png
+../wordclouds/UPI/SKLIE68.png
