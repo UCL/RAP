@@ -712,3 +712,15 @@
 ../wordclouds/UPI/ALRRI14.png
 ../wordclouds/UPI/CBRID70.png
 ../wordclouds/departments/GA4.png
+../wordclouds/UPI/ASBOT93.png
+../wordclouds/UPI/SGILB75.png
+../wordclouds/UPI/ESTER48.png
+../wordclouds/UPI/JABIC12.png
+../wordclouds/UPI/KAKSI80.png
+../wordclouds/UPI/NAEDI34.png
+../wordclouds/UPI/JBENJ16.png
+../wordclouds/UPI/ARONA39.png
+../wordclouds/UPI/EFLOY44.png
+../wordclouds/UPI/RJSDH70.png
+../wordclouds/UPI/LGONZ72.png
+../wordclouds/UPI/NJAIN62.png
