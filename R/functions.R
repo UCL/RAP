@@ -317,7 +317,7 @@ wordcloud.maker <- function(freq, col, png.file, error.file='../tools/errors/err
 				size <- size * 0.8
 				}	
 			if(png.ratio>1.75 | png.ratio<1.25) print('ratio poor, trying again')	
-			if(attempt.number==6){
+			if(attempt.number==10){
 				generate <- FALSE
 				error <- TRUE
 				}
