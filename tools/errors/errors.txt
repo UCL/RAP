@@ -724,3 +724,7 @@
 ../wordclouds/UPI/RJSDH70.png
 ../wordclouds/UPI/LGONZ72.png
 ../wordclouds/UPI/NJAIN62.png
+../wordclouds/UPI/HVILA32.png
+../wordclouds/UPI/EWORS98.png
+../wordclouds/UPI/JHBUR52.png
+../wordclouds/UPI/AZAMO97.png
