@@ -295,7 +295,7 @@ wordcloud.maker <- function(freq, col, png.file, error.file='../tools/errors/err
 
 			# remove intermediate temp files
 			file.remove(html.file)
-      			unlink('tmp_files', recursive=TRUE)
+      		unlink('tmp_files', recursive=TRUE)
 			print('webshot complete')
 
 			# crop white borders with imagemagick
@@ -342,7 +342,7 @@ wordcloud.maker <- function(freq, col, png.file, error.file='../tools/errors/err
 		error.connection <- file(error.file)
 		old <- readLines(error.connection)
 		new <- unique(c(old, png.file))
-		writeLines(new, error.connection)
+		writeLines(sort(new), error.connection)
 		close(error.connection)
 		print(paste(png.file,'failed...................'))
 		}
