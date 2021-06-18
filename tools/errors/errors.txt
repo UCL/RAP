@@ -728,3 +728,7 @@
 ../wordclouds/UPI/EWORS98.png
 ../wordclouds/UPI/JHBUR52.png
 ../wordclouds/UPI/AZAMO97.png
+../wordclouds/UPI/GCOOK18.png
+../wordclouds/UPI/JJCRO10.png
+../wordclouds/UPI/RWLAN29.png
+../wordclouds/UPI/ALDOW64.png
