@@ -80,7 +80,9 @@
 ../wordclouds/UPI/ATSOM33.png
 ../wordclouds/UPI/AZAMO97.png
 ../wordclouds/UPI/AZARK42.png
+../wordclouds/UPI/AZUML60.png
 ../wordclouds/UPI/BADRX16.png
+../wordclouds/UPI/BANDE97.png
 ../wordclouds/UPI/BCMOD56.png
 ../wordclouds/UPI/BERAR46.png
 ../wordclouds/UPI/BESCH99.png
@@ -127,6 +129,7 @@
 ../wordclouds/UPI/CMHAR38.png
 ../wordclouds/UPI/CMOOR45.png
 ../wordclouds/UPI/CNEWT04.png
+../wordclouds/UPI/CPEAS90.png
 ../wordclouds/UPI/CPILO07.png
 ../wordclouds/UPI/CPINN72.png
 ../wordclouds/UPI/CPRAM80.png
@@ -527,6 +530,7 @@
 ../wordclouds/UPI/NMUKA20.png
 ../wordclouds/UPI/NNIMM92.png
 ../wordclouds/UPI/NOYCE20.png
+../wordclouds/UPI/NPARM59.png
 ../wordclouds/UPI/NPARM93.png
 ../wordclouds/UPI/NPEAC34.png
 ../wordclouds/UPI/NPELE46.png
