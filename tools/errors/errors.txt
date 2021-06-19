@@ -732,3 +732,6 @@
 ../wordclouds/UPI/JJCRO10.png
 ../wordclouds/UPI/RWLAN29.png
 ../wordclouds/UPI/ALDOW64.png
+../wordclouds/UPI/KWTUB44.png
+../wordclouds/UPI/CCAMP94.png
+../wordclouds/UPI/CCARE56.png
