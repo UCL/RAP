@@ -347,6 +347,7 @@
 ../wordclouds/UPI/JPLAW91.png
 ../wordclouds/UPI/JPMWE63.png
 ../wordclouds/UPI/JRATK98.png
+../wordclouds/UPI/JREND85.png
 ../wordclouds/UPI/JRJWI34.png
 ../wordclouds/UPI/JROLI12.png
 ../wordclouds/UPI/JSATK10.png
