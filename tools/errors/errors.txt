@@ -43,11 +43,13 @@
 ../wordclouds/UPI/ALCEA35.png
 ../wordclouds/UPI/ALDOW64.png
 ../wordclouds/UPI/ALHEA88.png
+../wordclouds/UPI/ALHIC14.png
 ../wordclouds/UPI/ALLOY21.png
 ../wordclouds/UPI/ALPVO49.png
 ../wordclouds/UPI/ALRRI14.png
 ../wordclouds/UPI/AMAAL95.png
 ../wordclouds/UPI/AMAGE08.png
+../wordclouds/UPI/AMAHM84.png
 ../wordclouds/UPI/AMALI63.png
 ../wordclouds/UPI/AMARA76.png
 ../wordclouds/UPI/AMHAR78.png
@@ -618,6 +620,7 @@
 ../wordclouds/UPI/RSSIL02.png
 ../wordclouds/UPI/RSWIL67.png
 ../wordclouds/UPI/RWLAN29.png
+../wordclouds/UPI/SABEY46.png
 ../wordclouds/UPI/SAGRI40.png
 ../wordclouds/UPI/SAMAL19.png
 ../wordclouds/UPI/SANEW89.png
