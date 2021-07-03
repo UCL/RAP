@@ -256,6 +256,7 @@
 ../wordclouds/UPI/GHOGA93.png
 ../wordclouds/UPI/GJAHA81.png
 ../wordclouds/UPI/GJAME99.png
+../wordclouds/UPI/GJIVE68.png
 ../wordclouds/UPI/GJLIP52.png
 ../wordclouds/UPI/GLING62.png
 ../wordclouds/UPI/GNUGE52.png
@@ -602,6 +603,7 @@
 ../wordclouds/UPI/RBPYN83.png
 ../wordclouds/UPI/RCBON48.png
 ../wordclouds/UPI/RCHOP18.png
+../wordclouds/UPI/RCIGM73.png
 ../wordclouds/UPI/RCONW07.png
 ../wordclouds/UPI/RCOOP25.png
 ../wordclouds/UPI/RCOUL34.png
