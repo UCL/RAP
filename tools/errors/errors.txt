@@ -379,6 +379,7 @@
 ../wordclouds/UPI/JSUNX02.png
 ../wordclouds/UPI/JSUVA17.png
 ../wordclouds/UPI/JTASI80.png
+../wordclouds/UPI/JTSAN18.png
 ../wordclouds/UPI/JWHIA70.png
 ../wordclouds/UPI/JWILT32.png
 ../wordclouds/UPI/JWNEW53.png
