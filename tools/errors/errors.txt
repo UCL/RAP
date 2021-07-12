@@ -428,6 +428,7 @@
 ../wordclouds/UPI/LBRUS94.png
 ../wordclouds/UPI/LCROU58.png
 ../wordclouds/UPI/LDENT76.png
+../wordclouds/UPI/LEEXX24.png
 ../wordclouds/UPI/LEFMC71.png
 ../wordclouds/UPI/LESAC47.png
 ../wordclouds/UPI/LFAUL21.png
