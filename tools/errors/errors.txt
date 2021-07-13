@@ -532,6 +532,7 @@
 ../wordclouds/UPI/MSECR66.png
 ../wordclouds/UPI/MSHAM12.png
 ../wordclouds/UPI/MSHEL37.png
+../wordclouds/UPI/MSMAH27.png
 ../wordclouds/UPI/MSYME08.png
 ../wordclouds/UPI/MSZYN28.png
 ../wordclouds/UPI/MTADH42.png
@@ -540,6 +541,7 @@
 ../wordclouds/UPI/MTEST94.png
 ../wordclouds/UPI/MTMCL15.png
 ../wordclouds/UPI/MTRIC91.png
+../wordclouds/UPI/MULHO63.png
 ../wordclouds/UPI/MWCHA98.png
 ../wordclouds/UPI/MXUAX99.png
 ../wordclouds/UPI/MZBOR62.png
@@ -680,6 +682,7 @@
 ../wordclouds/UPI/SHGIL51.png
 ../wordclouds/UPI/SHOUB42.png
 ../wordclouds/UPI/SJLED66.png
+../wordclouds/UPI/SKESH66.png
 ../wordclouds/UPI/SKEUP68.png
 ../wordclouds/UPI/SKLIE68.png
 ../wordclouds/UPI/SKMOR44.png
