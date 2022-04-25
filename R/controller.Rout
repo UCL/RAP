@@ -1,0 +1,57 @@
+
+R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #-------------------------------------------------------------------------------------------
+> # Single script to run all other required R scripts, so can be envoked automatically on server using CRON
+> #-------------------------------------------------------------------------------------------
+> source('boilerplate.R')
+Loading required package: SemNetDictionaries
+
+SemNetDictionaries 
+For help getting started, see <https://doi.org/10.31234/osf.io/eht87> 
+
+ Submit your own dictionary and moniker glossaries to:
+ <https://github.com/AlexChristensen/SemNetDictionaries/issues/new/choose>
+
+SemNetCleaner 
+For help getting started, see <https://doi.org/10.31234/osf.io/eht87> 
+ For bugs and errors, submit an issue to <https://github.com/AlexChristensen/SemNetCleaner/issues>
+
+WARNING: There have been major updates to the SemNetCleaner package.
+ Please see 'Package NEWS' for a detailed list of updates (see 'Changes in version 1.2.0')
+
+> install_phantomjs(force = TRUE)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   663  100   663    0     0   1462      0 --:--:-- --:--:-- --:--:--  1460
+  1 16.3M    1  175k    0     0   138k      0  0:02:00  0:00:01  0:01:59  138k 73 16.3M   73 12.0M    0     0  5433k      0  0:00:03  0:00:02  0:00:01 11.8M100 16.3M  100 16.3M    0     0  7132k      0  0:00:02  0:00:02 --:--:-- 14.9M
+phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
+> 
+> #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
+> #ud_model <- udpipe_load_model(ud_model$file_model)
+> ud_model <- udpipe_load_model('../tools/data/english-ewt-ud-2.5-191206.udpipe')
+> #-------------------------------------------------------------------------------------------
+> correction.tidy()
+> Sys.time()
+[1] "2022-04-25 03:05:10 BST"
+> source('generate list of UPIs.R')
+Error in UseMethod("html_table") : 
+  no applicable method for 'html_table' applied to an object of class "xml_missing"
+Calls: source -> withVisible -> eval -> eval -> %>% -> html_table
+Execution halted
