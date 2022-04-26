@@ -39,9 +39,9 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   663  100   663    0     0   1462      0 --:--:-- --:--:-- --:--:--  1460
-  1 16.3M    1  175k    0     0   138k      0  0:02:00  0:00:01  0:01:59  138k 73 16.3M   73 12.0M    0     0  5433k      0  0:00:03  0:00:02  0:00:01 11.8M100 16.3M  100 16.3M    0     0  7132k      0  0:00:02  0:00:02 --:--:-- 14.9M
-phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   663  100   663    0     0   1493      0 --:--:-- --:--:-- --:--:--  1493
+  1 16.3M    1  175k    0     0   146k      0  0:01:54  0:00:01  0:01:53  146k 65 16.3M   65 10.7M    0     0  5121k      0  0:00:03  0:00:02  0:00:01 11.1M100 16.3M  100 16.3M    0     0  7094k      0  0:00:02  0:00:02 --:--:-- 13.9M
+phantomjs has been installed to /Users/adrian/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
 > #ud_model <- udpipe_load_model(ud_model$file_model)
@@ -49,9 +49,34 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > correction.tidy()
 > Sys.time()
-[1] "2022-04-25 03:05:10 BST"
+[1] "2022-04-26 13:59:09 BST"
 > source('generate list of UPIs.R')
-Error in UseMethod("html_table") : 
-  no applicable method for 'html_table' applied to an object of class "xml_missing"
-Calls: source -> withVisible -> eval -> eval -> %>% -> html_table
-Execution halted
+> Sys.time()
+[1] "2022-04-26 13:59:10 BST"
+> source('generate wordcloud for each UPI.R')
+[1] "6028 UPIs still to do"
+[1] "----------------------------------------------------------"
+[1] "Attempting PJCAV00 1 of 2"
+[1] "number of words = 75"
+[1] "attempt number 1"
+[1] "webshot complete"
+[1] "cropping..."
+[1] "1.656 is too big, trying again"
+[1] "attempt number 2"
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting HGTMA52 2 of 2"
+[1] "HGTMA52 failed"
+> Sys.time()
+[1] "2022-04-26 13:59:56 BST"
+> source('generate list of department codes.R')
+> Sys.time()
+[1] "2022-04-26 14:00:36 BST"
+> source('generate wordcloud for each department.R')
+[1] "7 departments still to do"
+[1] "----------------------------------------------------------"
+[1] "Attempting B03 1 of 10"
+[1] "pulling data for B03 ......."

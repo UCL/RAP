@@ -13,7 +13,7 @@ UPIs.new <- all.UPIs[!all.UPIs %in% clouds]
 print(paste(length(UPIs.new),'UPIs still to do'))
 
 # 200 clouds that haven't been updated recently. Dont do them all.
-N <- 200
+N <- 2#00
 i <- order(file.info(list.files('../wordclouds/UPI', full.names=T))$mtime)
 UPIs.old <- clouds[i[1:N]]
 

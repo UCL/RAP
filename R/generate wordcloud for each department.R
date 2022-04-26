@@ -26,7 +26,7 @@ departments.new <- departments[!departments %in% clouds]
 print(paste(length(departments.new),'departments still to do'))
 
 # 10 clouds that haven't been updated recently. Dont do them all.
-N <- 10
+N <- 1
 i <- order(file.info(list.files('../wordclouds/departments', full.names=T))$mtime)
 departments.old <- clouds[i[1:N]]
 
@@ -50,6 +50,11 @@ for(n in sample(1:N)){
 	urls <- try(get.discovery.urls.for.department(dept))
 	if(length(urls)<10){
 		print(paste(dept,'has less than 10 publications. Added to the exclusion list'))
+		non.research <- c(non.research,dept)
+		next
+		}
+	if(length(urls)>10000){
+		print(paste(dept,'has more than 10,000 publications. Looks like a meta-department. Added to the exclusion list'))
 		non.research <- c(non.research,dept)
 		next
 		}

@@ -7,9 +7,9 @@
 source('boilerplate.R')
 #-------------------------------------------------------------------------------------------
 min <- 5
-
 page <- read_html('https://discovery.ucl.ac.uk/view/people/')
-x <-  page %>% html_node("table") %>% html_table()
+x <-  page %>% html_nodes("li") %>% html_text()
+x <- x[nchar(x)%in%c(11,12,13)]
 x <- paste(x,collapse='')
 x <- strsplit(x,split="[() ]+")[[1]]
 df <- as.data.frame(t(matrix(x,2,length(x)/2))); names(df) <- c('upi','counts')
