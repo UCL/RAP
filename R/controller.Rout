@@ -39,9 +39,9 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   663  100   663    0     0   1495      0 --:--:-- --:--:-- --:--:--  1496
-  2 16.3M    2  463k    0     0   611k      0  0:00:27 --:--:--  0:00:27  611k 37 16.3M   37 6272k    0     0  3469k      0  0:00:04  0:00:01  0:00:03 5531k 70 16.3M   70 11.4M    0     0  4221k      0  0:00:03  0:00:02  0:00:01 5573k100 16.3M  100 16.3M    0     0  4635k      0  0:00:03  0:00:03 --:--:-- 5703k
-phantomjs has been installed to /Users/adrian/Library/Application Support/PhantomJS
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   663  100   663    0     0   1665      0 --:--:-- --:--:-- --:--:--  1665
+  3 16.3M    3  655k    0     0   714k      0  0:00:23 --:--:--  0:00:23  714k 55 16.3M   55 9344k    0     0  4878k      0  0:00:03  0:00:01  0:00:02 8705k100 16.3M  100 16.3M    0     0  6118k      0  0:00:02  0:00:02 --:--:-- 8846k
+phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
 > #ud_model <- udpipe_load_model(ud_model$file_model)
@@ -49,41 +49,65 @@ phantomjs has been installed to /Users/adrian/Library/Application Support/Phanto
 > #-------------------------------------------------------------------------------------------
 > correction.tidy()
 > Sys.time()
-[1] "2022-04-26 16:28:10 BST"
+[1] "2022-04-26 16:38:43 BST"
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2022-04-26 16:28:11 BST"
+[1] "2022-04-26 16:38:44 BST"
 > source('generate wordcloud for each UPI.R')
-[1] "6027 UPIs still to do"
+[1] "6025 UPIs still to do"
 [1] "----------------------------------------------------------"
-[1] "Attempting CJECA82 1 of 2"
-[1] "number of words = 187"
+[1] "Attempting POORT36 1 of 2"
+[1] "number of words = 57"
 [1] "attempt number 1"
 [1] "webshot complete"
 [1] "cropping..."
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting JMARK32 2 of 2"
-[1] "number of words = 56"
+[1] "Attempting MSTEE91 2 of 2"
+[1] "number of words = 37"
 [1] "attempt number 1"
+[1] "webshot complete"
+[1] "cropping..."
+[1] "ratio poor, trying again"
+[1] "attempt number 2"
+[1] "webshot complete"
+[1] "cropping..."
+[1] "ratio poor, trying again"
+[1] "attempt number 3"
+[1] "webshot complete"
+[1] "cropping..."
+[1] "ratio poor, trying again"
+[1] "attempt number 4"
+[1] "webshot complete"
+[1] "cropping..."
+[1] "ratio poor, trying again"
+[1] "attempt number 5"
+[1] "webshot complete"
+[1] "cropping..."
+[1] "ratio poor, trying again"
+[1] "attempt number 6"
+[1] "webshot complete"
+[1] "cropping..."
+[1] "ratio poor, trying again"
+[1] "attempt number 7"
 [1] "webshot complete"
 [1] "cropping..."
 [1] "resizing..."
 [1] "optipng compression..."
 > Sys.time()
-[1] "2022-04-26 16:29:11 BST"
+[1] "2022-04-26 16:40:38 BST"
 > source('generate list of department codes.R')
 > Sys.time()
-[1] "2022-04-26 16:29:49 BST"
+[1] "2022-04-26 16:41:20 BST"
 > source('generate wordcloud for each department.R')
-[1] "7 departments still to do"
+[1] "6 departments still to do"
 [1] "----------------------------------------------------------"
-[1] "Attempting FH7 1 of 1"
-[1] "pulling data for FH7 ......."
-[1] "FH7 has less than 10 publications. Added to the exclusion list"
+[1] "Attempting FH4 1 of 1"
+[1] "pulling data for FH4 ......."
+[1] "FH4 has less than 10 publications. Added to the exclusion list"
 > Sys.time()
-[1] "2022-04-26 16:29:50 BST"
+[1] "2022-04-26 16:41:21 BST"
 > #-------------------------------------------------------------------------------------------
 > 
 > #-------------------------------------------------------------------------------------------
@@ -109,4 +133,4 @@ phantomjs has been installed to /Users/adrian/Library/Application Support/Phanto
 > 
 > proc.time()
    user  system elapsed 
- 72.038  13.217 108.665 
+ 86.761  32.581 166.391 
