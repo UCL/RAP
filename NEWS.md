@@ -4,7 +4,8 @@
 # UCL-RAP build history
 
 ## 2022-04-26
-* Exclude meta-departments with more than 10,000 publications.
+* Excluded meta-departments with more than 10,000 publications.
+* token keys inplemented for github, replacing passwords.
 
 ## 2021-07-28
 * Corrected URL link examples to a wordcloud image - direct link to raw files required.

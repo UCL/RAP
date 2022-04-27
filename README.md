@@ -31,7 +31,8 @@ Unusual word changes can be specified by appending /tools/corrections/correction
 
 ### Current protocol
 The Molecular And Cultural Evolution laboratory (MACE-lab) server regulary automatically webscrapes publications from UCL Discovery, generates wordclouds, summary statistics etc, for any UPI with 5 or more publications and for departments with more than 10 publications.
-UCL comprises several hundred departments and tens of thousands of UPIs, making this process computationally costly. Therefore, only the least recently updated 200 UPIs and 10 departments are updated each day.
+Meta-departments with greater than 10,000 publications are also excluded.
+UCL comprises several hundred departments and tens of thousands of UPIs, making this process computationally costly. Therefore, only the least recently updated 200 UPIs and 5 departments are updated each day.
 
 The following procedure is automatically performed nightly using scripts in the R folder:
 - Web scrape Discovery to update  /tools/UPI/everyone.txt and /tools/departments/departments.txt

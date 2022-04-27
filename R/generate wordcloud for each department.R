@@ -26,7 +26,7 @@ departments.new <- departments[!departments %in% clouds]
 print(paste(length(departments.new),'departments still to do'))
 
 # 10 clouds that haven't been updated recently. Dont do them all.
-N <- 1
+N <- 5
 i <- order(file.info(list.files('../wordclouds/departments', full.names=T))$mtime)
 departments.old <- clouds[i[1:N]]
 
