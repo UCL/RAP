@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   663  100   663    0     0  10311      0 --:--:-- --:--:-- --:--:-- 10359
-100 16.3M  100 16.3M    0     0  44.0M      0 --:--:-- --:--:-- --:--:-- 44.0M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   663  100   663    0     0  10371      0 --:--:-- --:--:-- --:--:-- 10523
+100 16.3M  100 16.3M    0     0  38.4M      0 --:--:-- --:--:-- --:--:-- 38.4M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,19 +49,19 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > #correction.tidy()
 > Sys.time()
-[1] "2022-04-27 18:50:19 BST"
+[1] "2022-04-27 18:50:51 BST"
 > #source('generate list of UPIs.R')
 > Sys.time()
-[1] "2022-04-27 18:50:19 BST"
+[1] "2022-04-27 18:50:51 BST"
 > #source('generate wordcloud for each UPI.R')
 > Sys.time()
-[1] "2022-04-27 18:50:19 BST"
+[1] "2022-04-27 18:50:51 BST"
 > #source('generate list of department codes.R')
 > Sys.time()
-[1] "2022-04-27 18:50:19 BST"
+[1] "2022-04-27 18:50:51 BST"
 > #source('generate wordcloud for each department.R')
 > Sys.time()
-[1] "2022-04-27 18:50:19 BST"
+[1] "2022-04-27 18:50:51 BST"
 > #-------------------------------------------------------------------------------------------
 > 
 > #-------------------------------------------------------------------------------------------
@@ -87,4 +87,4 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > 
 > proc.time()
    user  system elapsed 
-  2.643   0.551   3.508 
+  2.672   0.564   3.591 
