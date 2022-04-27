@@ -39,51 +39,29 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   663  100   663    0     0   1407      0 --:--:-- --:--:-- --:--:--  1407
- 23 16.3M   23 4015k    0     0  2964k      0  0:00:05  0:00:01  0:00:04 2964k100 16.3M  100 16.3M    0     0  8123k      0  0:00:02  0:00:02 --:--:-- 17.5M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   663  100   663    0     0   1421      0 --:--:-- --:--:-- --:--:--  1425
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 16.3M  100 16.3M    0     0  10.5M      0  0:00:01  0:00:01 --:--:-- 18.3M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
 > #ud_model <- udpipe_load_model(ud_model$file_model)
-> ud_model <- udpipe_load_model('../tools/data/english-ewt-ud-2.5-191206.udpipe')
+> #ud_model <- udpipe_load_model('../tools/data/english-ewt-ud-2.5-191206.udpipe')
 > #-------------------------------------------------------------------------------------------
-> correction.tidy()
+> #correction.tidy()
 > Sys.time()
-[1] "2022-04-27 08:21:09 BST"
-> source('generate list of UPIs.R')
+[1] "2022-04-27 08:34:03 BST"
+> #source('generate list of UPIs.R')
 > Sys.time()
-[1] "2022-04-27 08:21:10 BST"
-> source('generate wordcloud for each UPI.R')
-[1] "5830 UPIs still to do"
-[1] "----------------------------------------------------------"
-[1] "Attempting GBMAG95 1 of 2"
-[1] "number of words = 80"
-[1] "attempt number 1"
-[1] "webshot complete"
-[1] "cropping..."
-[1] "resizing..."
-[1] "optipng compression..."
-[1] "----------------------------------------------------------"
-[1] "Attempting MLDEJ94 2 of 2"
-[1] "number of words = 70"
-[1] "attempt number 1"
-[1] "webshot complete"
-[1] "cropping..."
-[1] "resizing..."
-[1] "optipng compression..."
+[1] "2022-04-27 08:34:03 BST"
+> #source('generate wordcloud for each UPI.R')
 > Sys.time()
-[1] "2022-04-27 08:21:57 BST"
-> source('generate list of department codes.R')
+[1] "2022-04-27 08:34:03 BST"
+> #source('generate list of department codes.R')
 > Sys.time()
-[1] "2022-04-27 08:22:36 BST"
-> source('generate wordcloud for each department.R')
-[1] "0 departments still to do"
-[1] "----------------------------------------------------------"
-[1] "Attempting B02 1 of 1"
-[1] "pulling data for B02 ......."
-[1] "B02 has more than 10,000 publications. Looks like a meta-department. Added to the exclusion list"
+[1] "2022-04-27 08:34:03 BST"
+> #source('generate wordcloud for each department.R')
 > Sys.time()
-[1] "2022-04-27 08:23:08 BST"
+[1] "2022-04-27 08:34:03 BST"
 > #-------------------------------------------------------------------------------------------
 > 
 > #-------------------------------------------------------------------------------------------
@@ -109,4 +87,4 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > 
 > proc.time()
    user  system elapsed 
- 85.426  13.917 126.428 
+  3.007   0.584   4.911 
