@@ -17,5 +17,3 @@ git add -A
 git commit -m "auto update from server"
 git push
 git status
-
-# test
