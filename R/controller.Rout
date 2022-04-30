@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   663    0   663    0     0   1478      0 --:--:-- --:--:-- --:--:--  1479
- 48 16.3M   48 8144k    0     0  8494k      0  0:00:01 --:--:--  0:00:01 8494k100 16.3M  100 16.3M    0     0  12.7M      0  0:00:01  0:00:01 --:--:-- 25.6M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   663    0   663    0     0   1322      0 --:--:-- --:--:-- --:--:--  1323
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 16.3M  100 16.3M    0     0  11.1M      0  0:00:01  0:00:01 --:--:-- 21.6M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,19 +49,19 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > #correction.tidy()
 > Sys.time()
-[1] "2022-04-29 09:41:06 BST"
+[1] "2022-04-30 02:02:09 BST"
 > #source('generate list of UPIs.R')
 > Sys.time()
-[1] "2022-04-29 09:41:06 BST"
+[1] "2022-04-30 02:02:09 BST"
 > #source('generate wordcloud for each UPI.R')
 > Sys.time()
-[1] "2022-04-29 09:41:06 BST"
+[1] "2022-04-30 02:02:09 BST"
 > #source('generate list of department codes.R')
 > Sys.time()
-[1] "2022-04-29 09:41:06 BST"
+[1] "2022-04-30 02:02:09 BST"
 > #source('generate wordcloud for each department.R')
 > Sys.time()
-[1] "2022-04-29 09:41:06 BST"
+[1] "2022-04-30 02:02:09 BST"
 > #-------------------------------------------------------------------------------------------
 > 
 > #-------------------------------------------------------------------------------------------
@@ -87,4 +87,4 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > 
 > proc.time()
    user  system elapsed 
-  2.715   0.537   4.441 
+  2.708   0.592   6.603 
