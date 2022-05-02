@@ -1,76 +1,0 @@
-#-------------------------------------------------------------------------------------------#
-# Single script to run all other required R scripts, so can be envoked automatically on server using CRON#
-#-------------------------------------------------------------------------------------------#
-source('boilerplate.R')#
-install_phantomjs(force = TRUE)#
-#ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')#
-#ud_model <- udpipe_load_model(ud_model$file_model)#
-ud_model <- udpipe_load_model('../tools/data/english-ewt-ud-2.5-191206.udpipe')#
-#-------------------------------------------------------------------------------------------#
-correction.tidy()#
-Sys.time()
-source('generate list of UPIs.R')
-min <- 5#
-page <- read_html('https://discovery.ucl.ac.uk/view/people/')
-x <-  page %>% html_node("table") %>% html_table()
-page
-page <- read_html('https://discovery.ucl.ac.uk/view/people/')
-page
-page %>% html_node("table")
-str(page)
-page <- read.html('https://discovery.ucl.ac.uk/view/people/DAJAC80.html')
-page <- read_html('https://discovery.ucl.ac.uk/view/people/DAJAC80.html')
-page
-x <-  page %>% html_node("table") %>% html_table()
-x
-page <- read_html('https://discovery.ucl.ac.uk/view/people.html')
-page <- read_html('https://discovery.ucl.ac.uk/view/people/')
-x <-  page %>% html_node("table") %>% html_table()
-page <- read_html('https://discovery.ucl.ac.uk/view/people/')
-page
-str(page)
-page$node
-page$doc
-source('boilerplate.R')
-x <- readLines('https://www.ucl.ac.uk/isd/comprep/orglist.php')
-x <- x[-1]
-x <- paste(x,collapse='|')
-x
-x <- strsplit(x,split='\\|')[[1]]
-df <- as.data.frame(t(matrix(x,2,length(x)/2))); names(df) <- c('department','code')
-df <- df[df$code!='UCL',]
-df$exists <- NA
-nrow(df)
-df$exists <- NA#
-for(n in 1:nrow(df))df$exists[n] <- url.exists(paste('https://discovery.ucl.ac.uk/view/UCL',df$code[n],sep='/'))#
-df <- subset(df, exists)
-#-------------------------------------------------------------------------------------------#
-source('boilerplate.R')#
-departments <- readLines('../tools/departments/departments.txt')#
-cloud.png <- list.files('../wordclouds/departments')#
-non.research <- readLines('../tools/departments/non.research.txt')
-departments <- departments[!departments%in%non.research]
-# remove any departments that are no longer at UCL#
-clouds <- sub('.png','',cloud.png)#
-remove <- list.files('../wordclouds/departments', full.names=T)[!clouds%in%departments]#
-file.remove(remove)
-departments.new <- departments[!departments %in% clouds]#
-print(paste(length(departments.new),'departments still to do'))
-# 10 clouds that haven't been updated recently. Dont do them all.#
-N <- 10#
-i <- order(file.info(list.files('../wordclouds/departments', full.names=T))$mtime)#
-departments.old <- clouds[i[1:N]]
-departments <- c(departments.new, departments.old)
-N <- 10
-if(length(departments)>N)departments <- sample(departments,size=N)
-#-------------------------------------------------------------------------------------------#
-count <- 0#
-N <- length(departments)
-n=1
-count <- count + 1
-dept <- urls <- discovery <- exclude <- freq <- NULL
-dept <- departments[n]
-print('----------------------------------------------------------')
-print(paste('Attempting',dept,count,'of',N))
-urls <- try(get.discovery.urls.for.department(dept))
-urls
