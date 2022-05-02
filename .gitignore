@@ -1,0 +1,16 @@
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# User-specific files
+.Ruserdata
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# R Environment Variables
+.Renviron
