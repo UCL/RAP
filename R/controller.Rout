@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
- 49 16.3M   49 8206k    0     0  7073k      0  0:00:02  0:00:01  0:00:01 7073k100 16.3M  100 16.3M    0     0  13.2M      0  0:00:01  0:00:01 --:--:--  119M
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 49 16.3M   49 8206k    0     0  4444k      0  0:00:03  0:00:01  0:00:02 4444k100 16.3M  100 16.3M    0     0  8742k      0  0:00:01  0:00:01 --:--:--  120M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,86 +49,39 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > #correction.tidy()
 > Sys.time()
-[1] "2025-08-24 06:48:10 BST"
+[1] "2025-08-25 06:48:10 BST"
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2025-08-24 06:48:12 BST"
+[1] "2025-08-25 06:48:11 BST"
 > source('generate wordcloud for each UPI.R')
-[1] "227 UPIs still to do"
+[1] "226 UPIs still to do"
 [1] "----------------------------------------------------------"
-[1] "Attempting ASMIT42 1 of 100"
-[1] "ASMIT42 failed"
-[1] "----------------------------------------------------------"
-[1] "Attempting RSCRA85 2 of 100"
-[1] "RSCRA85 failed"
-[1] "----------------------------------------------------------"
-[1] "Attempting AHADD08 3 of 100"
-[1] "AHADD08 failed"
-[1] "----------------------------------------------------------"
-[1] "Attempting NMCLA78 4 of 100"
-[1] "NMCLA78 failed"
-[1] "----------------------------------------------------------"
-[1] "Attempting TLOEW52 5 of 100"
-[1] "TLOEW52 failed"
-[1] "----------------------------------------------------------"
-[1] "Attempting LNICK92 6 of 100"
-[1] "number of words = 45"
+[1] "Attempting MFARA61 1 of 100"
+[1] "number of words = 181"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "cropping..."
-[1] "resizing..."
-[1] "optipng compression..."
-[1] "----------------------------------------------------------"
-[1] "Attempting NRODO76 7 of 100"
-[1] "number of words = 64"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "resizing..."
-[1] "optipng compression..."
-[1] "----------------------------------------------------------"
-[1] "Attempting AZAMO97 8 of 100"
-[1] "AZAMO97 failed"
-[1] "----------------------------------------------------------"
-[1] "Attempting JXUEX03 9 of 100"
-[1] "JXUEX03 failed"
-[1] "----------------------------------------------------------"
-[1] "Attempting MWWES96 10 of 100"
-[1] "MWWES96 failed"
-[1] "----------------------------------------------------------"
-[1] "Attempting SDEAN50 11 of 100"
-[1] "number of words = 56"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "resizing..."
-[1] "optipng compression..."
-[1] "----------------------------------------------------------"
-[1] "Attempting JLAFO26 12 of 100"
-[1] "JLAFO26 failed"
-[1] "----------------------------------------------------------"
-[1] "Attempting CFFAB79 13 of 100"
-[1] "number of words = 54"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
+[1] "1.444 is too small, trying again"
 [1] "ratio poor, trying again"
 [1] "attempt number 2"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "cropping..."
+[1] "2.166 is too small, trying again"
+[1] "ratio poor, trying again"
+[1] "attempt number 3"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting JHBUR52 14 of 100"
-[1] "JHBUR52 failed"
+[1] "Attempting MLONG29 2 of 100"
+[1] "MLONG29 failed"
 [1] "----------------------------------------------------------"
-[1] "Attempting AMEYE16 15 of 100"
-[1] "number of words = 57"
+[1] "Attempting ZHAND92 3 of 100"
+[1] "number of words = 51"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
@@ -136,7 +89,13 @@ _RegisterApplication(), FAILED TO establish the default connection to the Window
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting PTURO88 16 of 100"
+[1] "Attempting WBODN04 4 of 100"
+[1] "WBODN04 failed"
+[1] "----------------------------------------------------------"
+[1] "Attempting ILSKN92 5 of 100"
+[1] "ILSKN92 failed"
+[1] "----------------------------------------------------------"
+[1] "Attempting apete53 6 of 100"
 [1] "number of words = 350"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
@@ -145,19 +104,31 @@ _RegisterApplication(), FAILED TO establish the default connection to the Window
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting RCIGM73 17 of 100"
-[1] "RCIGM73 failed"
+[1] "Attempting MNEVE30 7 of 100"
+[1] "MNEVE30 failed"
 [1] "----------------------------------------------------------"
-[1] "Attempting MGDOE34 18 of 100"
-[1] "MGDOE34 failed"
+[1] "Attempting FIKEJ50 8 of 100"
+[1] "number of words = 160"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting RWANG01 19 of 100"
-[1] "RWANG01 failed"
+[1] "Attempting ABOUR83 9 of 100"
+[1] "number of words = 246"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting MKATH66 20 of 100"
+[1] "Attempting OLAND03 10 of 100"
 Error in open.connection(x, "rb") : SSLRead() return error -9806
 Error: $ operator is invalid for atomic vectors
 In addition: Warning message:
 In .Internal(gc(verbose, reset, full)) :
-  closing unused connection 3 (https://discovery.ucl.ac.uk/id/eprint/10135523/)
+  closing unused connection 3 (https://discovery.ucl.ac.uk/id/eprint/10075447/)
 Execution halted
