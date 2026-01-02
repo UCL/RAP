@@ -39,8 +39,8 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 48 16.3M   48 8205k    0     0  1686k      0  0:00:09  0:00:04  0:00:05 1839k100 16.3M  100 16.3M    0     0  3391k      0  0:00:04  0:00:04 --:--:-- 3695k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 16.3M  100 16.3M    0     0  16.2M      0  0:00:01  0:00:01 --:--:-- 16.2M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > #ud_model <- udpipe_download_model(language = "english", model_dir='../tools/data')
@@ -49,7 +49,7 @@ phantomjs has been installed to /Users/admin/Library/Application Support/Phantom
 > #-------------------------------------------------------------------------------------------
 > #correction.tidy()
 > Sys.time()
-[1] "2026-01-01 06:48:13 GMT"
+[1] "2026-01-02 06:48:09 GMT"
 > source('generate list of UPIs.R')
 Error in open.connection(x, "rb") : 
   SSL certificate problem: Invalid certificate chain
