@@ -1,13 +1,3 @@
-# History files
-.Rhistory
-.Rapp.history
 
-# Session Data files
-.RData
-.Rout
-
-# User-specific files
-.Ruserdata
-
-# R Environment Variables
-.Renviron
+# maintain on server, but dont track
+R/controller.Rout
