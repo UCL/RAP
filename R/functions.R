@@ -228,12 +228,7 @@ get.iris.summary <- function(upi){
 return(text)}
 #-------------------------------------------------------------------------------------------------------
 reader <- function(url){
-        page <- NA
         gc()
-        if(!url.exists(url)){
-                print(paste(url,'non-existant'))
-                return(NA)
-                }
         page <- read_html(url)	
 return(page)}
 #-------------------------------------------------------------------------------------------------------
@@ -295,7 +290,7 @@ wordcloud.maker <- function(freq, col, png.file){
 
 			# remove intermediate temp files
 			file.remove(html.file)
-      		unlink('tmp_files', recursive=TRUE)
+			unlink('tmp_files', recursive=TRUE)
 			print('webshot complete')
 
 			# crop white borders with imagemagick
