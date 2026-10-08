@@ -3,6 +3,11 @@
 
 # UCL-RAP build history
 
+## 2026-10-08
+* removed the check if url exists, as it was failing.
+* cleared out main git history as it was getting too big.
+
+
 ## 2022-04-26
 * Excluded meta-departments with more than 10,000 publications.
 * token keys inplemented for github, replacing passwords.
