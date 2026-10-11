@@ -20,7 +20,7 @@ Type 'q()' to quit R.
 > D #-------------------------------------------------------------------------------------------
 function (expr, name) 
 .External(C_doD, expr, name)
-<bytecode: 0x7fa268690f38>
+<bytecode: 0x7fa44163d938>
 <environment: namespace:stats>
 > # Single script to run all other required R scripts, so can be envoked automatically on server using CRON
 > #-------------------------------------------------------------------------------------------
@@ -43,50 +43,89 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 48 16.3M   48 8204k    0     0  1996k      0  0:00:08  0:00:04  0:00:04 2392k100 16.3M  100 16.3M    0     0  4006k      0  0:00:04  0:00:04 --:--:-- 4784k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 48 16.3M   48 8204k    0     0  4769k      0  0:00:03  0:00:01  0:00:02 4769k 55 16.3M   55 9228k    0     0  3851k      0  0:00:04  0:00:02  0:00:02 1514k 61 16.3M   61 10.0M    0     0  3225k      0  0:00:05  0:00:03  0:00:02 1400k100 16.3M  100 16.3M    0     0  4451k      0  0:00:03  0:00:03 --:--:-- 4185k
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > ud_model <- udpipe_load_model('../tools/data/english-ewt-ud-2.5-191206.udpipe')
 > #-------------------------------------------------------------------------------------------
 > Sys.time()
-[1] "2026-10-10 06:48:13 BST"
+[1] "2026-10-11 06:48:16 BST"
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2026-10-10 06:48:15 BST"
+[1] "2026-10-11 06:48:18 BST"
 > source('generate wordcloud for each UPI.R')
-[1] "1088 UPIs still to do"
+[1] "1109 UPIs still to do"
 [1] "----------------------------------------------------------"
-[1] "Attempting RRAJE35 1 of 100"
-[1] "number of words = 233"
+[1] "Attempting SKAST78 1 of 100"
+[1] "number of words = 90"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "cropping..."
-[1] "1.512 is too big, trying again"
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting JWMEL74 2 of 100"
+[1] "number of words = 52"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "1.496 is too small, trying again"
 [1] "attempt number 2"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "cropping..."
-[1] "resizing..."
-[1] "optipng compression..."
-[1] "----------------------------------------------------------"
-[1] "Attempting AJENN67 2 of 100"
-[1] "number of words = 56"
-[1] "attempt number 1"
+[1] "2.244 is too small, trying again"
+[1] "ratio poor, trying again"
+[1] "attempt number 3"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "ratio poor, trying again"
+[1] "attempt number 4"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "3.366 is too big, trying again"
+[1] "attempt number 5"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "2.693 is too big, trying again"
+[1] "attempt number 6"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "cropping..."
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting NCOLO94 3 of 100"
+[1] "Attempting BTAMI27 3 of 100"
 [1] "number of words = 77"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "cropping..."
-[1] "1.459 is too big, trying again"
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting MBWIC59 4 of 100"
+[1] "number of words = 51"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting GDEST19 5 of 100"
+[1] "number of words = 217"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "1.42 is too big, trying again"
 [1] "attempt number 2"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
@@ -94,8 +133,22 @@ _RegisterApplication(), FAILED TO establish the default connection to the Window
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting MALAM89 4 of 100"
-[1] "number of words = 32"
+[1] "Attempting SZHOB52 6 of 100"
+[1] "number of words = 261"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "1.406 is too big, trying again"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting JBORO08 7 of 100"
+[1] "number of words = 38"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
@@ -103,11 +156,11 @@ _RegisterApplication(), FAILED TO establish the default connection to the Window
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting LWOLP69 5 of 100"
-[1] "LWOLP69 failed"
+[1] "Attempting ADIDU12 8 of 100"
+[1] "ADIDU12 failed"
 [1] "----------------------------------------------------------"
-[1] "Attempting FADIA90 6 of 100"
-[1] "number of words = 205"
+[1] "Attempting MKRAS65 9 of 100"
+[1] "number of words = 43"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
@@ -115,10 +168,10 @@ _RegisterApplication(), FAILED TO establish the default connection to the Window
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting CHEIL62 7 of 100"
+[1] "Attempting NKROJ26 10 of 100"
 Error in open.connection(x, "rb") : HTTP error 429.
 Error: $ operator is invalid for atomic vectors
 In addition: Warning message:
 In .Internal(gc(verbose, reset, full)) :
-  closing unused connection 3 (https://discovery.ucl.ac.uk/id/eprint/10062404/)
+  closing unused connection 3 (https://discovery.ucl.ac.uk/id/eprint/10179372/)
 Execution halted
