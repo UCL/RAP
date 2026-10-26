@@ -20,7 +20,7 @@ Type 'q()' to quit R.
 > D #-------------------------------------------------------------------------------------------
 function (expr, name) 
 .External(C_doD, expr, name)
-<bytecode: 0x7f9cc71f8538>
+<bytecode: 0x7fc546026138>
 <environment: namespace:stats>
 > # Single script to run all other required R scripts, so can be envoked automatically on server using CRON
 > #-------------------------------------------------------------------------------------------
@@ -43,101 +43,22 @@ WARNING: There have been major updates to the SemNetCleaner package.
 > install_phantomjs(force = TRUE)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-  9 16.3M    9 1662k    0     0  2963k      0  0:00:05 --:--:--  0:00:05 2963k 49 16.3M   49 8206k    0     0  3878k      0  0:00:04  0:00:02  0:00:02 4211k100 16.3M  100 16.3M    0     0  7663k      0  0:00:02  0:00:02 --:--:-- 9288k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 16.3M  100 16.3M    0     0  14.0M      0  0:00:01  0:00:01 --:--:-- 14.0M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > ud_model <- udpipe_load_model('../tools/data/english-ewt-ud-2.5-191206.udpipe')
 > #-------------------------------------------------------------------------------------------
 > Sys.time()
-[1] "2026-10-25 06:48:11 GMT"
+[1] "2026-10-26 06:48:10 GMT"
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2026-10-25 06:48:14 GMT"
+[1] "2026-10-26 06:48:12 GMT"
 > source('generate wordcloud for each UPI.R')
-[1] "1069 UPIs still to do"
+[1] "1061 UPIs still to do"
 [1] "----------------------------------------------------------"
-[1] "Attempting AHADD08 1 of 100"
-[1] "AHADD08 failed"
-[1] "----------------------------------------------------------"
-[1] "Attempting ZSHEN16 2 of 100"
-[1] "number of words = 109"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "1.387 is too big, trying again"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "resizing..."
-[1] "optipng compression..."
-[1] "----------------------------------------------------------"
-[1] "Attempting DMEND66 3 of 100"
-[1] "number of words = 134"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "1.247 is too big, trying again"
-[1] "ratio poor, trying again"
-[1] "attempt number 3"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 4"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 5"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 6"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 7"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "resizing..."
-[1] "optipng compression..."
-[1] "----------------------------------------------------------"
-[1] "Attempting AEWIL76 4 of 100"
-[1] "AEWIL76 failed"
-[1] "----------------------------------------------------------"
-[1] "Attempting OSMIT64 5 of 100"
-[1] "number of words = 48"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "1.687 is too big, trying again"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "resizing..."
-[1] "optipng compression..."
-[1] "----------------------------------------------------------"
-[1] "Attempting JMCAS16 6 of 100"
-[1] "number of words = 72"
+[1] "Attempting ALAMO31 1 of 100"
+[1] "number of words = 96"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
@@ -145,8 +66,17 @@ _RegisterApplication(), FAILED TO establish the default connection to the Window
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting NMUMT88 7 of 100"
-[1] "number of words = 74"
+[1] "Attempting CDAWE21 2 of 100"
+[1] "number of words = 43"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting LDIMI14 3 of 100"
+[1] "number of words = 40"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
@@ -166,82 +96,80 @@ _RegisterApplication(), FAILED TO establish the default connection to the Window
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 5"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 6"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 7"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 8"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 9"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 10"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
+[1] "resizing..."
+[1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting MDCRU66 8 of 100"
+[1] "Attempting MLRAY48 4 of 100"
+[1] "number of words = 244"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting RTSSA98 5 of 100"
+[1] "number of words = 44"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "1.234 is too big, trying again"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting SHACH13 6 of 100"
+[1] "number of words = 41"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting ASMIT42 7 of 100"
+[1] "ASMIT42 failed"
+[1] "----------------------------------------------------------"
+[1] "Attempting JKENN38 8 of 100"
 [1] "number of words = 60"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "cropping..."
-[1] "ratio poor, trying again"
-[1] "attempt number 2"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting AGOUL91 9 of 100"
-[1] "number of words = 30"
+[1] "Attempting SPETE65 9 of 100"
+[1] "number of words = 40"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "cropping..."
-[1] "resizing..."
-[1] "optipng compression..."
-[1] "----------------------------------------------------------"
-[1] "Attempting KEDGA88 10 of 100"
-[1] "number of words = 75"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "ratio poor, trying again"
+[1] "1.458 is too small, trying again"
 [1] "attempt number 2"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "cropping..."
+[1] "2.187 is too small, trying again"
 [1] "ratio poor, trying again"
 [1] "attempt number 3"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
 [1] "cropping..."
+[1] "3.28 is too big, trying again"
+[1] "attempt number 4"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting CHANC67 11 of 100"
-[1] "number of words = 54"
+[1] "Attempting RTIWA45 10 of 100"
+[1] "number of words = 63"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
@@ -249,19 +177,10 @@ _RegisterApplication(), FAILED TO establish the default connection to the Window
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting LGINS26 12 of 100"
-[1] "number of words = 99"
-[1] "attempt number 1"
-_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
-[1] "webshot complete"
-[1] "cropping..."
-[1] "resizing..."
-[1] "optipng compression..."
-[1] "----------------------------------------------------------"
-[1] "Attempting IILYA09 13 of 100"
+[1] "Attempting JCHAN15 11 of 100"
 Error in open.connection(x, "rb") : HTTP error 429.
 Error: $ operator is invalid for atomic vectors
 In addition: Warning message:
 In .Internal(gc(verbose, reset, full)) :
-  closing unused connection 3 (https://discovery.ucl.ac.uk/id/eprint/10226654/)
+  closing unused connection 3 (https://discovery.ucl.ac.uk/id/eprint/10087082/)
 Execution halted
