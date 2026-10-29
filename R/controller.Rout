@@ -20,7 +20,7 @@ Type 'q()' to quit R.
 > D #-------------------------------------------------------------------------------------------
 function (expr, name) 
 .External(C_doD, expr, name)
-<bytecode: 0x7fdc05e96938>
+<bytecode: 0x7ffe176a5538>
 <environment: namespace:stats>
 > # Single script to run all other required R scripts, so can be envoked automatically on server using CRON
 > #-------------------------------------------------------------------------------------------
@@ -44,24 +44,38 @@ WARNING: There have been major updates to the SemNetCleaner package.
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 48 16.3M   48 8204k    0     0  2143k      0  0:00:07  0:00:03  0:00:04 2435k100 16.3M  100 16.3M    0     0  4296k      0  0:00:03  0:00:03 --:--:-- 4871k
+ 32 16.3M   32 5472k    0     0  7286k      0  0:00:02 --:--:--  0:00:02 7286k100 16.3M  100 16.3M    0     0  15.1M      0  0:00:01  0:00:01 --:--:-- 33.4M
 phantomjs has been installed to /Users/admin/Library/Application Support/PhantomJS
 > 
 > ud_model <- udpipe_load_model('../tools/data/english-ewt-ud-2.5-191206.udpipe')
 > #-------------------------------------------------------------------------------------------
 > Sys.time()
-[1] "2026-10-28 06:48:13 GMT"
+[1] "2026-10-29 06:48:10 GMT"
 > source('generate list of UPIs.R')
 > Sys.time()
-[1] "2026-10-28 06:48:16 GMT"
+[1] "2026-10-29 06:48:12 GMT"
 > source('generate wordcloud for each UPI.R')
-[1] "1047 UPIs still to do"
+[1] "1046 UPIs still to do"
 [1] "----------------------------------------------------------"
-[1] "Attempting TLOEW52 1 of 100"
-[1] "TLOEW52 failed"
+[1] "Attempting CEHAW79 1 of 100"
+[1] "CEHAW79 failed"
 [1] "----------------------------------------------------------"
-[1] "Attempting IASHR68 2 of 100"
-[1] "number of words = 163"
+[1] "Attempting CEKRA21 2 of 100"
+[1] "number of words = 29"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "ratio poor, trying again"
+[1] "attempt number 2"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting IILYA09 3 of 100"
+[1] "number of words = 101"
 [1] "attempt number 1"
 _RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
 [1] "webshot complete"
@@ -69,10 +83,40 @@ _RegisterApplication(), FAILED TO establish the default connection to the Window
 [1] "resizing..."
 [1] "optipng compression..."
 [1] "----------------------------------------------------------"
-[1] "Attempting DTHOR21 3 of 100"
+[1] "Attempting ASIVA04 4 of 100"
+[1] "ASIVA04 failed"
+[1] "----------------------------------------------------------"
+[1] "Attempting SAPAP58 5 of 100"
+[1] "number of words = 39"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting FBZAC28 6 of 100"
+[1] "number of words = 82"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting MABXX27 7 of 100"
+[1] "number of words = 185"
+[1] "attempt number 1"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[1] "webshot complete"
+[1] "cropping..."
+[1] "resizing..."
+[1] "optipng compression..."
+[1] "----------------------------------------------------------"
+[1] "Attempting FGALV19 8 of 100"
 Error in open.connection(x, "rb") : HTTP error 429.
 Error: $ operator is invalid for atomic vectors
 In addition: Warning message:
 In .Internal(gc(verbose, reset, full)) :
-  closing unused connection 3 (https://discovery.ucl.ac.uk/id/eprint/10061297/)
+  closing unused connection 3 (https://discovery.ucl.ac.uk/id/eprint/1469720/)
 Execution halted
